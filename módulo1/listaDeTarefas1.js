@@ -258,7 +258,7 @@ calcularMedia();
 /* 14. Calcular o fatorial de um número: */
 const readline3 = require("readline");
 
-const prompt3 = readline.createInterface({
+const prompt3 = readline3.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
