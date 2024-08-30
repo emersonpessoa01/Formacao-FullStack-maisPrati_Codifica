@@ -149,119 +149,88 @@ escreverNumero10Vezes(7);
 console.log("------------------------------------------------------------");
 
 /* 11.Calcular a soma de 5 números fornecidos */
-const readline = require("readline");
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+const prompt11 = require("prompt-sync")();
 
 function calcularSoma() {
   let soma = 0;
-  let contador = 0;
 
-  function perguntarNumero() {
-    if (contador < 5) {
-      rl.question("Digite um número: ", (entrada) => {
-        const numero = parseFloat(entrada);
-        if (!isNaN(numero)) {
-          soma += numero;
-          contador++;
-          perguntarNumero();
-        } else {
-          console.log("Entrada inválida. Por favor, digite um número.");
-          perguntarNumero();
-        }
-      });
+  for (let i = 0; i < 5; i++) {
+    const entrada = prompt11("Digite um número: ");
+    const numero = parseFloat(entrada);
+    if (!isNaN(numero)) {
+      soma += numero;
     } else {
-      console.log("Soma total:", soma);
-      rl.close();
+      console.log("Entrada inválida. Por favor, digite um número.");
+      i--; // Decrementa o contador para garantir que 5 números válidos sejam somados.
     }
   }
 
-  perguntarNumero();
-  rl.on("close", () => {
-    console.log("Programa encerrado.");
-    console.log("------------------------------------------------------------");
-  });
+  console.log("Soma total:", soma);
+  console.log("Programa encerrado.");
+  console.log("------------------------------------------------------------");
 }
+
 console.log("11.Calcular a soma de 5 números fornecidos:");
 calcularSoma();
 console.log("");
 
 /* 12. Exibir a tabuada de um número */
-let readLine = require("readline");
+const prompt12 = require("prompt-sync")();
 
-const prompt = readLine.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+function exibirTabuada() {
+  const entrada = prompt12("Digite um número para ver sua tabuada: ");
+  const numero = parseInt(entrada);
 
-function perguntarNumero() {
-  prompt.question("Digite um número para ver sua tabuada: ", (numero) => {
-    const n = parseInt(numero);
-
-    if (!isNaN(n)) {
-      console.log(`Tabuada de ${n}:`);
-      for (let i = 1; i <= 10; i++) {
-        console.log(`${n} x ${i} = ${n * i}`);
-      }
-      prompt.close(); // Fecha a interface após exibir a tabuada
-    } else {
-      console.log("Por favor, digite um número válido.");
-      perguntarNumero(); // Pergunta novamente se a entrada for inválida
+  if (!isNaN(numero)) {
+    console.log(`Tabuada de ${numero}:`);
+    for (let i = 1; i <= 10; i++) {
+      console.log(`${numero} x ${i} = ${numero * i}`);
     }
-  });
-}
+  } else {
+    console.log("Por favor, digite um número válido.");
+    exibirTabuada(); // Pergunta novamente se a entrada for inválida
+  }
 
-prompt.on("close", () => {
   console.log("Programa encerrado.");
   console.log("------------------------------------------------------------");
-});
+}
 
 console.log("12. Exibir a tabuada de um número");
-perguntarNumero();
+exibirTabuada();
 
 /* 13. Calcular a média aritmética até que o usuário digite 0: */
-const readline2 = require("readline");
-
- prompt2 = readline2.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+const prompt13 = require("prompt-sync")();
 
 function calcularMedia() {
   let soma = 0;
   let count = 0;
 
-  function perguntarNumero() {
-    prompt2.question("Digite um número (0 para sair): ", (entrada) => {
-      const numero = parseFloat(entrada);
+  while (true) {
+    const entrada = prompt13("Digite um número (0 para sair): ");
+    const numero = parseFloat(entrada);
 
-      if (numero !== 0) {
-        soma += numero;
-        count++;
-        perguntarNumero(); // Continua perguntando até o usuário digitar 0
-      } else {
-        const media = count > 0 ? soma / count : 0;
-        console.log("Média aritmética:", media.toFixed(2));
-        prompt2.close(); // Fecha a interface de prompt
-      }
-    });
+    if (numero === 0) {
+      break; // Sai do loop quando o usuário digitar 0
+    }
+
+    if (!isNaN(numero)) {
+      soma += numero;
+      count++;
+    } else {
+      console.log("Por favor, digite um número válido.");
+    }
   }
 
-  perguntarNumero(); // Inicia a função
+  const media = count > 0 ? soma / count : 0;
+  console.log("Média aritmética:", media.toFixed(2));
+  console.log("Programa encerrado.");
+  console.log("------------------------------------------------------------");
 }
 
 calcularMedia();
 
 /* 14. Calcular o fatorial de um número: */
-const readline3 = require("readline");
-
-const prompt3 = readline3.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+const prompt14 = require("prompt-sync")();
 
 function calcularFatorial(numero) {
   let fatorial = 1;
@@ -271,17 +240,18 @@ function calcularFatorial(numero) {
   console.log(`Fatorial de ${numero} é ${fatorial}`);
 }
 
-prompt3.question("Digite um número para calcular o fatorial: ", (entrada) => {
-  const numero = parseInt(entrada);
+const entrada = prompt14("Digite um número para calcular o fatorial: ");
+const numero = parseInt(entrada);
 
-  if (!isNaN(numero) && numero >= 0) {
-    calcularFatorial(numero);
-  } else {
-    console.log("Por favor, digite um número inteiro não negativo.");
-  }
+if (!isNaN(numero) && numero >= 0) {
+  calcularFatorial(numero);
+} else {
+  console.log("Por favor, digite um número inteiro não negativo.");
+}
 
-  prompt3.close();
-});
+console.log("Programa encerrado.");
+console.log("------------------------------------------------------------");
+
 /* 15. Gerar e imprimir os primeiros 10 números da sequência de Fibonacci: */
 function fibonacci() {
     let n1 = 0, n2 = 1, nextTerm;
