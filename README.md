@@ -1,5 +1,6 @@
-<img src="./images/logo.png">
-
+<div align="center">
+<img src="./images/logo.webp" width="50%">
+</div>
 
 # Grupo +praTI e Codifica - Dev Full Stack Jr. - Turma 2
  
