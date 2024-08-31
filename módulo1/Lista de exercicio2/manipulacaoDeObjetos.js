@@ -142,13 +142,13 @@ console.log("---------------------------------------------------------");
 /* 7. Modificando Objetos em um Array
 
 Crie um array de objetos produtos, onde cada objeto tem nome, preco, e desconto. Use forEach para aplicar um desconto de 10% em todos os produtos e exibir o novo preço. */
-console.log("7.Modificando Objetos em um Array")
+console.log("7.Modificando Objetos em um Array");
 const produtos = [
   { nome: "Notebook", preco: 2000, desconto: 0 },
   { nome: "Smartphone", preco: 1500, desconto: 0 },
   { nome: "Tablet", preco: 1000, desconto: 0 },
 ];
-produtos.forEach(({preco, nome}) => {
+produtos.forEach(({ preco, nome }) => {
   preco = preco * 0.9;
   console.log(`Nome: ${nome}, Novo Preço: ${preco}`);
 });
@@ -178,7 +178,7 @@ const filmes = [
 ];
 
 const titulos = [];
-filmes.forEach(({titulo}) => {
+filmes.forEach(({ titulo }) => {
   titulos.push(titulo);
 });
 console.log(titulos);
@@ -217,7 +217,7 @@ const clientes = [
   },
 ];
 let count = 0;
-clientes.forEach(({idade}) => {
+clientes.forEach(({ idade }) => {
   if (idade > 30) {
     count++;
   }
@@ -237,11 +237,12 @@ const vendas = [
   { produto: "Teclado", quantidade: 2, valor: 800 },
 ];
 let valorTotal = 0;
-vendas.forEach(({quantidade,valor}) => {
+vendas.forEach(({ quantidade, valor }) => {
   valorTotal += quantidade * valor;
 });
 
 console.log(`Valor total de vendas: ${valorTotal}`);
+console.log("---------------------------------------------------------");
 
 /* 11. Agrupando Elementos com forEach
 
@@ -265,6 +266,8 @@ pedidos.forEach((pedido) => {
   totalPorCliente[pedido.cliente] += pedido.quantidade;
 });
 console.log(totalPorCliente);
+console.log("---------------------------------------------------------");
+
 /* 12. Atualizando um Array de Objetos
 
 Crie um array de objetos estoque, onde cada objeto tem produto, quantidade e minimo. Use forEach para atualizar a quantidade dos produtos que estão abaixo do mínimo, duplicando suas quantidades. */
@@ -288,10 +291,77 @@ const estoque = [
   },
 ];
 estoque.forEach(({ quantidade, minimo }, index) => {
-    if (quantidade < minimo) {
-      estoque[index].quantidade *= 2;
-    }
-  });
-  
-  console.log(estoque);
-  
+  if (quantidade < minimo) {
+    estoque[index].quantidade *= 2;
+  }
+});
+
+console.log(estoque);
+console.log("---------------------------------------------------------");
+
+/* 13. Implementando um Carrinho de Compras
+Crie um objeto carrinho com uma propriedade itens, que é um array de objetos. Cada objeto dentro de itens deve representar um produto no carrinho, com nome, quantidade, e precoUnitario. Use forEach para calcular o valor total do carrinho. */
+console.log("13. Implementando um Carrinho de Compras");
+let carrinho = {
+  itens: [
+    { nome: "Notebook", quantidade: 1, precoUnitario: 2000 },
+    { nome: "Smartphone", quantidade: 2, precoUnitario: 1500 },
+    { nome: "Tablet", quantidade: 3, precoUnitario: 1000 },
+  ],
+};
+let valorTotalCarrinho = 0;
+carrinho.itens.forEach(({ quantidade, precoUnitario }) => {
+  valorTotalCarrinho += quantidade * precoUnitario;
+});
+console.log(`O valor total do carrinho: R$ ${valorTotalCarrinho}`);
+console.log("---------------------------------------------------------");
+
+/* 14. Manipulando Objetos Complexos
+
+Crie um objeto empresa com uma propriedade departamentos, que é um array de objetos. Cada departamento tem um nome e uma lista de funcionarios. Use for...in e for...of para iterar sobre os departamentos e seus funcionários, exibindo o nome de cada funcionário junto com o departamento ao qual pertence. */
+console.log("14.Manipulando Objetos Complexos");
+const empresa = {
+  departamentos: [
+    {
+      nome: "Financeiro",
+      funcionarios: ["João", "Maria", "Pedro"],
+    },
+    {
+      nome: "Desenvolvimento",
+      funcionarios: ["Ana", "Rafael", "Lucas"],
+    },
+  ],
+};
+for (let i in empresa.departamentos) {
+  let departamento = empresa.departamentos[i];
+  for (let funcionario of departamento.funcionarios) {
+    console.log(
+      `Funcionários: ${funcionario}, Departamento: ${departamento.nome}`
+    );
+  }
+}
+console.log("---------------------------------------------------------");
+
+/* 15. Filtrando e Somando Valores
+
+Crie um array de objetos transacoes, onde cada transação tem tipo (entrada ou saída) e valor. Use forEach para calcular o saldo final, somando as entradas e subtraindo as saídas. */
+
+console.log("15. Filtrando e Somando Valores");
+const transacoes = [
+  { tipo: "entrada", valor: 500 },
+  { tipo: "saida", valor: 300 },
+  { tipo: "entrada", valor: 200 },
+  { tipo: "saida", valor: 100 },
+];
+
+let saldo = 0;
+
+transacoes.forEach((transacao) => {
+  if (transacao.tipo === "entrada") {
+    saldo += transacao.valor;
+  } else if (transacao.tipo === "saida") {
+    saldo -= transacao.valor;
+  }
+});
+console.log(`Saldo final: R$ ${saldo}`);
+console.log("---------------------------------------------------------");
