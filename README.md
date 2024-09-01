@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./images/logo.webp" width="50%">
+<img src="./images/logo.webp" width="80%">
 </div>
 
 # Grupo +praTI e Codifica - Dev Full Stack Jr. - Turma 2
