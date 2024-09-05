@@ -26,7 +26,8 @@ console.log("2.Classificar idade em categorias:");
 classificarIdade(25);
 console.log("------------------------------------------------------------");
 
-/* 3.Classificar nota como Aprovado, Recuperação ou Reprovado */
+/* 3.Classificar nota como Aprovado,
+ Recuperação ou Reprovado */
 function classificarNota(nota) {
   if (nota >= 7) {
     console.log("Aprovado");
@@ -100,7 +101,8 @@ console.log("6.Verificar tipo de triângulo:");
 verificarTriangulo(3, 4, 5);
 console.log("------------------------------------------------------------");
 
-/* 7.Calcular o valor total da compra de maçãs */
+/* 7.Calcular o valor total da compra de 
+maçãs */
 function calcularValorMacas(quantidade) {
   let preco;
   if (quantidade < 12) {
@@ -116,7 +118,8 @@ console.log("7.Calcular o valor total da compra de maçãs:");
 calcularValorMacas(10);
 console.log("------------------------------------------------------------");
 
-/* 8.Escrever dois valores em ordem crescente */
+/* 8.Escrever dois valores em ordem 
+crescente */
 function ordenarValores(valor1, valor2) {
   if (valor1 > valor2) {
     console.log(`[${valor2}, ${valor1}]`);
@@ -252,7 +255,8 @@ if (!isNaN(numero) && numero >= 0) {
 console.log("Programa encerrado.");
 console.log("------------------------------------------------------------");
 
-/* 15. Gerar e imprimir os primeiros 10 números da sequência de Fibonacci: */
+/* 15. Gerar e imprimir os primeiros 10 
+números da sequência de Fibonacci: */
 function fibonacci() {
     let n1 = 0, n2 = 1, nextTerm;
     let soma = n1 + n2; // Inicializa a soma com os dois primeiros termos
