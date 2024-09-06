@@ -423,5 +423,6 @@ transacoes.forEach((transacao) => {
     saldo -= transacao.valor;
   }
 });
+
 console.log(`Saldo final: R$ ${saldo}`);
 console.log("---------------------------------------------------------");
