@@ -288,5 +288,5 @@ Proporcionar, através do conhecimento, oportunidades de emprego na área de tec
 <a href="#topo">Voltar ao Topo</a>
 
 ## Licença
-    Copyright :copyright: 2024 - Dev Full Stack Jr ☕
+  Copyright ©️ 2024 - Dev Full Stack Jr ☕
 
