@@ -123,15 +123,15 @@ Proporcionar, através do conhecimento, oportunidades de emprego na área de tec
 - [x] 2.  Estruturas Essenciais do HTML
 - [x] 3.  CSS Básico I
       [x]4. CSS Básico II
-- [] 5. Introdução ao JavaScript e Manipulação do DOM
-- [] 6. Funções e Eventos do DOM
-- [] 7. Projeto Prático I - Construção de uma Landing Page
-- [] 8. Design Responsivo e Semântica Web
-- [] 9. Flexbox e CSS Grid
-- [] 10. Frameworks de CSS
-- [] 11. Projeto Prático II - Desenvolvimento com Frameworks
-- [] 12. Introdução a Testes no Front-end
-- [] 13. Projeto Prático III - Aplicação Front-end Completa
+- [ ] 5. Introdução ao JavaScript e Manipulação do DOM
+- [ ] 6. Funções e Eventos do DOM
+- [ ] 7. Projeto Prático I - Construção de uma Landing Page
+- [ ] 8. Design Responsivo e Semântica Web
+- [ ] 9. Flexbox e CSS Grid
+- [ ] 10. Frameworks de CSS
+- [ ] 11. Projeto Prático II - Desenvolvimento com Frameworks
+- [ ] 12. Introdução a Testes no Front-end
+- [ ] 13. Projeto Prático III - Aplicação Front-end Completa
 
 > **Trilha Complementar**: Design para quem não é Designer (paralelo aos módulos 3 e 4)
 
@@ -139,89 +139,89 @@ Proporcionar, através do conhecimento, oportunidades de emprego na área de tec
 
 ### Módulo 4 - Desenvolvendo Front-end com ReactJS (13 Aulas)
 
-- [] 1. Introdução ao ReactJS e Configuração do Ambiente
-- [] 2. Componentes Funcionais, Hooks e de Classe
-- [] 3. Estado e Ciclo de Vida dos Componentes
-- [] 4. Manipulação de Eventos e Formulários
-- [] 5. Componentização Avançada
-- [] 6. Roteamento com React Router
-- [] 7. Gerenciamento de Estado com Context API I
-- [] 8. Gerenciamento de Estado com Context API II
-- [] 9. Requisições HTTP com Axios e Estilização com CSS
-- [] 10. Testes Unitários com Jest e React Testing Library
-- [] 11. Desenvolvimento de Aplicações CRUD com React e Redux I
-- [] 12. Desenvolvimento de Aplicações CRUD com React e Redux II
-- [] 13. Deploy e Otimização de Aplicações React
+- [ ] 1. Introdução ao ReactJS e Configuração do Ambiente
+- [ ] 2. Componentes Funcionais, Hooks e de Classe
+- [ ] 3. Estado e Ciclo de Vida dos Componentes
+- [ ] 4. Manipulação de Eventos e Formulários
+- [ ] 5. Componentização Avançada
+- [ ] 6. Roteamento com React Router
+- [ ] 7. Gerenciamento de Estado com Context API I
+- [ ] 8. Gerenciamento de Estado com Context API II
+- [ ] 9. Requisições HTTP com Axios e Estilização com CSS
+- [ ] 10. Testes Unitários com Jest e React Testing Library
+- [ ] 11. Desenvolvimento de Aplicações CRUD com React e Redux I
+- [ ] 12. Desenvolvimento de Aplicações CRUD com React e Redux II
+- [ ] 13. Deploy e Otimização de Aplicações React
 
 <a href="#topo">Voltar ao Topo</a>
 
 ### Módulo 5 - Introdução à Linguagem Java (17 Aulas)
 
-- [] 1. Introdução à Linguagem de Programação Java e Configuração do Ambiente
-- [] 2. Conceitos Básicos: Variáveis e Tipos de Dados
-- [] 3. Operadores e Expressões
-- [] 4. Estruturas de Controle: Condicional
-- [] 5. Estruturas de Controle: Repetição
-- [] 6. Arrays e Coleções
-- [] 7. Métodos e Funções
-- [] 8. Introdução à Programação Orientada a Objetos
-- [] 9. Classes, Objetos e Construtores
-- [] 10. Herança e Sobrecarga
-- [] 11. Polimorfismo e Interface
-- [] 12. Tratamento de Exceções
-- [] 13. Introdução a Estruturas de Dados: Listas e Filas
-- [] 14. Estruturas de Dados: Pilhas e Mapas
-- [] 15. Algoritmos - Busca e Ordenação
-- [] 16. Projeto Prático I
-- [] 17. Projeto Prático II
+- [ ] 1. Introdução à Linguagem de Programação Java e Configuração do Ambiente
+- [ ] 2. Conceitos Básicos: Variáveis e Tipos de Dados
+- [ ] 3. Operadores e Expressões
+- [ ] 4. Estruturas de Controle: Condicional
+- [ ] 5. Estruturas de Controle: Repetição
+- [ ] 6. Arrays e Coleções
+- [ ] 7. Métodos e Funções
+- [ ] 8. Introdução à Programação Orientada a Objetos
+- [ ] 9. Classes, Objetos e Construtores
+- [ ] 10. Herança e Sobrecarga
+- [ ] 11. Polimorfismo e Interface
+- [ ] 12. Tratamento de Exceções
+- [ ] 13. Introdução a Estruturas de Dados: Listas e Filas
+- [ ] 14. Estruturas de Dados: Pilhas e Mapas
+- [ ] 15. Algoritmos - Busca e Ordenação
+- [ ] 16. Projeto Prático I
+- [ ] 17. Projeto Prático II
 
 <a href="#topo">Voltar ao Topo</a>
 
 ### Módulo 6 - Fundamentos de Bancos de Dados Relacionais (13 Aulas)
 
-- [] 1. Introdução a Bancos de Dados Relacionais e Configuração do MySQL
-- [] 2. Modelagem de Dados e Entidades
-- [] 3. Criação e Manipulação de Tabelas
-- [] 4. Consultas Simples com Select
-- [] 5. Restrições de Integridade e Chaves
-- [] 6. Consultas Avançadas com Select
-- [] 7. Backup e Restauração de Dados
-- [] 8. Segurança e Gerenciamento de Usuários
-- [] 9. Introdução a Stored Procedures
-- [] 10. Introdução a Triggers
-- [] 11. Índices e Otimização de Consultas
-- [] 12. Introdução a Views
-- [] 13. Revisão e Projeto Final
+- [ ] 1. Introdução a Bancos de Dados Relacionais e Configuração do MySQL
+- [ ] 2. Modelagem de Dados e Entidades
+- [ ] 3. Criação e Manipulação de Tabelas
+- [ ] 4. Consultas Simples com Select
+- [ ] 5. Restrições de Integridade e Chaves
+- [ ] 6. Consultas Avançadas com Select
+- [ ] 7. Backup e Restauração de Dados
+- [ ] 8. Segurança e Gerenciamento de Usuários
+- [ ] 9. Introdução a Stored Procedures
+- [ ] 10. Introdução a Triggers
+- [ ] 11. Índices e Otimização de Consultas
+- [ ] 12. Introdução a Views
+- [ ] 13. Revisão e Projeto Final
 
 <a href="#topo">Voltar ao Topo</a>
 
 ### Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas)
 
-- [] 1. Introdução ao Desenvolvimento Back-end
-- [] 2. Conceitos Básicos de API REST e Estrutura da Internet
-- [] 3. Introdução ao Spring Boot e Configuração do Ambiente
-- [] 4. Manipulação de Dados com Spring Data JPA
-- [] 5. Validação de Dados e Tratamento de Exceções
-- [] 6. Documentação de API com Swagger
-- [] 7. Autenticação e Autorização com Spring Security
-- [] 8. Upload e Download de Arquivos
-- [] 9. Paginação, Ordenação e Filtragem de Dados
-- [] 10. Testes de Unidade e Integração com JUnit e Mockito
-- [] 11. Gerenciamento de Dependências com Spring Boot Actuator
-- [] 12. Integração com Banco de Dados MySQL I
-- [] 13. Integração com Banco de Dados MySQL II
-
-<a href="#topo">Voltar ao Topo</a>
-
+- [ ] 1. Introdução ao Desenvolvimento Back-end
+- [ ] 2. Conceitos Básicos de API REST e Estrutura da Internet
+- [ ] 3. Introdução ao Spring Boot e Configuração do Ambiente
+- [ ] 4. Manipulação de Dados com Spring Data JPA
+- [ ] 5. Validação de Dados e Tratamento de Exceções
+- [ ] 6. Documentação de API com Swagger
+- [ ] 7. Autenticação e Autorização com Spring Security
+- [ ] 8. Upload e Download de Arquivos
+- [ ] 9. Paginação, Ordenação e Filtragem de Dados
+- [ ] 10. Testes de Unidade e Integração com JUnit e Mockito
+- [ ] 11. Gerenciamento de Dependências com Spring Boot Actuator
+- [ ] 12. Integração com Banco de Dados MySQL I
+- [ ] 13. Integração com Banco de Dados MySQL II
+ 
+<a  href="#topo">Voltar ao Topo</a>
+ 
 ### Módulo 8 - Laboratório de Projeto Final (7 Aulas)
 
-- [] 1. Introdução às Metodologias Ágeis
-- [] 2. Introdução à Arquitetura de Software
-- [] 3. Implementação de Testes Unitários
-- [] 4. Introdução à Integração Contínua (CI)
-- [] 5. Introdução à Entrega Contínua (CD)
-- [] 6. Gestão de Mudanças e Versionamento de Código
-- [] 7. Revisão e Entrega Final
+- [ ] 1. Introdução às Metodologias Ágeis
+- [ ] 2. Introdução à Arquitetura de Software
+- [ ] 3. Implementação de Testes Unitários
+- [ ] 4. Introdução à Integração Contínua (CI)
+- [ ] 5. Introdução à Entrega Contínua (CD)
+- [ ] 6. Gestão de Mudanças e Versionamento de Código
+- [ ] 7. Revisão e Entrega Final
 
 ---
 <a href="#topo">Voltar ao Topo</a>
