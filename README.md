@@ -36,13 +36,13 @@ Proporcionar, através do conhecimento, oportunidades de emprego na área de tec
 ## Cronograma de Aulas
 
 ### Módulo 1 - Introdução à Lógica de Programação (7 Aulas)
-[x] 1. Fundamentos da Computação I
-[x] 2. Fundamentos da Computação II
-[x] 3. Introdução à Lógica de Programação e JavaScript Básico
-[x] 4. [Onboarding RH?], Estruturas de Controle: Repetição e Funções Básicas
-[x] 5. Arrays e Funções Avançadas
-[x] 6. Criação e Manipulação de Objetos em JavaScript
-[x] 7. Revisão e Finalização do Módulo
+-  [x] 1. Fundamentos da Computação I
+-  [x] 2. Fundamentos da Computação II
+-  [x] 3. Introdução à Lógica de Programação e JavaScript Básico
+-  [x] 4. [Onboarding RH?], Estruturas de Controle: Repetição e Funções Básicas
+-  [x] 5. Arrays e Funções Avançadas
+-  [x] 6. Criação e Manipulação de Objetos em JavaScript
+-  [x] 7. Revisão e Finalização do Módulo
 
 ### Módulo 2 - Introdução ao Controle de Versão com Git e GitHub (2 Aulas)
 [x] 1. Introdução ao Git e GitHub
