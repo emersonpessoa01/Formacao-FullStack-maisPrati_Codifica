@@ -31,37 +31,24 @@
   
   # <i class="fa-solid fa-laptop"></i> Grupo +praTI e Codifica - Dev Full Stack Jr. - Turma 2
   
-  ## Tópicos:
-  
-  :small_blue_diamond: [Sobre a Codifica](#sobre-a-codifica)
-  
-  :small_blue_diamond:[Sobre o +praTI](#sobre-o-prati)
-  
-  :small_blue_diamond:[Objetivo](#objetivo)
-  
-  :small_blue_diamond:[Horário das Aulas - Turma 2](#horário-das-aulas---turma-2)
-  
-  :small_blue_diamond:[Módulo 1 - Introdução à Lógica de Programação (7 Aulas)](#módulo-1---introdução-à-lógica-de-programação-7-aulas)
-  
-  :small_blue_diamond:[Módulo 2 - Introdução ao Controle de Versão com Git e GitHub (2 Aulas)](#módulo-2---introdução-ao-controle-de-versão-com-git-e-github-2-aulas)
-  
-  :small_blue_diamond:[Módulo 3 - Fundamentos do Desenvolvimento Front-end (13 Aulas)](#módulo-3---fundamentos-do-desenvolvimento-front-end-13-aulas)
-  
-  :small_blue_diamond:[Módulo 4 - Desenvolvendo Front-end com ReactJS (13 Aulas)](#módulo-4---desenvolvendo-front-end-com-reactjs-13-aulas)
-  
-  :small_blue_diamond:[Módulo 5 - Introdução à Linguagem Java (17 Aulas)](#módulo-5---introdução-à-linguagem-java-17-aulas)
-  
-  :small_blue_diamond:[Módulo 6 - Fundamentos de Bancos de Dados Relacionais (13 Aulas)](#módulo-6---fundamentos-de-bancos-de-dados-relacionais-13-aulas)
-  
-  :small_blue_diamond:[Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas)](#módulo-7---desenvolvimento-de-apis-rest-com-spring-boot-13-aulas)
-  
-  :small_blue_diamond:[Módulo 8 - Laboratório de Projeto Final (7 Aulas)](#módulo-8---laboratório-de-projeto-final-7-aulas)
-  
-  :small_blue_diamond:[Projeto Final](#projeto-final)
-  
-  :small_blue_diamond:[Avaliação](#avaliação)
-  
-  :small_blue_diamond:[FAQ](#faq)
+  <h2>Tópicos:</h2>
+  <ul type="none">
+    <li><a href="#sobre-a-codifica">:small_blue_diamond:Sobre a Codifica</a></li>
+    <li><a href="#sobre-o-prati">:small_blue_diamond:Sobre o +praTI</a></li>
+    <li><a href="#objetivo">:small_blue_diamond:Objetivo</a></li>
+    <li><a href="#horário-das-aulas---turma-2">:small_blue_diamond:Horário das Aulas - Turma 2</a></li>
+    <li><a href="#módulo-1---introdução-à-lógica-de-programação-7-aulas">:small_blue_diamond:Módulo 1 - Introdução à Lógica de Programação (7 Aulas)</a></li>
+    <li><a href="#módulo-2---introdução-ao-controle-de-versão-com-git-e-github-2-aulas">:small_blue_diamond:Módulo 2 - Introdução ao Controle de Versão com Git e GitHub (2 Aulas)</a></li>
+    <li><a href="#módulo-3---fundamentos-do-desenvolvimento-front-end-13-aulas">:small_blue_diamond:Módulo 3 - Fundamentos do Desenvolvimento Front-end (13 Aulas)</a></li>
+    <li><a href="#módulo-4---desenvolvendo-front-end-com-reactjs-13-aulas">:small_blue_diamond:Módulo 4 - Desenvolvendo Front-end com ReactJS (13 Aulas)</a></li>
+    <li><a href="#módulo-5---introdução-à-linguagem-java-17-aulas">:small_blue_diamond:Módulo 5 - Introdução à Linguagem Java (17 Aulas)</a></li>
+    <li><a href="#módulo-6---fundamentos-de-bancos-de-dados-relacionais-13-aulas">:small_blue_diamond:Módulo 6 - Fundamentos de Bancos de Dados Relacionais (13 Aulas)</a></li>
+    <li><a href="#módulo-7---desenvolvimento-de-apis-rest-com-spring-boot-13-aulas">:small_blue_diamond:Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas)</a></li>
+    <li><a href="#módulo-8---laboratório-de-projeto-final-7-aulas">:small_blue_diamond:Módulo 8 - Laboratório de Projeto Final (7 Aulas)</a></li>
+    <li><a href="#projeto-final">:small_blue_diamond:Projeto Final</a></li>
+    <li><a href="#avaliação">:small_blue_diamond:Avaliação</a></li>
+    <li><a href="#faq">:small_blue_diamond:FAQ</a></li>
+  </ul>
   
   
   <a href="#topo">Voltar ao Topo</a>
@@ -81,7 +68,7 @@
   ---
   <a href="#topo">Voltar ao Topo</a>
   
-  ## Horário das Aulas - Turma 2
+  ##  Horário das Aulas - Turma 2
   
   ### Primeiro Momento (Início: 09/07)
   
