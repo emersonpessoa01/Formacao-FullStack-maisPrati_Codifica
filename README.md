@@ -33,7 +33,7 @@
   
   <h2>Tópicos:</h2>
   <ul type="none">
-    <li><a href="#sobre-a-codifica">:small_blue_diamond:Sobre a Codifica</a></li>
+    <li>:small_blue_diamond:<a href="#sobre-a-codifica">Sobre a Codifica</a></li>
     <li><a href="#sobre-o-prati">:small_blue_diamond:Sobre o +praTI</a></li>
     <li><a href="#objetivo">:small_blue_diamond:Objetivo</a></li>
     <li><a href="#horário-das-aulas---turma-2">:small_blue_diamond:Horário das Aulas - Turma 2</a></li>
