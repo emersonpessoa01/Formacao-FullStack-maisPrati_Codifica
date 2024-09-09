@@ -46,7 +46,7 @@
     <li>:small_blue_diamond:<a href="#módulo-7---desenvolvimento-de-apis-rest-com-spring-boot-13-aulas">Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas)</a></li>
     <li>:small_blue_diamond:<a href="#módulo-8---laboratório-de-projeto-final-7-aulas">Módulo 8 - Laboratório de Projeto Final (7 Aulas)</a></li>
     <li>:small_blue_diamond:<a href="#projeto-final">Projeto Final</a></li>
-    <li><a href="#avaliação">Avaliação</a></li>
+    <li>:small_blue_diamond:<a href="#avaliação">Avaliação</a></li>
     <li>:small_blue_diamond:<a href="#faq">FAQ</a></li>
   </ul>
   
