@@ -65,6 +65,7 @@
   
   
   <a href="#topo">Voltar ao Topo</a>
+
   ## Sobre a Codifica
   
   Somos uma Edtech especializada no ensino de tecnologia, inovação e pensamento computacional, desde a educação básica até a educação profissional. Nosso objetivo é despertar o interesse pela tecnologia, promovendo um conhecimento democrático e de qualidade, que desenvolva habilidades essenciais para os desafios de um mundo digital.
@@ -130,7 +131,7 @@
   - [x] 1.  Introdução ao Desenvolvimento Front-end
   - [x] 2.  Estruturas Essenciais do HTML
   - [x] 3.  CSS Básico I
-        [x]4. CSS Básico II
+  - [x] 4. CSS Básico II
   - [ ] 5. Introdução ao JavaScript e Manipulação do DOM
   - [ ] 6. Funções e Eventos do DOM
   - [ ] 7. Projeto Prático I - Construção de uma Landing Page
