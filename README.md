@@ -7,7 +7,7 @@
   <img src="./images/logo.png" width="80%">
   </div>
 
-  ## <img src="https://user-images.githubusercontent.com/74038190/206662607-d9e7591e-bbf9-42f9-9386-29efc927bc16.gif" width="30px" height="30px"> Tecnologias e Ferramentas
+## <img src="https://user-images.githubusercontent.com/74038190/206662607-d9e7591e-bbf9-42f9-9386-29efc927bc16.gif" width="30px" height="30px"> Tecnologias e Ferramentas
 
   <p align="left">
     <code><img src="https://img.shields.io/badge/html%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/></code>
@@ -53,8 +53,8 @@
   
   <a href="#topo">Voltar ao Topo</a>
 
-  ## Sobre a Codifica
-  
+  <h2 id="sobre-a-codifica">📌Sobre a Codifica</h2>
+  <!-- ## Sobre a Codifica -->
   Somos uma Edtech especializada no ensino de tecnologia, inovação e pensamento computacional, desde a educação básica até a educação profissional. Nosso objetivo é despertar o interesse pela tecnologia, promovendo um conhecimento democrático e de qualidade, que desenvolva habilidades essenciais para os desafios de um mundo digital.
   
   ## Sobre o +praTI
