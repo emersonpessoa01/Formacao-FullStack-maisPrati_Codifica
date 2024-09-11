@@ -27,23 +27,23 @@
   # Grupo +praTI e Codifica - Dev Full Stack Jr. - Turma 2
   
   <h2>Tópicos:</h2>
-  <ul type="none"  style="margin-left:0; padding-left: 0;">
-    <li>:small_blue_diamond:<a href="#sobre-a-codifica">Sobre a Codifica</a></li>
-    <li>:small_blue_diamond:<a href="#sobre-o-prati">Sobre o +praTI</a></li>
-    <li>:small_blue_diamond:<a href="#objetivo">Objetivo</a></li>
-    <li>:small_blue_diamond:<a href="#horário-das-aulas---turma-2">Horário das Aulas - Turma 2</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-1---introdução-à-lógica-de-programação-7-aulas">Módulo 1 - Introdução à Lógica de Programação (7 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-2---introdução-ao-controle-de-versão-com-git-e-github-2-aulas">Módulo 2 - Introdução ao Controle de Versão com Git e GitHub (2 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-3---fundamentos-do-desenvolvimento-front-end-13-aulas">Módulo 3 - Fundamentos do Desenvolvimento Front-end (13 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-4---desenvolvendo-front-end-com-reactjs-13-aulas">Módulo 4 - Desenvolvendo Front-end com ReactJS (13 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-5---introdução-à-linguagem-java-17-aulas">Módulo 5 - Introdução à Linguagem Java (17 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-6---fundamentos-de-bancos-de-dados-relacionais-13-aulas">Módulo 6 - Fundamentos de Bancos de Dados Relacionais (13 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-7---desenvolvimento-de-apis-rest-com-spring-boot-13-aulas">Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#módulo-8---laboratório-de-projeto-final-7-aulas">Módulo 8 - Laboratório de Projeto Final (7 Aulas)</a></li>
-    <li>:small_blue_diamond:<a href="#projeto-final">Projeto Final</a></li>
-    <li>:small_blue_diamond:<a href="#avaliação">Avaliação</a></li>
-    <li>:small_blue_diamond:<a href="#faq">FAQ</a></li>
-  </ul>
+  
+  - 🔹 [Sobre a Codifica](#sobre-a-codifica)
+- 🔹 [Sobre o +praTI](#sobre-o-prati)
+- 🔹 [Objetivo](#objetivo)
+- 🔹 [Horário das Aulas - Turma 2](#horário-das-aulas---turma-2)
+- 🔹 [Módulo 1 - Introdução à Lógica de Programação (7 Aulas)](#módulo-1---introdução-à-lógica-de-programação-7-aulas)
+- 🔹 [Módulo 2 - Introdução ao Controle de Versão com Git e GitHub (2 Aulas)](#módulo-2---introdução-ao-controle-de-versão-com-git-e-github-2-aulas)
+- 🔹 [Módulo 3 - Fundamentos do Desenvolvimento Front-end (13 Aulas)](#módulo-3---fundamentos-do-desenvolvimento-front-end-13-aulas)
+- 🔹 [Módulo 4 - Desenvolvendo Front-end com ReactJS (13 Aulas)](#módulo-4---desenvolvendo-front-end-com-reactjs-13-aulas)
+- 🔹 [Módulo 5 - Introdução à Linguagem Java (17 Aulas)](#módulo-5---introdução-à-linguagem-java-17-aulas)
+- 🔹 [Módulo 6 - Fundamentos de Bancos de Dados Relacionais (13 Aulas)](#módulo-6---fundamentos-de-bancos-de-dados-relacionais-13-aulas)
+- 🔹 [Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas)](#módulo-7---desenvolvimento-de-apis-rest-com-spring-boot-13-aulas)
+- 🔹 [Módulo 8 - Laboratório de Projeto Final (7 Aulas)](#módulo-8---laboratório-de-projeto-final-7-aulas)
+- 🔹 [Projeto Final](#projeto-final)
+- 🔹 [Avaliação](#avaliação)
+- 🔹 [FAQ](#faq)
+
   
   
   <a href="#topo">Voltar ao Topo</a>
