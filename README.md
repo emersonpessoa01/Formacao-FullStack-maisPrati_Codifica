@@ -79,7 +79,8 @@
 - **Quartas-feiras**: 19h - 22h (com 20 minutos de intervalo)
 - **Quintas-feiras**: 19h - 22h (com 20 minutos de intervalo)
 - **Sábados**: 9h - 12h (com 20 minutos de intervalo)
-  > [!IMPORTANT] > **Plantão de Dúvidas**: Sempre 1 hora antes da aula, no Discord.
+  > [!IMPORTANT] 
+  > **Plantão de Dúvidas**: Sempre 1 hora antes da aula, no Discord.
 
 ---
 
