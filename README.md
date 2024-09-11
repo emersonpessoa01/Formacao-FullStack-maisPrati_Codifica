@@ -304,7 +304,7 @@
   
   <a href="#topo">Voltar ao Topo</a>
   
-  ## Licença
+ <h2 align="center"> Licença</h2>
   <div align="center">Copyright ©️ 2024 - Dev Full Stack Jr <div>
   
 </html>
