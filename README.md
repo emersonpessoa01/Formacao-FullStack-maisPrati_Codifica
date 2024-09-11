@@ -1,8 +1,3 @@
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<html>
   <div align="center" id="topo">
   <img src="./images/logo.webp" width="80%">
   </div>
@@ -29,10 +24,10 @@
   <code><img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"/></code>
   </p>
   
-  # <i class="fa-solid fa-laptop"></i> Grupo +praTI e Codifica - Dev Full Stack Jr. - Turma 2
+  # Grupo +praTI e Codifica - Dev Full Stack Jr. - Turma 2
   
   <h2>Tópicos:</h2>
-  <ul type="none">
+  <ul type="none"  style="margin-left:0; padding-left: 0;">
     <li>:small_blue_diamond:<a href="#sobre-a-codifica">Sobre a Codifica</a></li>
     <li>:small_blue_diamond:<a href="#sobre-o-prati">Sobre o +praTI</a></li>
     <li>:small_blue_diamond:<a href="#objetivo">Objetivo</a></li>
@@ -306,5 +301,3 @@
   
  <h2 align="center"> Licença</h2>
   <div align="center">Copyright ©️ 2024 - Dev Full Stack Jr <div>
-  
-</html>
