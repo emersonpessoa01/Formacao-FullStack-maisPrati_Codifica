@@ -1,5 +1,5 @@
   <div align="center" id="topo">
-  <img src="./images/logo.webp" width="80%">
+  <img src="./images/logo3.png" width="auto">
   </div>
 
 ## <img src="https://user-images.githubusercontent.com/74038190/206662607-d9e7591e-bbf9-42f9-9386-29efc927bc16.gif" width="30px" height="30px"> Tecnologias e Ferramentas
