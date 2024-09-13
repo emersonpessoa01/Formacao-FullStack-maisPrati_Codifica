@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Simples</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .calculator {
+      width: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .display {
+      width: 100%;
+      height: 60px;
+      font-size: 32px;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      box-sizing: border-box;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+    button {
+      padding: 15px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #e0e0e0;
+      cursor: pointer;
+    }
+    button.operator {
+      background-color: #ff9800;
+      color: white;
+    }
+    button.equal {
+      background-color: #4caf50;
+      color: white;
+    }
+    button.clear, button.backspace {
+      background-color: #f44336;
+      color: white;
+    }
+    button:hover {
+      background-color: #dcdcdc;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="clear">C</button>
+      <button onclick="backspace()" class="backspace">DEL</button>
+      <button onclick="appendOperator('%')" class="operator">%</button>
+      <button onclick="appendOperator('/')" class="operator">÷</button>
+
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('*')" class="operator">×</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('-')" class="operator">-</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendOperator('+')" class="operator">+</button>
+
+      <button onclick="appendNumber('0')" style="grid-column: span 2">0</button>
+      <button class="equal" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script>
+    let display = document.getElementById('display');
+    let currentInput = '';
+
+    // Função para adicionar números ao display
+    function appendNumber(number) {
+      if (display.innerText === '0') {
+        display.innerText = number;
+      } else {
+        display.innerText += number;
+      }
+      currentInput = display.innerText;
+    }
+
+    // Função para adicionar operadores ao display
+    function appendOperator(operator) {
+      if (!currentInput.endsWith(operator)) {
+        display.innerText += operator;
+      }
+    }
+
+    // Função para limpar o display
+    function clearDisplay() {
+      display.innerText = '0';
+      currentInput = '';
+    }
+
+    // Função para deletar o último caractere (backspace)
+    function backspace() {
+      if (display.innerText.length > 1) {
+        display.innerText = display.innerText.slice(0, -1);
+      } else {
+        display.innerText = '0';
+      }
+      currentInput = display.innerText;
+    }
+
+    // Função para calcular o resultado
+    function calculate() {
+      try {
+        let expression = display.innerText;
+
+        // Substitui operadores para o cálculo correto
+        expression = expression.replace('×', '*').replace('÷', '/');
+
+        // Lógica para percentagem
+        if (expression.includes('%')) {
+          let [left, right] = expression.split('%');
+          display.innerText = (parseFloat(left) * (parseFloat(right) / 100)).toString();
+        } else {
+          display.innerText = eval(expression).toString();
+        }
+      } catch (error) {
+        display.innerText = 'Erro';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -79,6 +79,20 @@ select:focus {
   margin-bottom: 0;
 }
 
+.btn-box button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
 button {
   padding: 12px;
   background-color: #007bff;
@@ -88,6 +102,10 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+
+  display: block;
+  width: 40%;
+  margin: 0 auto;
 }
 
 button:hover {
