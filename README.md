@@ -121,7 +121,7 @@
   - [x] 3.  CSS Básico I
   - [x] 4. CSS Básico II
   - [x] 5. Introdução ao JavaScript e Manipulação do DOM
-  - [ ] 6. Funções e Eventos do DOM
+  - [x] 6. Funções e Eventos do DOM
   - [ ] 7. Projeto Prático I - Construção de uma Landing Page
   - [ ] 8. Design Responsivo e Semântica Web
   - [ ] 9. Flexbox e CSS Grid
