@@ -119,6 +119,6 @@ showAllBtn.addEventListener("click", () => renderTasks("all"));
 showCompletedBtn.addEventListener("click", () => renderTasks("completed"));
 showIncompletedBtn.addEventListener("click", () => renderTasks("incompleted"));
 
-// Renderiza as tarefas inicilamente(sem filtro)
+// Renderiza as tarefas inicialmente(sem filtro)
 
 renderTasks();
