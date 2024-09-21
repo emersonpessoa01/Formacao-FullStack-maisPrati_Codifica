@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botões com Timeout, Interval e Zerar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      button {
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 20px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="changeTextButton">Alterar Texto</button>
+    <button id="startCounterButton">Iniciar Contador</button>
+    <button id="resetCounterButton">Zerar Contador</button>
+
+    <p id="textDisplay">Texto inicial</p>
+    <p id="counterDisplay">Contador: 0</p>
+
+    <script>
+      // Botão para alterar o texto após 3 segundos
+      document
+        .getElementById("changeTextButton")
+        .addEventListener("click", function () {
+          setTimeout(() => {
+            let textDisplay = document.getElementById("textDisplay")
+            textDisplay.innerText =
+              "O texto foi alterado!";
+              textDisplay.style.color="red"
+          }, 3000);
+        });
+
+      // Variáveis para controlar o contador
+      let counter = 0;
+      let intervalId;
+
+      // Botão para iniciar o contador
+      document
+        .getElementById("startCounterButton")
+        .addEventListener("click", function () {
+          if (!intervalId) {
+            // Evita que múltiplos intervalos sejam criados
+            intervalId = setInterval(() => {
+              counter++;
+              document.getElementById(
+                "counterDisplay"
+              ).innerText = `Contador: ${counter}`;
+            }, 1000);
+          }
+        });
+
+      // Botão para zerar o contador
+      document
+        .getElementById("resetCounterButton")
+        .addEventListener("click", function () {
+          clearInterval(intervalId); // Para o contador
+          intervalId = null; // Reseta o intervalo
+          counter = 0; // Zera o contador
+          document.getElementById(
+            "counterDisplay"
+          ).innerText = `Contador: ${counter}`;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histórico e Redirecionamento</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      button {
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="backButton">Voltar</button>
+    <button id="forwardButton">Avançar</button>
+
+    <button id="goToGoogleButton">Ir para Google</button>
+    <button id="goToYouTubeButton">Ir para YouTube</button>
+
+    <script>
+      // Botão "Voltar" que utiliza o histórico do navegador
+      document
+        .getElementById("backButton")
+        .addEventListener("click", function () {
+          window.history.back(); // Navega para a página anterior no histórico
+        });
+
+      // Botão "Avançar" que utiliza o histórico do navegador
+      document
+        .getElementById("forwardButton")
+        .addEventListener("click", function () {
+          window.history.forward(); // Navega para a próxima página no histórico
+        });
+
+      // Botão para redirecionar para o Google
+      document
+        .getElementById("goToGoogleButton")
+        .addEventListener("click", function () {
+          window.location.href = "https://www.google.com"; // Redireciona para o Google
+        });
+
+      // Botão para redirecionar para o YouTube
+      document
+        .getElementById("goToYouTubeButton")
+        .addEventListener("click", function () {
+          window.location.href = "https://www.youtube.com"; // Redireciona para o YouTube
+        });
+    </script>
+  </body>
+</html>

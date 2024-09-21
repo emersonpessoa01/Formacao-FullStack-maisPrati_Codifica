@@ -1,0 +1,327 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos - +praTi Pratique Programação</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      header {
+        background: #35424a;
+        color: #ffffff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d 3px solid;
+      }
+      header a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+      header .highlight,
+      header .current a {
+        color: #e8491d;
+        font-weight: bold;
+      }
+      header a:hover {
+        color: #cccccc;
+        font-weight: bold;
+      }
+      #branding {
+        float: left;
+      }
+      #branding h1 {
+        margin: 0;
+      }
+      nav {
+        float: right;
+        margin-top: 10px;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline;
+        padding: 0 20px;
+      }
+      #main {
+        padding: 30px 0;
+        background: #ffffff;
+      }
+      #main h2 {
+        color: #35424a;
+        border-bottom: 2px solid #e8491d;
+        padding-bottom: 10px;
+      }
+      .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+      }
+      .course-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+      }
+      .course-card:hover {
+        transform: translateY(-5px);
+      }
+      .course-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .course-content {
+        padding: 20px;
+      }
+      .course-title {
+        font-size: 1.2em;
+        margin-top: 0;
+        color: #35424a;
+      }
+      .course-description {
+        font-size: 0.9em;
+        color: #666;
+      }
+      .course-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+      }
+      .course-price {
+        font-weight: bold;
+        color: #e8491d;
+      }
+      .course-button {
+        background-color: #e8491d;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .course-button:hover {
+        background-color: #c13a18;
+      }
+      footer {
+        padding: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        header #branding,
+        header nav,
+        header nav li {
+          float: none;
+          text-align: center;
+          width: 100%;
+        }
+        header {
+          padding-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">+praTi</span> Pratique Programação</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="cursos.html">Cursos</a></li>
+            <li><a href="sobre1.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+      <div class="container">
+        <h2>Nossos Cursos</h2>
+        <div class="courses-grid">
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Desenvolvimento Web Fullstack"
+              class="course-image"
+              width="300"
+              height="200"
+            />
+            <div class="course-content">
+              <h3 class="course-title">Desenvolvimento Web Fullstack</h3>
+              <p class="course-description">
+                Aprenda a criar aplicações web completas, do front-end ao
+                back-end, utilizando as tecnologias mais modernas do mercado.
+              </p>
+              <div class="course-meta">
+                <span class="course-price">R$ 1.999,00</span>
+                <button class="course-button">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Ciência de Dados"
+              class="course-image"
+              width="300"
+              height="200"
+            />
+            <div class="course-content">
+              <h3 class="course-title">Ciência de Dados</h3>
+              <p class="course-description">
+                Domine as técnicas de análise de dados, machine learning e
+                visualização para tomar decisões baseadas em dados.
+              </p>
+              <div class="course-meta">
+                <span class="course-price">R$ 2.499,00</span>
+                <button class="course-button">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Desenvolvimento Mobile"
+              class="course-image"
+              width="300"
+              height="200"
+            />
+            <div class="course-content">
+              <h3 class="course-title">Desenvolvimento Mobile</h3>
+              <p class="course-description">
+                Crie aplicativos móveis incríveis para iOS e Android utilizando
+                React Native e Flutter.
+              </p>
+              <div class="course-meta">
+                <span class="course-price">R$ 1.799,00</span>
+                <button class="course-button">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="DevOps e Cloud Computing"
+              class="course-image"
+              width="300"
+              height="200"
+            />
+            <div class="course-content">
+              <h3 class="course-title">DevOps e Cloud Computing</h3>
+              <p class="course-description">
+                Aprenda a automatizar, escalar e gerenciar infraestruturas na
+                nuvem com as melhores práticas de DevOps.
+              </p>
+              <div class="course-meta">
+                <span class="course-price">R$ 2.299,00</span>
+                <button class="course-button">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Inteligência Artificial"
+              class="course-image"
+              width="300"
+              height="200"
+            />
+            <div class="course-content">
+              <h3 class="course-title">Inteligência Artificial</h3>
+              <p class="course-description">
+                Explore o fascinante mundo da IA, aprendendo sobre redes
+                neurais, deep learning e processamento de linguagem natural.
+              </p>
+              <div class="course-meta">
+                <span class="course-price">R$ 2.699,00</span>
+                <button class="course-button">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="UX/UI Design"
+              class="course-image"
+              width="300"
+              height="200"
+            />
+            <div class="course-content">
+              <h3 class="course-title">UX/UI Design</h3>
+              <p class="course-description">
+                Aprenda a criar interfaces intuitivas e atraentes, focando na
+                experiência do usuário e nas melhores práticas de design.
+              </p>
+              <div class="course-meta">
+                <span class="course-price">R$ 1.699,00</span>
+                <button class="course-button">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>+praTi Pratique Programação, Copyright &copy; 2024</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const courseButtons = document.querySelectorAll(".course-button");
+        courseButtons.forEach((button) => {
+          button.addEventListener("click", (e) => {
+            const courseName = e.target
+              .closest(".course-card")
+              .querySelector(".course-title").textContent;
+            alert(
+              `Você selecionou o curso: ${courseName}. Em breve, você será redirecionado para mais informações!`
+            );
+          });
+        });
+
+        const courseCards = document.querySelectorAll(".course-card");
+        courseCards.forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            card.style.transform = "scale(1.03)";
+            card.style.boxShadow = "0 6px 12px rgba(0,0,0,0.15)";
+            card.style.transition = "all 0.3s ease-in-out";
+          });
+          card.addEventListener("mouseleave", () => {
+            card.style.transform = "scale(1)";
+            card.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
