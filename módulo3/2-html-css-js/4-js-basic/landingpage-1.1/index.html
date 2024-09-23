@@ -19,15 +19,23 @@
       }
       .container {
         width: 80%;
-        margin: auto;
+        /* margin: auto; */
         overflow: hidden;
       }
       header {
         background: #35424a;
         color: #ffffff;
-        padding-top: 30px;
-        min-height: 70px;
+        /* padding: 20px 0; */
+        padding: 1rem 7%;
         border-bottom: #e8491d 3px solid;
+      }
+      header .container {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: center !important;
+        justify-content: space-between !important;
+        max-width: 1200px !important;
+        /* padding: 0 20px; */
       }
       header a {
         color: #ffffff;
@@ -45,22 +53,39 @@
         font-weight: bold;
       }
       #branding {
-        float: left;
+        /* float: left; */
+        flex: 1;
       }
       #branding h1 {
-        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1;
+      }
+      #branding img {
+        margin-right: 10px;
       }
       nav {
-        float: right;
-        margin-top: 10px;
+        flex: 2;
+        display: flex;
+        justify-content: center;
       }
       nav ul {
-        margin: 0;
+        display: flex;
+        list-style: none;
         padding: 0;
+        margin: 0;
       }
-      nav li {
-        display: inline;
-        padding: 0 20px;
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #007bff;
       }
       #showcase {
         min-height: 400px;
@@ -70,18 +95,19 @@
         color: #ffffff;
       }
       #showcase .container {
-        /* display: flex;
-        align-items: center; */
+        margin: 0 auto;
       }
+
       #showcase h1 {
         margin-top: 100px;
-        font-size: 55px;
+        font-size: clamp(20px,8vw,55px);
         margin-bottom: 10px;
       }
       #showcase p {
         font-size: 20px;
         width: 50%;
         margin: 0 auto;
+        font-size: clamp(16px,4vw,20px);
       }
       #newsletter {
         padding: 15px;
@@ -139,6 +165,9 @@
         gap: 20px; /* Espaçamento entre os itens */
         padding: 20px 0;
       }
+      #boxes .container, aside .container, #newsletter .container {
+        margin: 0 auto;
+      }
 
       .box {
         background-color: #f4f4f4;
@@ -174,7 +203,9 @@
         overflow: hidden; /* Impedir que o conteúdo "vaze" */
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        /* margin: auto; */
       }
+
       aside h4 {
         text-align: center;
         font-size: 18px;
@@ -225,6 +256,10 @@
         #showcase .container {
           flex-direction: column;
         }
+      }@media(max-width:851px){
+        header .container{
+         
+        }
       }
       @media (max-width: 769px) {
         .content {
@@ -250,10 +285,12 @@
         }
         #newsletter form input[type="email"] {
           width: 100%;
-          margin-bottom: 5px;
+          margin-bottom: 10px;
         }
         #boxes {
           margin-bottom: 0;
+          margin-left: 0;
+          margin-right: 0;
         }
 
         aside .container {
@@ -266,7 +303,7 @@
     <header>
       <div class="container">
         <div id="branding">
-          <h1><span class="highlight">+praTi</span> Pratique Programação</h1>
+          <h1><img src="./image/logo.png" /> Pratique Programação</h1>
         </div>
         <nav>
           <ul>
@@ -332,10 +369,46 @@
         <div class="container">
           <h4>Links Úteis</h4>
           <ul>
-            <li><a class="button-link" href="#">Documentação</a></li>
-            <li><a class="button-link" href="#">Fórum</a></li>
-            <li><a class="button-link" href="#">Tutoriais</a></li>
-            <li><a class="button-link" href="#">Contato</a></li>
+            <li>
+              <a
+                class="button-link"
+                href="https://curso.maisprati.com.br/#"
+                target="_blank"
+                >Sobre a trilha</a
+              >
+            </li>
+            <li>
+              <a
+                class="button-link"
+                href="https://curso.maisprati.com.br/#conteudo"
+                target="_blank"
+                >Contéudo</a
+              >
+            </li>
+            <li>
+              <a
+                class="button-link"
+                href="https://curso.maisprati.com.br/#metodologia"
+                target="_blank"
+                >Metodologias</a
+              >
+            </li>
+            <li>
+              <a
+                class="button-link"
+                href="https://curso.maisprati.com.br/#faq"
+                target="_blank"
+                >Dúvidas</a
+              >
+            </li>
+            <li>
+              <a
+                class="button-link"
+                href="https://maisprati.com.br/"
+                target="_blank"
+                >Site +PraTi</a
+              >
+            </li>
           </ul>
         </div>
       </aside>
