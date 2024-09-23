@@ -7,6 +7,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Link CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
       body {
@@ -19,80 +31,131 @@
       }
       .container {
         width: 80%;
-        /* margin: auto; */
+        margin: auto;
         overflow: hidden;
       }
-      header {
+
+      /* header */
+      .header {
         background: #35424a;
-        color: #ffffff;
-        /* padding: 20px 0; */
-        padding: 1rem 7%;
-        border-bottom: #e8491d 3px solid;
-      }
-      header .container {
-        display: flex !important;
-        flex-wrap: wrap;
-        align-items: center !important;
-        justify-content: space-between !important;
-        max-width: 1200px !important;
-        /* padding: 0 20px; */
-      }
-      header a {
-        color: #ffffff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-      }
-      header .highlight,
-      header .current a {
-        color: #e8491d;
-        font-weight: bold;
-      }
-      header a:hover {
-        color: #cccccc;
-        font-weight: bold;
-      }
-      #branding {
-        /* float: left; */
-        flex: 1;
-      }
-      #branding h1 {
         display: flex;
         align-items: center;
-        font-size: 16px;
-        line-height: 1;
+        justify-content: space-between;
+        padding: 0rem 4%;
+        border-bottom: var(--border);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 2px 2px 10px #566d99, -2px -2px 10px #dadef0;
       }
-      #branding img {
-        margin-right: 10px;
+      .header.shadow {
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
       }
-      nav {
-        flex: 2;
-        display: flex;
-        justify-content: center;
+      .header .navbar a.changed {
+        color: #0056b3;
       }
-      nav ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
+      .header .logo img {
+        height: 2rem;
       }
-      nav ul li {
-        margin: 0 15px;
-      }
-      nav ul li a {
-        color: #fff;
+
+      .header .navbar a {
         text-decoration: none;
-        transition: color 0.3s ease;
+        margin: 0 1rem;
+        font-size: 1.25rem;
+        color: white;
+        padding: 1.5rem;
+        transform: 2ms ease-in;
+        display: inline-block;
       }
-      nav ul li a:hover {
-        color: #007bff;
+      .header .navbar a:nth-child(1) {
+        color: #e8491d;
       }
+      .header .navbar a::after {
+        content: "";
+        display: block;
+        background: #e8491d;
+        width: 0;
+        height: 2px;
+        border-radius: 4px;
+        margin: 6px auto 6px auto;
+        transition: all 0.3s ease;
+      }
+      .header .navbar a:hover:before,
+      .header .navbar a:hover:after {
+        width: 100%;
+      }
+
+      .header .navbar a:hover {
+        color: #e8491d;
+        cursor: pointer;
+      }
+      .header .navbar a:active {
+      }
+      .header .icons div {
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+      }
+      header .icons div.changed {
+        color: #e8491d;
+      }
+
+      .header .icons div:hover {
+        color: #e8491d;
+      }
+
+      #menu-btn {
+        display: none;
+      }
+      #menu-btn.color {
+        color: #e8491d;
+      }
+
+      @media (max-width: 991px) {
+        html {
+          font-size: 87%;
+        }
+      }
+      @media (max-width: 768px) {
+        #menu-btn {
+          display: inline-block;
+        }
+        .icons #menu-btn.fa-times {
+          transform: rotate(180deg);
+        }
+        .header {
+          padding: 1rem 4%;
+        }
+        .header .navbar {
+          position: absolute;
+          top: 100%;
+          right: -280px;
+          background: #fff;
+          width: 20rem;
+          height: calc(100vh - 9.5rem);
+        }
+        .header .navbar.active {
+          right: 0;
+          transition: all 0.8s ease;
+        }
+        .header .navbar a {
+          color: #636363;
+          display: block;
+        }
+      }
+      /* fim header */
+
       #showcase {
         min-height: 400px;
         background: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
           no-repeat center center/cover;
         text-align: center;
         color: #ffffff;
+        padding: 88px 0 0 0;
       }
       #showcase .container {
         margin: 0 auto;
@@ -100,14 +163,14 @@
 
       #showcase h1 {
         margin-top: 100px;
-        font-size: clamp(20px,8vw,55px);
+        font-size: clamp(20px, 8vw, 55px);
         margin-bottom: 10px;
       }
       #showcase p {
         font-size: 20px;
         width: 50%;
         margin: 0 auto;
-        font-size: clamp(16px,4vw,20px);
+        font-size: clamp(16px, 4vw, 20px);
       }
       #newsletter {
         padding: 15px;
@@ -165,7 +228,9 @@
         gap: 20px; /* Espaçamento entre os itens */
         padding: 20px 0;
       }
-      #boxes .container, aside .container, #newsletter .container {
+      #boxes .container,
+      aside .container,
+      #newsletter .container {
         margin: 0 auto;
       }
 
@@ -256,9 +321,9 @@
         #showcase .container {
           flex-direction: column;
         }
-      }@media(max-width:851px){
-        header .container{
-         
+      }
+      @media (max-width: 851px) {
+        header .container {
         }
       }
       @media (max-width: 769px) {
@@ -300,19 +365,23 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><img src="./image/logo.png" /> Pratique Programação</h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="sobre1.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+    <header class="header">
+      <a href="#" class="logo" title="voltar para o topo">
+        <img
+          src="./image/logo.png"
+          alt="Logo"
+          alt="Logo da +PraTi"
+          title="Logo da +PraTi"
+        />
+      </a>
+      <nav class="navbar">
+        <a href="" class="current">Home</a>
+        <a href="" class="link">Cursos</a>
+        <a href="" class="link">Sobre</a>
+        <a href="" class="link">Contato</a>
+      </nav>
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
       </div>
     </header>
 
@@ -474,6 +543,31 @@
             }, 300 * (index + 1));
           }, 600);
         });
+      });
+      /* Toggle */
+      let menu = document.querySelector("#menu-btn");
+      let navbar = document.querySelector(".navbar");
+      let changed = document.querySelectorAll(".navbar > a.link");
+
+      menu.onclick = () => {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      };
+
+      /* menu hamburger */
+      let header = document.querySelector(".header");
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("shadow", window.scrollY > 0);
+        navbar.classList.remove("active");
+        menu.classList.remove("fa-times");
+      });
+
+      /* Para mudar cor dos links no scroll */
+      window.addEventListener("scroll", () => {
+        for (item of changed) {
+          item.classList.toggle("changed", window.scrollY > 0);
+          menu.classList.toggle("color", window.scrollY > 0);
+        }
       });
     </script>
   </body>
