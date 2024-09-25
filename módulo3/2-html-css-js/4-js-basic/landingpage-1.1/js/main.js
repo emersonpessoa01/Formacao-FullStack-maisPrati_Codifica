@@ -42,6 +42,8 @@ let navbar = document.querySelector(".navbar");
 let changed = document.querySelectorAll(".navbar > a.link");
 let logo = document.querySelector(".header .logo img");
 
+console.log(menu)
+
 menu.onclick = () => {
   menu.classList.toggle("fa-times");
   navbar.classList.toggle("active");

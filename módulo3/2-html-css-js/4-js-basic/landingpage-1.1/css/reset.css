@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-dark-blue: #35424a;
+  --bg-clear1-blue: #007bff;
+  --bg-clear2-blue: #0056b3;
+  --color-h2:#35424a;
+}
+body {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.25px;
+}
+hml::-webkit-scroll-track {
+  background: inset 0 0 5px #a5aaad;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 5rem;
+  transition: background-color 0.3s ease;
+  border: 1px solid #fff;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+  border-radius: 5rem;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}

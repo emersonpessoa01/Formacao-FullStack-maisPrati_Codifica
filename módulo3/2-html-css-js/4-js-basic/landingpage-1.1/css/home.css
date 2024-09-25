@@ -1,41 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
-  font-family: "Lexend", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-}
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 3rem;
-}
-html::-webkit-scrollbar {
-  width: 0.8rem;
-  height: 0.25px;
-}
-hml::-webkit-scroll-track {
-  background: inset 0 0 5px #a5aaad;
-}
-html::-webkit-scrollbar-thumb {
-  background-color: #007bff;
-  border-radius: 5rem;
-  transition: background-color 0.3s ease;
-  border: 1px solid #fff;
-}
-html::-webkit-scrollbar-thumb:hover {
-  background: #0056b3;
-  border-radius: 5rem;
-}
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
+
 
 /* header */
 .header {
@@ -44,7 +7,6 @@ html::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: space-between;
   padding: 0rem 4%;
-  border-bottom: var(--border);
   position: fixed;
   top: 0;
   left: 0;
@@ -69,7 +31,7 @@ html::-webkit-scrollbar-thumb:hover {
 .header .navbar a {
   text-decoration: none;
   margin: 0 1rem;
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
   color: white;
   padding: 1.5rem;
   transform: 2ms ease-in;
@@ -121,17 +83,6 @@ header .icons div.changed {
   color: #0056b3;
 }
 
-@media (max-width: 991px) {
-  html {
-    font-size: 87%;
-  }
-}
-
-@media (max-width: 480px) {
-  .header .logo img {
-    height: 3rem;
-  }
-}
 /* fim header */
 
 #showcase {
@@ -168,17 +119,12 @@ header .icons div.changed {
   align-items: center;
   justify-content: space-between;
 }
-#newsletter h1 {
-  /* float: left; */
-}
+
 #newsletter form {
-  /* float: right; */
   margin-top: 15px;
 }
 #newsletter input[type="email"] {
   padding: 10px 20px;
-  /* margin:0 10px; */
-  /* height: 25px; */
   width: 250px;
   border-radius: 5px;
 }
@@ -188,7 +134,6 @@ header .icons div.changed {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  /* margin:0 10px; */
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -308,7 +253,7 @@ aside ul li {
 }
 
 .footer .share {
-  padding: 1rem 0;
+  padding: 2rem 0 1rem;
 }
 
 .footer .share a {
@@ -321,8 +266,7 @@ aside ul li {
   margin: 0.3rem;
   border-radius: 50%;
   text-decoration: none;
-  transition: all .3s ease-in-out
-
+  transition: all 0.3s ease-in-out;
 }
 
 .footer .share a:hover {
@@ -347,7 +291,7 @@ aside ul li {
 
 .footer .links a:hover {
   background: #007bff;
-  transition: all .3s ease-in-out
+  transition: all 0.3s ease-in-out;
 }
 
 .footer .credit {
@@ -356,22 +300,26 @@ aside ul li {
   font-weight: lighter;
   padding: 1rem;
 }
-.footer .credit p{
-  font-weight:300;
+.footer .credit p {
+  font-weight: 300;
   font-size: clamp(12px, 2vw, 14px);
   margin: 0;
   width: 40%;
   margin: 0 auto;
   margin-bottom: 12px;
 }
-.footer .credit p > span{
+.footer .credit p > span {
   font-weight: bold;
 }
 .footer .credit span {
   font-weight: 300;
   text-transform: capitalize;
 }
+
 @media (max-width: 991px) {
+  html {
+    font-size: 87%;
+  }
   #showcase .container {
     flex-direction: column;
     line-height: 5rem;
@@ -456,8 +404,13 @@ aside ul li {
   .footer .credit {
     font-size: 1.2rem;
   }
-  .footer .credit p{
+  .footer .credit p {
     width: 100%;
     text-align: justify;
+  }
+}
+@media (max-width: 480px) {
+  .header .logo img {
+    height: 3rem;
   }
 }
