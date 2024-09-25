@@ -41,5 +41,5 @@ html::-webkit-scrollbar-thumb:hover {
 .container {
   width: 80%;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
