@@ -124,7 +124,7 @@
   - [x] 6. Funções e Eventos do DOM
   - [ ] 7. Projeto Prático I - Construção de uma Landing Page
   - [ ] 8. Design Responsivo e Semântica Web
-  - [ ] 9. Flexbox e CSS Grid
+  - [x] 9. Flexbox e CSS Grid
   - [ ] 10. Frameworks de CSS
   - [ ] 11. Projeto Prático II - Desenvolvimento com Frameworks
   - [ ] 12. Introdução a Testes no Front-end

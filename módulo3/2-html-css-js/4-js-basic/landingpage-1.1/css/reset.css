@@ -43,3 +43,12 @@ html::-webkit-scrollbar-thumb:hover {
   margin: auto;
   /* overflow: hidden; */
 }
+#main {
+  padding: 100px 0 30px;
+  /* background: #fff; */
+}
+#main h2 {
+  color: #35424a;
+  border-bottom: 1px solid ;
+  padding-bottom: 10px;
+}

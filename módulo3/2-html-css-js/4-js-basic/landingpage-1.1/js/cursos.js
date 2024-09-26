@@ -80,7 +80,7 @@ const courseCards = [
 document.addEventListener("DOMContentLoaded", () => {
   let coursesGrid = document.querySelector(".courses-grid");
   courseCards.forEach((card) => {
-    const getCards = `
+    const getCouseCards = `
     <div class="course-card">
       <div class="box-image">
         <img
@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </div>
     `;
-    coursesGrid.innerHTML += getCards;
+    coursesGrid.innerHTML += getCouseCards;
   });
 });
+

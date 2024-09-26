@@ -35,7 +35,7 @@
   transform: 2ms ease-in;
   display: inline-block;
 }
-.header .navbar a:nth-child(1) {
+.header .navbar a.current {
   /* color: #e8491d; */
   color: #0056b3;
 }
@@ -148,7 +148,7 @@ header .icons div.changed {
   /* padding: 20px; */
   margin-right: 10px;
   padding: 0 1%;
-  max-width: 94%;
+  max-width: 85%;
   margin: 0 auto;
 }
 #boxes {
@@ -370,6 +370,7 @@ aside ul li {
   .header .navbar a {
     color: #636363;
     display: block;
+    text-align: left;
   }
   #newsletter form {
     float: none;

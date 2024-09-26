@@ -1,12 +1,4 @@
-#main {
-  padding: 100px 0 0 0;
-  /* background: #fff; */
-}
-#main h2 {
-  color: #35424a;
-  border-bottom: 1px solid ;
-  padding-bottom: 10px;
-}
+
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste para ser mais responsivo */

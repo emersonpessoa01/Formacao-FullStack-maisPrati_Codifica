@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", (e) => {
   const newsletterForm = document.querySelector("#newsletter form");
   newsletterForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -41,8 +41,6 @@ let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".navbar");
 let changed = document.querySelectorAll(".navbar > a.link");
 let logo = document.querySelector(".header .logo img");
-
-console.log(menu)
 
 menu.onclick = () => {
   menu.classList.toggle("fa-times");
@@ -146,20 +144,27 @@ const links = [
   },
 ];
 
+/* Usando uma variável para acumular HTML */
+let linkContainer = document.querySelector(".link-container");
+
+let linksHTML = ""; // Variável para acumular o HTML
+
+// Constrói o HTML para todos os links
 links.forEach((link) => {
-  let linkContainer = document.querySelector(".link-container");
-  const getLinks = `
-    <ul>
-      <li>
-        <a key="${link.id}"
-           class="button-link"
-           href="${link.href}"
-           target="_blank"
-           title="${link.description}">
-          ${link.title}
-        </a>
-      </li>
-    </ul>
-  `;
-  linkContainer.innerHTML += getLinks;
+  linksHTML += `
+      <ul>
+        <li>
+          <a key="${link.id}"
+             class="button-link"
+             href="${link.href}"
+             target="_blank"
+             title="${link.description}">
+            ${link.title}
+          </a>
+        </li>
+      </ul>
+    `;
 });
+
+// Insere todo o HTML acumulado de uma vez
+linkContainer.innerHTML = linksHTML;
