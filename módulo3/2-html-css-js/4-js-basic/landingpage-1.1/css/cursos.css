@@ -82,7 +82,8 @@
   @media (max-width: 480px) {
     .courses-grid {
       grid-template-columns: 1fr; /* Cada card ocupa toda a largura da tela em mobile */
-      margin: 10px;
+      /* margin: 10px; */
+      margin: 0;
       gap: 10px;
     }
 

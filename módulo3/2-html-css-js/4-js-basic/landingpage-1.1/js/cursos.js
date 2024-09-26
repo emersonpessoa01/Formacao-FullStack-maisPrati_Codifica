@@ -1,3 +1,4 @@
+
 /* Alerta ao clicar no curso */
 document.addEventListener("DOMContentLoaded", (event) => {
   const courseButtons = document.querySelectorAll(".course-button");
@@ -77,7 +78,7 @@ const courseCards = [
 ];
 
 /* Iterar os cards */
-document.addEventListener("DOMContentLoaded", () => {
+
   let coursesGrid = document.querySelector(".courses-grid");
   courseCards.forEach((card) => {
     const getCouseCards = `
@@ -103,5 +104,4 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     coursesGrid.innerHTML += getCouseCards;
   });
-});
 

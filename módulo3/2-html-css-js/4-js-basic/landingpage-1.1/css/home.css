@@ -46,7 +46,7 @@
   width: 0;
   height: 2px;
   border-radius: 4px;
-  margin: 6px auto 6px auto;
+  /* margin: 6px auto 6px auto; */
   transition: all 0.3s ease;
 }
 .header .navbar a:hover:before,
@@ -404,7 +404,7 @@ aside ul li {
 }
 @media (max-width: 600px) {
   #showcase h1 {
-    line-height: 2;
+    line-height: 1;
   }
   footer p {
     width: 100%;
