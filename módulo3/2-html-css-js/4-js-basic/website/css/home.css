@@ -19,8 +19,12 @@
 .header .navbar a.changed {
   color: #0056b3;
 }
+
 .header .logo img {
   height: 4rem;
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
 }
 .header .logo img.changedLogo {
   filter: invert(28%) sepia(89%) saturate(7443%) hue-rotate(221deg) brightness(90%) contrast(101%);
