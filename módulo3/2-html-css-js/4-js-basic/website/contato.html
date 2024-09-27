@@ -39,7 +39,7 @@
         <form class="contact-form">
           <div class="form-group">
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required pattern="[A-Za-zÀ-ÿ\s]+" title="O nome deve conter apenas letras." />
+            <input autofocus type="text" id="name" name="name" required pattern="[A-Za-zÀ-ÿ\s]+" title="O nome deve conter apenas letras." />
           </div>
           <div class="form-group">
             <label for="email">E-mail</label>
@@ -64,7 +64,10 @@
         </form>
       </div>
     </section>
-
+    <!------------------------- Button ScrollTop --------------------------->
+    <button type="button" class="scrollTop" title="Botão ScrollTop">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <!-- footer section starts  -->
     <section class="footer">
       <div class="share">
@@ -93,7 +96,8 @@
     </section>
     <!-- footer section ends -->
 
-    <script src="./js/main.js"></script>
     <script src="./js/contato.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/scrollTop.js"></script>
   </body>
 </html>

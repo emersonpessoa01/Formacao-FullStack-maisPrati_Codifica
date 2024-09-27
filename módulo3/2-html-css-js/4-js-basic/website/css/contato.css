@@ -6,6 +6,7 @@
   #main .container .page-title{
     max-width: 650px;
     margin: 0 auto 30px;
+    text-align: left;
   }
   .page-title {
     color: #35424a;
