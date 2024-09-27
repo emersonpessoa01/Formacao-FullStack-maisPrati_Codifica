@@ -346,6 +346,9 @@ aside ul li {
     width: 100%;
   }
   #menu-btn {
+    transition: transform 0.5s ease;
+  }
+  #menu-btn {
     display: inline-block;
   }
   .icons #menu-btn.fa-times {

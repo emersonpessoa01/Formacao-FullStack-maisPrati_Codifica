@@ -51,4 +51,5 @@ html::-webkit-scrollbar-thumb:hover {
   color: #35424a;
   border-bottom: 1px solid ;
   padding-bottom: 10px;
+  margin-bottom: 30px;
 }

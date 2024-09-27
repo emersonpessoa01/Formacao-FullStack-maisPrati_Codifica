@@ -1,0 +1,60 @@
+#main {
+    padding: 100px 0 30px;
+    background: #ffffff;
+  }
+
+  #main .container .page-title{
+    max-width: 650px;
+    margin: 0 auto 30px;
+  }
+  .page-title {
+    color: #35424a;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    background: #f9f9f9;
+    padding: 24px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  :is(input, textarea):focus{
+    border: 1px solid #007bff;
+    outline: none;
+    box-shadow: 0 0 5px 0 #007bff;
+  }
+  .form-group textarea {
+    height: 150px;
+  }
+  .button {
+    display: inline-block;
+    background: var(--bg-clear1-blue);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: var(--bg-clear2-blue)
+  }
+  
