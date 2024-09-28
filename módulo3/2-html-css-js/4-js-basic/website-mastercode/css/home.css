@@ -235,7 +235,7 @@ aside .container,
 /* Estilo do aside */
 aside {
   background-color: #fff;
-  /* padding: 20px; */
+  padding: 10px 0;
   margin: 20px 20px 20px 0;
   width: 100%; /* Garantir que o aside use 100% da largura permitida */
   box-sizing: border-box; /* Incluir padding no cálculo da largura */
@@ -447,7 +447,7 @@ aside ul li {
   }
 
   aside .container {
-    padding: 0 0 40px 0;
+    padding: 20 0 20px 0;
   }
 }
 @media (max-width: 600px) {
