@@ -430,7 +430,7 @@ aside ul li {
 }
 @media (max-width: 480px) {
   .header .logo img {
-    height: 3rem;
+    height: 3.5rem;
   }
   
   #showcase{
@@ -439,6 +439,7 @@ aside ul li {
   }
   #showcase h1 {
     font-size: 1.5rem;
+    line-height: 2.5;
   }
   #showcase p {
     font-size: 1rem;
