@@ -62,8 +62,8 @@ const courseCards = [
   {
     id: 5,
     image: "../image/curso5.avif",
-    title: "Inteligência Artificial",
-    description: "Explore o fascinante mundo da IA, aprendendo sobre redes neurais, deep learning e processamento de linguagem natural..",
+    title: "Banco de Dados MySQL",
+    description: "Aprenda a dominar o MySQL, um dos sistemas de gerenciamento de banco de dados mais utilizados no mundo. Este curso oferece uma abordagem prática e direta, ideal tanto para iniciantes quanto para quem já tem algum conhecimento de bancos de dados.",
     price: "R$ 2.699,00",
     more: "Saiba Mais",
   },
