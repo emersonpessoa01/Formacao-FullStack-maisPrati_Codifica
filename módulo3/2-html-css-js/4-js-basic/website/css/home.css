@@ -95,19 +95,55 @@ header .icons div.changed {
   align-items: center;
   color: #fff;
   text-align: center;
+  padding: 0 25px;
 }
 #showcase .container {
-  margin: 0 auto;
+  max-width: 50rem;
+  color: #f1f3f5;
+  
+  
 }
 
 #showcase h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    #65c7f7 40%,
+    #0052d4 60%,
+    #fff 80%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 200% auto;
+  animation: animate 7s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 center;
+  }
+  50% {
+    background-position: 400% center;
+  }
+  100% {
+    background-position: 0 center;
+  }
 }
 
+
+
 #showcase p {
-  font-size: 1.2rem;
+  font-size:  1.8rem;
+  padding: 3.5rem;
+  box-shadow: 20px 20px 50px rgba(0,0,0,.25);
+  border-top:  1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius:8px;
 }
 #newsletter {
   padding: 15px;
@@ -329,7 +365,7 @@ aside ul li {
     line-height: 5rem;
     font-size: 2rem;
     color: #fff;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
   }
 }
@@ -417,6 +453,9 @@ aside ul li {
   /* #showcase h1 {
     line-height: 1;
   } */
+  #showcase p{
+    padding: 40px 20px;
+  }
   footer p {
     width: 100%;
   }
@@ -435,11 +474,12 @@ aside ul li {
   
   #showcase{
     height: 80vh;
-    padding: 0 20px;
+    padding: 40px 0 0;
   }
   #showcase h1 {
     font-size: 1.5rem;
     line-height: 2.5;
+    
   }
   #showcase p {
     font-size: 1rem;
