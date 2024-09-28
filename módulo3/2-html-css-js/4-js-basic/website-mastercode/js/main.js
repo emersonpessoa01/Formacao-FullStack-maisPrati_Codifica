@@ -86,6 +86,27 @@ const cards = [
     image: "../image/icon3.png",
     alt: "Ícone de chamada em conferência",
   },
+  {
+    id: 4,
+    title: "Cursos Online",
+    paragraph: "Acesse nossos cursos de qualquer lugar, a qualquer hora. Aprenda no seu ritmo com conteúdo atualizado.",
+    image: "https://cdn-icons-png.flaticon.com/512/2721/2721304.png",
+    alt: "Ícone de cursos online",
+  },
+  {
+    id: 5,
+    title: "Projetos Práticos",
+    paragraph: "Desenvolva projetos reais e construa um portfólio impressionante para se destacar no mercado.",
+    image: "https://cdn-icons-png.flaticon.com/512/1006/1006771.png",
+    alt: "Ícone de projetos práticos",
+  },
+  {
+    id: 6,
+    title: "Suporte Personalizado",
+    paragraph: "Conte com o apoio de instrutores experientes e uma comunidade ativa de estudantes.",
+    image: "https://cdn-icons-png.flaticon.com/512/1238/1238964.png",
+    alt: "Ícone de projetos práticos",
+  },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -168,4 +189,26 @@ links.forEach((link) => {
 
 // Insere todo o HTML acumulado de uma vez
 linkContainer.innerHTML = linksHTML;
+
+/* Carrossel */
+$(document).ready(function () {
+  $('.carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3, // Mostra 3 itens ao mesmo tempo
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint:1200, // Ajusta o número de slides para telas menores
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
 

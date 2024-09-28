@@ -36,7 +36,7 @@
   margin: 0 1rem;
   font-size: 1.25rem !important;
   color: white;
-  padding: 1.5rem;;
+  padding: 1.5rem;
   position: relative;
   margin-right: 1rem;
 }
@@ -62,7 +62,6 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-
 
 .header .navbar a:hover {
   color: #0056b3;
@@ -106,21 +105,13 @@ header .icons div.changed {
 #showcase .container {
   max-width: 50rem;
   color: #f1f3f5;
-  
-  
 }
 
 #showcase h1 {
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    to right,
-    #fff 20%,
-    #65c7f7 40%,
-    #0052d4 60%,
-    #fff 80%
-  );
+  background: linear-gradient(to right, #fff 20%, #65c7f7 40%, #0052d4 60%, #fff 80%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -139,17 +130,15 @@ header .icons div.changed {
   }
 }
 
-
-
 #showcase p {
-  font-size:  1.5rem;
+  font-size: 1.5rem;
   padding: 3.5rem;
-  box-shadow: 20px 20px 50px rgba(0,0,0,.25);
-  border-top:  1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter:blur(8px);
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-radius:8px;
+  border-radius: 8px;
   margin-top: 3rem;
 }
 #newsletter {
@@ -208,6 +197,10 @@ header .icons div.changed {
   gap: 20px; /* Espaçamento entre os itens */
   padding: 20px;
 }
+.carousel {
+  display: flex;
+  justify-content: space-between; /* Para espaçar os itens */
+}
 #boxes .container,
 aside .container,
 #newsletter .container {
@@ -215,27 +208,55 @@ aside .container,
 }
 
 .box {
-  background-color: #f4f4f4;
+  background: #fff;
   padding: 20px;
-  border-radius: 8px;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px; /* Margem horizontal para espaçamento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex: 1; /* Para que os itens ocupem o espaço disponível */
+  max-width: calc(33.33% - 20px); /* Limitar a largura máxima e considerar o gap */
+}
+.box.slick-slide {
+  height: 87% !important;
+}
+.carousel .slick-prev {
+  left: -1px;
+  position: absolute;
+  font-size: 24px !important;
+  z-index: 1;
 }
 
+.carousel .slick-next {
+  right: 8px;
+}
+.carousel .slick-prev::before,
+.carousel .slick-next::before {
+  color: #0052d4 !important;
+  font-size: 30px !important;
+}
+.slick-dots li button:before{
+  font-size: 8px !important;
+
+}
+
+.slick-dots li button:before,
+.slick-dots li button:after {
+  color: #0056b3 !important;
+}
 .box img {
   max-width: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 .box h3 {
-  margin: 15px 0;
-  font-size: 1.5rem;
-  color: #636363;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .box p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1em;
 }
 
 /* Estilo do aside */
@@ -250,7 +271,7 @@ aside {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   /* margin: auto; */
 }
-aside .container{
+aside .container {
   width: 87%;
 }
 
@@ -270,7 +291,7 @@ aside ul {
 aside ul li {
   margin: 10px 0;
 }
-aside ul li:nth-child(1){
+aside ul li:nth-child(1) {
   margin-top: 20px;
 }
 
@@ -323,7 +344,6 @@ aside ul li:nth-child(1){
 .footer .share a:hover {
   background-color: #007bff;
   transform: translateY(-10px);
-
 }
 
 .footer .links {
@@ -394,10 +414,9 @@ aside ul li:nth-child(1){
     grid-template-columns: repeat(1, auto);
     gap: 0;
   }
-  
 }
 @media (max-width: 768px) {
-  #showcase h1{
+  #showcase h1 {
     font-size: 2rem;
   }
   #showcase p {
@@ -469,7 +488,7 @@ aside ul li:nth-child(1){
   /* #showcase h1 {
     line-height: 1;
   } */
-  #showcase p{
+  #showcase p {
     padding: 40px 20px;
   }
   footer p {
@@ -487,17 +506,55 @@ aside ul li:nth-child(1){
   .header .logo img {
     height: 3.5rem;
   }
-  
-  #showcase{
+
+  #showcase {
     height: 80vh;
     padding: 40px 0 0;
   }
   #showcase h1 {
     font-size: 2rem;
-        line-height: 1.5;
-    
+    line-height: 1.5;
   }
   #showcase p {
     font-size: 1rem;
+  }
+}
+
+/* CARROSSEL */
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
+  gap: 20px; /* Espaçamento entre os itens */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel {
+    grid-template-columns: repeat(2, 1fr); /* 2 itens em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    grid-template-columns: 1fr; /* 1 item em telas muito pequenas */
   }
 }
