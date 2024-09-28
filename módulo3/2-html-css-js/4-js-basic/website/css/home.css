@@ -105,7 +105,7 @@ header .icons div.changed {
 }
 
 #showcase h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   background: linear-gradient(
@@ -477,8 +477,8 @@ aside ul li {
     padding: 40px 0 0;
   }
   #showcase h1 {
-    font-size: 1.5rem;
-    line-height: 2.5;
+    font-size: 2rem;
+        line-height: 1.5;
     
   }
   #showcase p {
