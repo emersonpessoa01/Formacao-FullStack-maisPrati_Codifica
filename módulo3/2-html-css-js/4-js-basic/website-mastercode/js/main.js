@@ -119,7 +119,7 @@ const links = [
   },
   {
     id: 2,
-    title: "Desenvolvedor Front-End da Meta",
+    title: "Dev Front-End da Meta",
     href: "https://www.coursera.org/professional-certificates/meta-front-end-developer",
     description: "Desenvolva habilidades prontas para o trabalho em uma carreira sob demanda e obtenha uma credencial da Meta.",
   },
@@ -131,7 +131,7 @@ const links = [
   },
   {
     id: 4,
-    title: "Desenvolvimento Web Full Stack",
+    title: "Dev Web Full Stack",
     href: "https://www.freecodecamp.org/learn",
     description: "Plataforma gratuita com trilhas de estudo para desenvolvimento web completo, do básico ao avançado.",
   },

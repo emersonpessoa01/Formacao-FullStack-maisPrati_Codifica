@@ -235,7 +235,7 @@ aside .container,
 /* Estilo do aside */
 aside {
   background-color: #fff;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   margin: 20px 20px 20px 0;
   width: 100%; /* Garantir que o aside use 100% da largura permitida */
   box-sizing: border-box; /* Incluir padding no cálculo da largura */
@@ -243,6 +243,9 @@ aside {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   /* margin: auto; */
+}
+aside .container{
+  width: 87%;
 }
 
 aside h4 {
@@ -260,6 +263,9 @@ aside ul {
 
 aside ul li {
   margin: 10px 0;
+}
+aside ul li:nth-child(1){
+  margin-top: 20px;
 }
 
 /* Estilos dos botões */
@@ -376,11 +382,13 @@ aside ul li {
     justify-content: center;
   }
 }
+
 @media (max-width: 769px) {
   .content {
     grid-template-columns: repeat(1, auto);
     gap: 0;
   }
+  
 }
 @media (max-width: 768px) {
   #showcase h1{
@@ -447,7 +455,8 @@ aside ul li {
   }
 
   aside .container {
-    padding: 20 0 20px 0;
+    padding: 0 0 10px 0;
+    width: 90%;
   }
 }
 @media (max-width: 600px) {
