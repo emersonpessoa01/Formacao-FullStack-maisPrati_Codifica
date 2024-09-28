@@ -20,7 +20,8 @@
 
   .course-image {
     width: 100%;
-    height: auto; /* Ajuste para manter a proporção da imagem */
+    /*height: auto;  Ajuste para manter a proporção da imagem */
+    height: 201px;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
   }

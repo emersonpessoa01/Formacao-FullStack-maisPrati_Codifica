@@ -55,4 +55,11 @@ html::-webkit-scrollbar-thumb:hover {
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
-
+#indicator{
+  background-color: var(--bg-clear1-blue);
+  height: 0.3rem;
+  width: 0;
+  position: fixed;
+  top:0;
+  z-index: 1001;
+}
