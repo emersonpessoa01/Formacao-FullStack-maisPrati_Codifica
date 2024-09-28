@@ -39,6 +39,7 @@ html::-webkit-scrollbar-thumb:hover {
   background: #0056b3;
   border-radius: 5rem;
 }
+
 .container {
   width: 80%;
   margin: auto;
