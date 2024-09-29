@@ -235,9 +235,8 @@ aside .container,
   color: #0052d4 !important;
   font-size: 30px !important;
 }
-.slick-dots li button:before{
+.slick-dots li button:before {
   font-size: 8px !important;
-
 }
 
 .slick-dots li button:before,
@@ -388,7 +387,9 @@ aside ul li:nth-child(1) {
   font-weight: 300;
   text-transform: capitalize;
 }
-
+/* .box.slick-slide{
+  padding-bottom: 15px !important;
+} */
 @media (max-width: 991px) {
   html {
     font-size: 90%;

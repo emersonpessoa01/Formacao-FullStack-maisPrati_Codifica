@@ -90,21 +90,21 @@ const cards = [
     id: 4,
     title: "Cursos Online",
     paragraph: "Acesse nossos cursos de qualquer lugar, a qualquer hora. Aprenda no seu ritmo com conteúdo atualizado.",
-    image: "https://cdn-icons-png.flaticon.com/512/2721/2721304.png",
+    image: "../image/icon4.png",
     alt: "Ícone de cursos online",
   },
   {
     id: 5,
     title: "Projetos Práticos",
     paragraph: "Desenvolva projetos reais e construa um portfólio impressionante para se destacar no mercado.",
-    image: "https://cdn-icons-png.flaticon.com/512/1006/1006771.png",
+    image: "../image/icon5.png",
     alt: "Ícone de projetos práticos",
   },
   {
     id: 6,
     title: "Suporte Personalizado",
     paragraph: "Conte com o apoio de instrutores experientes e uma comunidade ativa de estudantes.",
-    image: "https://cdn-icons-png.flaticon.com/512/1238/1238964.png",
+    image: "../image/icon6.png",
     alt: "Ícone de projetos práticos",
   },
 ];
@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img
           src="${card.image}"
           alt="${card.alt}"
+          title="${card.alt}"
         />
         <h3>${card.title}</h3>
         <p>
@@ -192,7 +193,7 @@ linkContainer.innerHTML = linksHTML;
 
 /* Carrossel */
 $(document).ready(function () {
-  $('.carousel').slick({
+  $(".carousel").slick({
     dots: true,
     infinite: true,
     speed: 300,
@@ -201,9 +202,10 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
+    cssEase: "ease-in-out", // Propriedade para transição suave
     responsive: [
       {
-        breakpoint:1200, // Ajusta o número de slides para telas menores
+        breakpoint: 1200, // Ajusta o número de slides para telas menores
         settings: {
           slidesToShow: 1,
         },
@@ -211,4 +213,3 @@ $(document).ready(function () {
     ],
   });
 });
-
