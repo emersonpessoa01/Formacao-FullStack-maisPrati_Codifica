@@ -2,9 +2,9 @@ let menu = document.querySelector("#menu-bar");
 let navbarNav = document.querySelector("#navbarNav");
 
 menu.onclick = () => {
-    menu.classList.toggle("fa-times");
-    navbarNav.classList.toggle("active");
-}
+  menu.classList.toggle("fa-times");
+  navbarNav.classList.toggle("active");
+};
 
 // window.onscroll = ()=>{
 //     menu.classList.add(".fa-times");
@@ -15,3 +15,16 @@ menu.onclick = () => {
 //         document.querySelector("#scroll-top").classList.remove("active");
 //     }
 // }
+
+const getJson = async () => {
+  try {
+    let url = `https://jsonplaceholder.typicode.com/users/`;
+    let response = await fetch(url);
+    let json = await response.json();
+
+    console.log(json);
+  } catch (error) {
+    console.log(`Error: ${error.message}`);
+  }
+};
+getJson();
