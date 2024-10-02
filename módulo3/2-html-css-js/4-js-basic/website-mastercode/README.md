@@ -1,3 +1,4 @@
+<img src="./image/mastercode-readme.webp" width="1200px">
 
 # MasterCode Website
 

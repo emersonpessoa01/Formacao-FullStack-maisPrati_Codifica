@@ -1,0 +1,31 @@
+.swiper-container {
+  width: 100%;
+  height: 50vh;
+  padding: 70px 0 0;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.service-card {
+  transition: transform 0.3s ease-in-out;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+.carousel-item img {
+  max-height: 500px; /* Ajuste a altura máxima conforme necessário */
+  width: 100%; /* Para garantir que a imagem ocupe a largura total do container */
+  object-fit: cover; /* Garante que a imagem preencha o container mantendo a proporção */
+  object-position: center; /* Centraliza a imagem dentro do container */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(32%) sepia(89%) saturate(5589%) hue-rotate(340deg) brightness(97%) contrast(107%);
+}
+
+  
