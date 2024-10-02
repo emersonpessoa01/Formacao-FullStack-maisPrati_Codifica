@@ -1,0 +1,39 @@
+#home {
+  padding: 0 !important;
+}
+.navbar{
+  padding: 12px 4% !important;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: var(--blue);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+}
+.slider-button-left {
+  width: 5px !important;
+  height: 5px !important;
+}
+button {
+  width: 40px !important;
+  height: 40px !important;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  border: 0.1px solid var(--blue) !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #fff;
+}

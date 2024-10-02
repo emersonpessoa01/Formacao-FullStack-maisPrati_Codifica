@@ -39,14 +39,4 @@
     background-color: #f2f2f2;
   }
 }
-@media (max-width: 768px) {
-  .carousel-item img {
-    max-height: 300px; /* Ajusta a altura para telas menores */
-  }
-}
 
-@media (max-width: 576px) {
-  .carousel-item img {
-    max-height: 200px; /* Altura menor para dispositivos muito pequenos */
-  }
-}
