@@ -1,9 +1,25 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const cors = require("cors"); // Importa o CORS
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Middleware para habilitar CORS
+app.use(cors());
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET", "PUT", "POST", "DELETE");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "x-PINOTHER",
+    "Content-Type",
+    "Authorization"
+  );
+  app.use(cors());
+  next();
+});
 
 // Middleware para servir arquivos estáticos da pasta 'public'
 app.use(express.static(path.join(__dirname, "public")));
