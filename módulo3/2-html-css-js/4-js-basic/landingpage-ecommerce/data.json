@@ -1,58 +1,62 @@
-[
-  {
-    "our_specialty": "Hamburguer Saboroso",
-    "special_image": "./public/image/g-1.jpg",
-    "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-    "popular_foods": "Hambúrguer Saboroso",
-    "imagem_popular": "./public/image/g-7.jpg",
-    "price": "(5 - 20 USD)",
-    "title_choice": "Escolha sua comida favorita",
-    "food gallery": "comida saborosa",
-    "gallery description": "Se o cliente for muito inteligente, ele conseguirá alcancar o resultado desejado. Para ser apagado, de fato.",
-    "name_client": "joão deo",
-    "assessment": "A empresa em si é uma empresa de muito sucesso. Eleitos corruptos, levamos a fazer isso de forma racional ou laboriosa? É o mais importante"
-  },
-  {
-    "our specialty": "Pizza Saborosa",
-    "special_image": "./public/image/s-img-2.jpg",
-    "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-    "popular_foods": "Bolos Saborosos",
-    "imagem_popular": "./public/image/g-8.jpg",
-    "price": "(5 - 20 USD)",
-    "title_choice": "Entrega grátis e rápida"
-  },
-  {
-    "our specialty": "Sorvete Gelado",
-    "special_image": "./public/image/g-3.jpg",
-    "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-    "popular_foods": "Doces Saborosos",
-    "imagem_popular": "./public/image/g-9.jpg",
-    "price": "(5 - 20 USD)",
-    "title_choice": "Métodos de pagamento fáceis"
-  },
-  {
-    "our specialty": "Bebidas Geladas",
-    "special_image": "./public/image/g-4.jpg",
-    "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-    "popular_foods": "Bolinhos Saborosos",
-    "imagem_popular": "./public/image/p-1.jpg",
-    "price": "(5 - 20 USD)",
-    "title_choice": "E finalmente, aproveite sua comida"
-  },
-  {
-    "our specialty": "Doces Saborosos",
-    "special_image": "./public/image/g-5.jpg",
-    "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-    "popular_foods": "Bebidas Geladas",
-    "imagem_popular": "./public/image/p-2.jpg",
-    "price": "(5 - 20 USD)"
-  },
-  {
-    "our specialty": "Café Da Manhã Saudáve",
-    "special_image": "./public/image/g-6.jpg",
-    "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-    "popular_foods": "Sorvete Gelado",
-    "imagem_popular": "./public/image/p-3.jpg",
-    "price": "(5 - 20 USD)"
-  }
-]
+{
+  "produtos": [
+    {
+      "id": 1,
+      "our_specialty": "Hamburguer Saboroso",
+      "special_image": "https://i.imgur.com/e67lq0X.jpeg",
+      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
+      "popular_foods": "Hambúrguer Saboroso",
+      "imagem_popular": "https://i.imgur.com/Jth7W5A.jpeg",
+      "price": "(5 - 20 USD)",
+      "title_choice": "Escolha sua comida favorita"
+    },
+    {
+      "id": 2,
+      "our_specialty": "Pizza Saborosa",
+      "special_image": "https://i.imgur.com/tQo0wPy.jpeg",
+      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
+      "popular_foods": "Bolos Saborosos",
+      "imagem_popular": "https://i.imgur.com/lUYpDnB.jpeg",
+      "price": "(5 - 20 USD)",
+      "title_choice": "Entrega grátis e rápida"
+    },
+    {
+      "id": 3,
+      "our_specialty": "Sorvete Gelado",
+      "special_image": "https://i.imgur.com/XnxxzsB.jpeg",
+      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
+      "popular_foods": "Doces Saborosos",
+      "imagem_popular": "https://i.imgur.com/e3x7K6p.jpeg",
+      "price": "(5 - 20 USD)",
+      "title_choice": "Métodos de pagamento fáceis"
+    },
+    {
+      "id": 4,
+      "our_specialty": "Bebidas Geladas",
+      "special_image": "https://i.imgur.com/4GAappk.jpeg",
+      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
+      "popular_foods": "Bolinhos Saborosos",
+      "imagem_popular": "https://i.imgur.com/O2qXMif.jpeg",
+      "price": "(5 - 20 USD)",
+      "title_choice": "E finalmente, aproveite sua comida"
+    },
+    {
+      "id": 5,
+      "our_specialty": "Doces Saborosos",
+      "special_image": "https://i.imgur.com/HBnJbTU.jpeg",
+      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
+      "popular_foods": "Bebidas Geladas",
+      "imagem_popular": "https://i.imgur.com/LMLdeM7.jpeg",
+      "price": "(5 - 20 USD)"
+    },
+    {
+      "id": 6,
+      "our_specialty": "Café Da Manhã Saudável",
+      "special_image": "https://i.imgur.com/7ZbY2qm.jpeg",
+      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
+      "popular_foods": "Sorvete Gelado",
+      "imagem_popular": "https://i.imgur.com/XnxxzsB.jpeg",
+      "price": "(5 - 20 USD)"
+    }
+  ]
+}

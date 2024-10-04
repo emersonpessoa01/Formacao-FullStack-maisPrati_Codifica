@@ -78,68 +78,66 @@
 
     <section id="home">
       <!--HTML CODE-->
-      <div class="w-full relative" id="container-home">
+      <div class="w-full relative" id="content">
         <div class="swiper default-carousel swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="bg-indigo-50 h-96 flex justify-center items-center">
-                <img src="./image/curso1.avif" alt="Slide 1" class="w-full h-full object-cover" />
+              <div class="bg-indigo-50 h-96 flex justify-center items-center relative">
+                <img src="./image/s-img-2.jpg" alt="Slide 1" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 flex justify-center items-center">
+                  <h2 class="text-white font-bold text-center" style="font-size: clamp(1.5rem, 5vw, 3rem);">Descubra o sabor da nossa comida</h2>
+                </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-indigo-50 h-96 flex justify-center items-center">
-                <img src="./image/curso2.avif" alt="Slide 2" class="w-full h-full object-cover" />
+              <div class="bg-indigo-50 h-96 flex justify-center items-center relative">
+                <img src="./image/p-6.jpg" alt="Slide 2" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 flex justify-center items-center">
+                  <h2 class="text-white font-bold text-center" style="font-size: clamp(1.5rem, 5vw, 3rem);">Uma experiência gastronômica inigualável</h2>
+                </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="bg-indigo-50 h-96 flex justify-center items-center">
-                <img src="./image/curso3.avif" alt="Slide 3" class="w-full h-full object-cover" />
+              <div class="bg-indigo-50 h-96 flex justify-center items-center relative">
+                <img src="./image/g-2.jpg" alt="Slide 3" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 flex justify-center items-center">
+                  <h2 class="text-white font-bold text-center" style="font-size: clamp(1.5rem, 5vw, 3rem);">Venha saborear o melhor da culinária</h2>
+                </div>
               </div>
             </div>
           </div>
-
+    
           <div class="flex items-center gap-4 lg:justify-start justify-center">
             <!-- Botão esquerdo -->
             <button
               id="slider-button-left"
               class="swiper-button-prev group p-2 flex justify-center items-center border border-solid border-indigo-600 w-10 h-10 transition-all duration-500 rounded-full top-2/4 translate-y-1/2 left-5 hover:bg-indigo-600"
               data-carousel-prev
-            ></button>
-
+            >
+              <!-- Ícone da seta esquerda -->
+            </button>
+    
             <!-- Botão direito -->
             <button
               id="slider-button-right"
-              class="swiper-button-next group p-2 flex justify-center items-center border border-solid border-indigo-600 w-5 h-5 transition-all duration-500 rounded-full top-2/4 translate-y-1/2 right-5 hover:bg-indigo-600"
+              class="swiper-button-next group p-2 flex justify-center items-center border border-solid border-indigo-600 w-10 h-10 transition-all duration-500 rounded-full top-2/4 translate-y-1/2 right-5 hover:bg-indigo-600"
               data-carousel-next
-            ></button>
+            >
+              <!-- Ícone da seta direita -->
+            </button>
           </div>
-
+    
           <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
+    
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".default-carousel", {
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-          delay: 3000, // Tempo em milissegundos entre as transições
-          disableOnInteraction: false, // O autoplay não será desativado após a interação do usuário
-        },
-      });
-    </script>
 
     <script src="./js/main.js"></script>
   </body>

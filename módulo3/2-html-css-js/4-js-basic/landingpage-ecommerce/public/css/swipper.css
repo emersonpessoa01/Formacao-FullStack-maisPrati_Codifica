@@ -31,7 +31,7 @@ button {
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
 button:not(:disabled) {
-  border: 0.1px solid var(--blue) !important;
+  border: 1px solid var(--blue) !important;
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
