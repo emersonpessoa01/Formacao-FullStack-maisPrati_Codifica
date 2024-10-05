@@ -1,19 +1,32 @@
+.navbar {
+  padding: 12px 4% !important;
+}
+
 #home {
   padding: 0 !important;
-}
-.navbar{
-  padding: 12px 4% !important;
+  position: relative !important;
 }
 .swiper-wrapper {
   width: 100%;
   height: max-content !important;
-  padding-bottom: 64px !important;
+  /* padding-bottom: 64px !important; */
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
   position: relative;
 }
+/*.swiper-pagination-bullet  Faça retangular */
+.swiper-pagination {
+  top: 92% !important;
+}
+
 .swiper-pagination-bullet {
-  background: var(--blue);
+  background: #fff !important;
+  width: 25px !important;
+  height: 4px !important;
+  border-radius: 0% !important;
+}
+.swiper-pagination-bullet:disabled {
+  background: red !important;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -36,4 +49,14 @@ button:not(:disabled) {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   color: #fff;
+}
+
+.swiper-pagination {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 10px !important;
+}
+#content {
+  margin: 0 !important;
+  padding: 0 !important;
 }

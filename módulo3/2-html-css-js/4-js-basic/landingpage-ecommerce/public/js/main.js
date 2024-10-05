@@ -40,6 +40,7 @@ getJson();
 
 let swiper = new Swiper(".default-carousel", {
   loop: true,
+  speed: 800, // Duração da transição em milissegundos
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

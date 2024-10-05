@@ -1,0 +1,93 @@
+.bordered-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 1.875rem;  Tamanho do texto (3xl) */
+  position: relative;
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+}
+/*
+.bordered-title::before,
+.bordered-title::after {
+  content: "";
+  flex: 1; Isso faz com que as linhas ocupem todo o espaço lateral
+  height: 2px; Espessura da linha 
+  background-color: var(--red); Cor das linhas (vermelho escuro) 
+  margin: 0 15px; Espaço entre o texto e as linhas 
+}
+*/
+.bordered-title::before {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: var(--red);
+  margin: 0 15px 0 0;
+}
+.bordered-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: var(--red);
+  margin: 0 0 0 15px;
+}
+.bordered-title::before {
+  margin-right: 8px;
+}
+
+.bordered-title::after {
+  margin-left: 8px;
+}
+/* Efeito Hover nos card Speciality */
+.card {
+    position: relative;
+    height: 300px !important; /* Altura do card */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa a área */
+    background-color: #333; /* Cor de fundo para o texto */
+  }
+  
+  .card img.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha sem distorções */
+    position: absolute;
+    top: -100%; /* Inicialmente, a imagem está fora da tela (acima) */
+    left: 0;
+    transition: top 0.5s ease; /* Transição suave do movimento da imagem */
+  }
+  
+  .card .card-body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo levemente transparente */
+    color: #333;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover img.card-img-top {
+    top: 0; /* No hover, a imagem desliza de cima para baixo */
+    cursor: pointer;
+  }
+  
+  .card:hover .card-body {
+    transform: translateY(100%); /* O texto é empurrado para baixo até desaparecer */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilização do ícone */
+  .icon {
+    width: 60px; /* Defina o tamanho desejado para o ícone */
+    height: auto; /* Mantém a proporção do ícone */
+    margin-bottom: 10px; /* Espaço abaixo do ícone */
+  }
+  
