@@ -5,7 +5,10 @@ menu.onclick = () => {
   menu.classList.toggle("fa-times");
   navbarNav.classList.toggle("active");
 };
-
+window.addEventListener("scroll", () => {
+  navbarNav.classList.remove("active");
+  menu.classList.remove("fa-times");
+});
 // Função para buscar os dados da API
 const getJson = async () => {
   try {

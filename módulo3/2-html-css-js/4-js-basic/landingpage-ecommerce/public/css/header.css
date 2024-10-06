@@ -3,7 +3,9 @@ div.container {
    padding: 0 20px;
  
 }
-
+header{
+  box-shadow: 0 .5 1rem rgba(0, 0, 0, 0.1);
+}
 header .navbar {
   position: fixed;
   top: 0;
@@ -15,7 +17,7 @@ header .navbar {
   justify-content: space-between;
   background: #fff !important;
   padding: 12px 0;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
 }
 a.navbar-brand {
   display: flex;
