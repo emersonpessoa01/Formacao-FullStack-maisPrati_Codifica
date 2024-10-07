@@ -157,7 +157,7 @@ header .icons div.changed {
   margin-top: 15px;
 }
 #newsletter input[type="email"] {
-  padding: 10px 20px;
+  padding: 11px 20px;
   width: 250px;
   border-radius: 5px;
 }
@@ -455,6 +455,8 @@ aside ul li:nth-child(1) {
     text-align: left;
   }
   #newsletter form {
+    display: flex;
+    flex-wrap: wrap;
     float: none;
     text-align: center;
     width: 100%;
