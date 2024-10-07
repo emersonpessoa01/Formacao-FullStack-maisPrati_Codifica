@@ -3,7 +3,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
+}
+#speciality .container{
+  padding: 0 !important;
 }
 .row {
   display: flex;
@@ -12,7 +16,7 @@
 }
 
 .row .col-md-4 {
-  flex: 1 1 20rem !important;
+  flex: 1 1 18rem !important;
   padding: 0;
   margin: 0;
 }
@@ -25,7 +29,7 @@
   /* font-size: 1.875rem;  Tamanho do texto (3xl) */
   position: relative;
   text-align: center;
-  font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+  font-size: clamp(1.5rem, 5vw, 2.25rem) !important;
 }
 /*
 .bordered-title::before,

@@ -1,5 +1,5 @@
-@media(max-width:1024px){
-  h2.text-white{
+@media (max-width: 1024px) {
+  h2.text-white {
     width: 80% !important;
   }
 }
@@ -26,8 +26,8 @@
     background: #f7f7f7;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-#navbarNav.active {
+  }
+  #navbarNav.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     display: block; /* Mostrar quando ativo */
   }
@@ -45,4 +45,13 @@
     background-color: #f2f2f2;
   }
 }
-
+@media (max-width: 991px) {
+  #about .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 768px) {
+  #about .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

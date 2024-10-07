@@ -1,0 +1,6 @@
+section .font-bold{
+    color: var(--red);
+}
+.first-letter-uppercase::first-letter {
+  text-transform: uppercase;
+}
