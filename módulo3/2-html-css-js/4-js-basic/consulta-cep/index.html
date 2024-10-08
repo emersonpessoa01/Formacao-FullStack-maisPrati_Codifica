@@ -20,7 +20,7 @@
       }
       header h1 {
         font-family: "Georgia", serif;
-        font-size: 2.5rem;
+        font-size: clamp(1.2rem, 5vw, 2.5rem);
         font-weight: 700;
         margin: 0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -33,6 +33,7 @@
       }
       .error-message {
         color: red;
+        display: none; /* Oculta a mensagem de erro por padrão */
       }
       @media (max-width: 675px) {
         .row {
@@ -48,29 +49,126 @@
 
     <div class="container">
       <form>
-        <div class="mb-3">
+        <div class="mb-3 col-md-4">
           <label for="cep" class="form-label">CEP</label>
-          <input type="text" autofocus class="form-control" id="cep" placeholder="CEP" />
-          <div class="error-message">Por favor, insira um CEP válido com 8 dígitos.</div>
+          <input
+            type="text"
+            id="cep"
+            name="cep"
+            class="form-control"
+            placeholder="CEP"
+            size="10"
+            maxlength="10"
+            autofocus
+            oninput="this.value = mascaraCep(this.value);"
+            onblur="pesquisacep(this.value);"
+            onkeydown="if (event.key === 'Enter') pesquisacep(this.value);"
+          />
+
+          <div class="error-message" id="error-message">Por favor, insira um CEP válido com 8 dígitos.</div>
         </div>
         <div class="mb-3">
-          <label for="rua" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="rua" value="Endereço" disabled />
+          <label for="rua" name="rua" size="60" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="rua" value="Rua" disabled />
         </div>
         <div class="row flex-wrap">
-          <div class="col-12 col-sm-4">
-            <input type="text" class="form-control" value="Bairro" disabled />
+          <div class="col-lg-4 col-md-6 g-3">
+            <input type="text" name="bairro" id="bairro" class="form-control" value="Bairro" size="40" disabled />
           </div>
-          <div class="col-12 col-sm-4">
-            <input type="text" class="form-control" value="Cidade" disabled />
+          <div class="col-lg-4 col-md-6 g-3">
+            <input type="text" class="form-control" name="cidade" id="cidade" value="Cidade" size="40" disabled />
           </div>
-          <div class="col-12 col-sm-4">
-            <input type="text" class="form-control" value="UF" disabled />
+          <div class="col-lg-4 col-md-6 g-3">
+            <input type="text" name="uf" id="uf" size="2" class="form-control" value="UF" disabled />
           </div>
         </div>
       </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function limpa_formulário_cep() {
+        // Restaura os placeholders originais ao invés de limpar os campos
+        document.getElementById("rua").placeholder = "Rua";
+        document.getElementById("bairro").placeholder = "Bairro";
+        document.getElementById("cidade").placeholder = "Cidade";
+        document.getElementById("uf").placeholder = "UF";
+
+        // Limpa os valores dos campos para que os placeholders sejam exibidos
+        document.getElementById("rua").value = "";
+        document.getElementById("bairro").value = "";
+        document.getElementById("cidade").value = "";
+        document.getElementById("uf").value = "";
+      }
+
+      function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+          // Atualiza os campos com os valores do endereço.
+          document.getElementById("rua").value = conteudo.logradouro;
+          document.getElementById("bairro").value = conteudo.bairro;
+          document.getElementById("cidade").value = conteudo.localidade;
+          document.getElementById("uf").value = conteudo.uf;
+
+          // Limpa o campo de entrada do CEP.
+          document.getElementById("cep").value = "";
+        } else {
+          // CEP não encontrado.
+          limpa_formulário_cep();
+          document.querySelector(".error-message").style.display = "block";
+        }
+      }
+
+      function pesquisacep(valor) {
+        // Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, "");
+
+        // Verifica se campo cep possui valor informado.
+        if (cep !== "") {
+          // Expressão regular para validar o CEP.
+          var validacep = /^[0-9]{8}$/;
+
+          // Valida o formato do CEP.
+          if (validacep.test(cep)) {
+            // Preenche os campos com "..." enquanto consulta webservice.
+            document.getElementById("rua").value = "...";
+            document.getElementById("bairro").value = "...";
+            document.getElementById("cidade").value = "...";
+            document.getElementById("uf").value = "...";
+            document.getElementById("error-message").style.display = "none"; // Esconde a mensagem de erro
+
+            // Cria um elemento javascript.
+            var script = document.createElement("script");
+
+            // Sincroniza com o callback.
+            script.src = "https://viacep.com.br/ws/" + cep + "/json/?callback=meu_callback";
+
+            // Insere script no documento e carrega o conteúdo.
+            document.body.appendChild(script);
+          } else {
+            // CEP é inválido.
+            limpa_formulário_cep();
+            console.log("Formato de CEP inválido."); // Adicionando log para depuração
+            document.getElementById("error-message").innerText = "Formato de CEP inválido.";
+            document.getElementById("error-message").style.display = "block"; // Mostra a mensagem de erro
+          }
+        } else {
+          // CEP sem valor, limpa formulário.
+          limpa_formulário_cep();
+          console.log("Campo de CEP vazio."); // Adicionando log para depuração
+        }
+      }
+      function mascaraCep(cep) {
+        // Remove todos os caracteres que não são dígitos
+        cep = cep.replace(/\D/g, "");
+
+        // Aplica a máscara: 99.999-999
+        cep = cep.replace(/^(\d{2})(\d)/, "$1.$2");
+        cep = cep.replace(/(\d{3})(\d)/, "$1-$2");
+
+        // Retorna o valor formatado
+        return cep;
+      }
+    </script>
   </body>
 </html>
