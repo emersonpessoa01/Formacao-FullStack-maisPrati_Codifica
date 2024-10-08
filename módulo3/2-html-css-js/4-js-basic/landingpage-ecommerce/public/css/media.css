@@ -55,3 +55,12 @@
     grid-template-columns: repeat(1, 1fr) !important;
   }
 }
+@media (max-width: 480px) {
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+  /* #about{
+    padding: 0 1rem !important;
+  } */
+  
+}

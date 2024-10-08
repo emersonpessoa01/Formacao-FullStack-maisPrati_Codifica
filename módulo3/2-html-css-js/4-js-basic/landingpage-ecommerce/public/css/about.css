@@ -4,3 +4,7 @@ section .font-bold{
 .first-letter-uppercase::first-letter {
   text-transform: uppercase;
 }
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
