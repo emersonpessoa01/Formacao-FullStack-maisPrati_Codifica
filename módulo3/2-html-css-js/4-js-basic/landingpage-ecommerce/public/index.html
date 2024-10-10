@@ -61,10 +61,13 @@
                 <a class="nav-link" href="#about">Sobre</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#speciality">Especialidade</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#service">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Testemunhos</a>
+                <a class="nav-link" href="#testemonials">Testemunhos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contato</a>
@@ -138,26 +141,27 @@
       </div>
     </section>
     <!-- About Section -->
-    <section class="mx-auto mt-8 px-8" id="about">
-      <h1 class="text-4xl font-bold mb-10 text-center bordered-title">Sobre Nós</h1>
+    <section class="mx-auto my-10 px-8" id="about">
+      <h2 class="text-center text-3xl bordered-title mb-10">
+        Sobre
+        <span class="text-danger bordered-title p-0 m-0 font-bold">Nós</span>
+      </h2>
 
-      
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center mb-16">
-          <div>
-            <img src="./image/cooks.webp" alt="Equipe Sabores Autênticos na cozinha" class="rounded-lg shadow-lg" />
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold mb-4">Nossa História</h2>
-            <p class="text-gray-700 mb-4 first-letter-uppercase lowercase">
-              Fundado em 2010, o Sabores Autênticos nasceu da paixão de um grupo de amigos pela culinária tradicional brasileira. Nossa missão é
-              preservar e compartilhar as receitas que fazem parte da rica herança gastronômica do Brasil.
-            </p>
-            <p class="text-gray-700 mb-4 first-letter-uppercase lowercase">
-              Ao longo dos anos, nos dedicamos a pesquisar, testar e aperfeiçoar receitas de todas as regiões do país, buscando sempre manter a
-              autenticidade dos pratos e, ao mesmo tempo, torná-los acessíveis para cozinheiros de todos os níveis.
-            </p>
-          </div>
-      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center mb-16">
+        <div>
+          <img src="./image/cooks.webp" alt="Equipe Sabores Autênticos na cozinha" class="rounded-lg shadow-lg" />
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Nossa História</h2>
+          <p class="text-gray-700 mb-4 first-letter-uppercase lowercase">
+            Fundado em 2010, o Sabores Autênticos nasceu da paixão de um grupo de amigos pela culinária tradicional brasileira. Nossa missão é
+            preservar e compartilhar as receitas que fazem parte da rica herança gastronômica do Brasil.
+          </p>
+          <p class="text-gray-700 mb-4 first-letter-uppercase lowercase">
+            Ao longo dos anos, nos dedicamos a pesquisar, testar e aperfeiçoar receitas de todas as regiões do país, buscando sempre manter a
+            autenticidade dos pratos e, ao mesmo tempo, torná-los acessíveis para cozinheiros de todos os níveis.
+          </p>
+        </div>
       </div>
       <!-- Nosso Valores -->
       <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
@@ -256,20 +260,22 @@
           Compartilhe sua paixão pela culinária brasileira! Estamos sempre em busca de novos talentos e colaboradores entusiasmados.
         </p>
         <div class="text-center">
-          <a href="/contato" class="bg-red-600 text-white px-6 py-3 rounded-lg inline-block hover:bg-red-700 transition duration-300 hover:no-underline lowercase first-letter-uppercase"
+          <a
+            href="/contato"
+            class="bg-red-600 text-white px-6 py-3 rounded-lg inline-block hover:bg-red-700 transition duration-300 hover:no-underline lowercase first-letter-uppercase"
             >Entre em Contato</a
           >
         </div>
       </div>
     </section>
     <!-- Speciality Section -->
-    <section id="speciality" class="py-5 bg-light mt-8 px-8">
+    <section id="speciality" class="mx-auto mt-8 px-8 py-6 bg-light">
       <div class="container">
-        <h2 class="text-center text-3xl bordered-title font-bold mb-10">
+        <h2 class="text-center text-3xl bordered-title my-10">
           Nossa
-          <span class="text-danger bordered-title p-0 m-0">Especialidade</span>
+          <span class="text-danger bordered-title p-0 m-0 font-bold">Especialidade</span>
         </h2>
-        <div class="row">
+        <div class="row mb-10">
           <div class="col-md-4">
             <div class="card">
               <img src="./image/cheeseburger-duplo.jpg" alt="Hamburger Saboroso" class="card-img-top" />
@@ -346,6 +352,86 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testemonials -->
+    <section class="gb-gray-10 mx-auto mt-8 px-8 py-6" id="testemonials">
+      <h2 class="text-center text-3xl bordered-title mb-10">
+        Depoimentos de
+        <span class="text-danger bordered-title p-0 m-0 font-bold">clientes</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Testemunho 1 -->
+        <div
+          class="bg-gray-800 rounded-lg shadow-lg mt-10 mb-4 pt-16 pb-8 px-6 relative transform transition-transform duration-300 hover:translate-y-1 md:mb-0 card-hover border-8 border-solid border-white box"
+        >
+          <img
+            src="./image/testemunha-1.webp"
+            alt="Foto de Maria Silva, mulher sorrindo com cabelos castanhos"
+            class="w-28 h-28 rounded-full absolute -top-12 left-1/2 transform -translate-x-1/2 border-8 border-white shadow-md object-cover"
+          />
+          <div class="text-center d-flex flex-column justify-between gap-2">
+            <h3 class="text-xl font-bold text-gray-800 my-2">Maria Silva</h3>
+            <div class="text-yellow-400 text-xl">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="text-gray-100 italic normal-case first-letter-uppercase">
+              "A comida deste restaurante é simplesmente incrível! Cada prato é uma explosão de sabores. Recomendo a todos!"
+            </p>
+          </div>
+        </div>
+
+        <!-- Testemunho 2 -->
+        <div
+          class="bg-gray-800 rounded-lg shadow-lg mt-10 mb-4 pt-16 pb-8 px-6 relative transform transition-transform duration-300 hover:translate-y-1 md:mb-0 card-hover border-8 border-solid border-white box"
+        >
+          <img
+            src="./image/testemunha-2.webp"
+            alt="Foto de João Santos, homem de meia-idade com barba grisalha"
+            class="w-28 h-28 rounded-full absolute -top-12 left-1/2 transform -translate-x-1/2 border-8 border-white shadow-md object-cover"
+          />
+          <div class="text-center d-flex flex-column justify-between gap-2">
+            <h3 class="text-xl font-bold text-gray-800 my-2">João Santos</h3>
+            <div class="text-yellow-400 text-xl">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="text-gray-100 italic normal-case first-letter-uppercase">
+              "Frequento este lugar há anos e nunca me decepcionou. O atendimento é excepcional e a comida é sempre fresca e deliciosa."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testemunho 3 -->
+        <div
+          class="bg-gray-800 rounded-lg shadow-lg mt-10 mb-4 pt-16 pb-8 px-6 relative transform transition-transform duration-300 hover:translate-y-1 md:mb-0 card-hover border-8 border-solid border-white"
+        >
+          <img
+            src="./image/testemunha-3.webp"
+            alt="Foto de Ana Oliveira, jovem mulher com cabelos cacheados"
+            class="w-28 h-28 rounded-full absolute -top-12 left-1/2 transform -translate-x-1/2 border-8 border-white shadow-md object-cover"
+          />
+          <div class="text-center d-flex flex-column justify-between gap-2">
+            <h3 class="text-xl font-bold text-gray-800 my-2">Ana Oliveira</h3>
+            <div class="text-yellow-400 text-xl">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="text-gray-100 italic normal-case first-letter-uppercase">
+              "Como vegetariana, fico impressionada com as opções criativas e saborosas que eles oferecem. É o meu lugar favorito para jantar!"
+            </p>
           </div>
         </div>
       </div>

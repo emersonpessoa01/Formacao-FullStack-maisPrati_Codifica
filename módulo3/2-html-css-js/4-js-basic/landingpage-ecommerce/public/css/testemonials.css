@@ -1,0 +1,21 @@
+/* section#testemonials .shadow-lg {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+} */
+
+/* Definindo a animação de flutuação */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Aplicando o efeito flutuante ao passar o mouse */
+.card-hover:hover {
+  animation: float 2.6s ease-in-out infinite;
+}
