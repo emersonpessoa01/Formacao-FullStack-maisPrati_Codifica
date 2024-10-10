@@ -17,5 +17,5 @@
 
 /* Aplicando o efeito flutuante ao passar o mouse */
 .card-hover:hover {
-  animation: float 2.6s ease-in-out infinite;
+  animation: float 3.5s ease-in-out infinite;
 }

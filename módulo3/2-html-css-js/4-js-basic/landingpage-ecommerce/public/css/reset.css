@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/uni-neue");
 :root {
   --red: #ff3112;
+  --red-hover: #ff3212ee;
   --blue: #4f46e5;
 }
 
@@ -26,6 +27,29 @@
     url("../fonts/Uni\ Sans\ Book\ Italic.woff") format("woff"),
     url("../fonts/Uni\ Sans\ Medium.woff") format("woff"), 
     url("../fonts/Uni\ Sans\ Medium\ Italic.woff") format("woff");
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.25px;
+}
+hml::-webkit-scroll-track {
+  background: inset 0 0 5px #a5aaad;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+  border-radius: 5rem;
+  transition: background-color 0.3s ease;
+  border: 1px solid #fff;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--red-hover);
+  border-radius: 5rem;
 }
 
 *::selection {
