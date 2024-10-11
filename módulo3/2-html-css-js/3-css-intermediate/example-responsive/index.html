@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Responsive</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 111px;
+       
+        justify-content: center;
+      }
+      section {
+        flex: 1 1 600px;
+        padding: 1rem;
+      }
+      aside {
+        flex: 1 1 300px;
+        background-color: #f1f1f1;
+        padding: 1rem;
+      }
+      h2,h3{
+        text-align: center !important;
+        color: #34495e;
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      aside ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      aside ul li{
+        margin-bottom: 1rem;
+      }
+      aside ul li a{
+        text-decoration: none;
+        color: #34495e;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+      }
+      footer {
+        background-color: #34495e;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+    <header>
+      <h1>Meu Site Simples</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Conteúdo Principal</h2>
+        <img src="./image/logo10.webp" />
+        <p>Em um mundo em constante evolução, a tecnologia se tornou a força motriz que transforma nossas vidas. Desde a inteligência artificial até a internet das coisas, estamos testemunhando uma era de inovações que redefine a maneira como nos conectamos, trabalhamos e vivemos. 
+
+        </p>
+      </section>
+
+      <aside>
+        <h3>Mantenha-se Atualizado</h3>
+        <p>Considere cursos online sobre programação, design gráfico ou marketing digital. Plataformas como Coursera, Udemy e edX oferecem uma variedade de cursos acessíveis.</p>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Nossos Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Meu Site Simples. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

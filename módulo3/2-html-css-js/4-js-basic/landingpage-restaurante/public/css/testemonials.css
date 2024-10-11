@@ -2,6 +2,15 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 } */
 
+#testemonials {
+  background-image: url("../image/home-bg.webp"); /* Verifique o caminho */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
 /* Definindo a animação de flutuação */
 @keyframes float {
   0% {
