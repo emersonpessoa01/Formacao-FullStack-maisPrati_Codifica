@@ -579,6 +579,21 @@
               value="Faça seu pedido"
             />
           </form>
+          <!-- O modal deve ser adicionado aqui, fora do formulário -->
+          <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg w-11/12 max-w-md p-6 space-y-4">
+              <h2 id="modal-title" class="text-xl font-semibold normal-case">Pedido enviado com sucesso!</h2>
+              <p id="modal-message" class="text-gray-700 normal-case">Obrigado pelo seu pedido. Entraremos em contato em breve.</p>
+
+              <button
+                id="modal-close-btn"
+                class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-500 transition duration-300 normal-case text-center w-full"
+                style="border: none; outline: none; box-shadow: none; appearance: none"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -605,6 +620,9 @@
       })();
 
       document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("modal");
+        const modalCloseBtn = document.getElementById("modal-close-btn");
+
         document.getElementById("contact-form").addEventListener("submit", function (event) {
           event.preventDefault();
 
@@ -629,16 +647,17 @@
             sender_tel: tel,
             food_name: foodName,
             message: message,
-            to_email: "emersonpessoa011108@gmail.com", // Certifique-se de colocar um email válido aqui
+            to_email: "emersonpessoa011108@gmail.com",
           };
 
-          // console.log(templateParams);
           // Enviar email usando EmailJS
           emailjs
             .send("service_hcx5f1a", "template_wqp5s2o", templateParams)
             .then((response) => {
               console.log("Email enviado com sucesso!", response.status, response.text);
-              alert("Pedido enviado com sucesso!");
+
+              // Exibir o modal de sucesso
+              modal.classList.remove("hidden");
 
               // Limpar os campos do formulário após o envio bem-sucedido
               document.getElementById("contact-form").reset();
@@ -647,6 +666,11 @@
               console.log("Erro ao enviar o email:", error);
               alert("Ocorreu um erro ao enviar o pedido. Por favor, tente novamente.");
             });
+        });
+
+        // Fechar o modal quando o botão de fechar for clicado
+        modalCloseBtn.addEventListener("click", function () {
+          modal.classList.add("hidden");
         });
       });
     </script>

@@ -19,6 +19,15 @@ textarea:focus {
   outline: none !important;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.868) !important;
 }
+button#modal-close-btn {
+  width: 50% !important;
+  display: block;
+  margin: 16px auto 0;
+  position: relative;
+  z-index: 1000;
+  /* text-align: center !important; */
+}
+
 input[type="submit"] {
   outline: none !important;
   border: none !important;

@@ -5,18 +5,23 @@ const cors = require("cors"); // Importa o CORS
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+// Carregar variáveis de ambiente
+// require("dotenv").config();
+
+// app.get("/api/emailjs-credentials", (req, res) => {
+//   res.json({
+//     serviceId: process.env.EMAILJS_SERVICE_ID,
+//     templateId: process.env.EMAILJS_TEMPLATE_ID,
+//     userId: process.env.EMAILJS_USER_ID,
+//   });
+// });
 
 // Middleware para habilitar CORS
 app.use(cors());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET", "PUT", "POST", "DELETE");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "x-PINOTHER",
-    "Content-Type",
-    "Authorization"
-  );
+  res.header("Access-Control-Allow-Headers", "x-PINOTHER", "Content-Type", "Authorization");
   app.use(cors());
   next();
 });
