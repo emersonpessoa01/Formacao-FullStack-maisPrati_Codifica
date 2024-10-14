@@ -40,7 +40,7 @@
 - [ ] Animações de exibição implementadas com **AOS.js**.
 
 ## Seção "Contato"
-- [ ] Formulário de contato com campos para nome, email, telefone e mensagem.
+- [x] Formulário de contato com campos para nome, email, telefone e mensagem.
 - [ ] Validação de formulário usando JavaScript para garantir que todos os campos obrigatórios sejam preenchidos corretamente.
 - [ ] Integração com **EmailJS** para enviar os dados do formulário para um email.
 

@@ -19,6 +19,10 @@ textarea:focus {
   outline: none !important;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.868) !important;
 }
+input[type="submit"] {
+  outline: none !important;
+  border: none !important;
+}
 @media (max-width: 768px) {
   #contact .box-form {
     padding-left: 12px;
