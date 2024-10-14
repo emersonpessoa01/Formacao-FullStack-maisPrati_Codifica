@@ -41,8 +41,8 @@
 
 ## Seção "Contato"
 - [x] Formulário de contato com campos para nome, email, telefone e mensagem.
-- [ ] Validação de formulário usando JavaScript para garantir que todos os campos obrigatórios sejam preenchidos corretamente.
-- [ ] Integração com **EmailJS** para enviar os dados do formulário para um email.
+- [x] Validação de formulário usando JavaScript para garantir que todos os campos obrigatórios sejam preenchidos corretamente.
+- [x] Integração com **EmailJS** para enviar os dados do formulário para um email.
 
 ## Footer
 - [ ] Contém links para as redes sociais da empresa.
