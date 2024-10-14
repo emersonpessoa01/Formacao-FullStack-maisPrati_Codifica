@@ -1,4 +1,4 @@
-# Projeto: Página Web Empresarial
+# Projeto: Página Web Sabores Autênticos
 
 ## Sumário
 
@@ -59,21 +59,24 @@
 
 ## Estilização com CSS
 
--[x] **Design Responsivo:** A página é adaptada para diferentes dispositivos (desktop, tablet, smartphone) utilizando media queries ou um framework como **Bootstrap** ou **Tailwind CSS**. -[x] **Slider:** Transições suaves entre as imagens e personalização dos botões de navegação e indicadores. -[x] **Seção de Testemunhos:** Animações para que os depoimentos apareçam gradualmente à medida que o usuário rola a página. -[x] **Botões CTA:** Efeito de hover nos botões, com mudanças de cor e tamanho.
+- [x] **Design Responsivo:** A página é adaptada para diferentes dispositivos (desktop, tablet, smartphone) utilizando media queries ou um framework como **Bootstrap** ou **Tailwind CSS**. 
+- [x] **Slider:** Transições suaves entre as imagens e personalização dos botões de navegação e indicadores. 
+- [x] **Seção de Testemunhos:** Animações para que os depoimentos apareçam gradualmente à medida que o usuário rola a página. 
+- [x] **Botões CTA:** Efeito de hover nos botões, com mudanças de cor e tamanho.
 
 ## Requisitos JavaScript
 
--[ ] **Consumo de APIs:** Implementação de chamadas a APIs externas para carregar serviços e depoimentos usando `fetch()`. -[x] **Validação de Formulário:** Validação para garantir que os campos obrigatórios estejam corretamente preenchidos.
+- [ ] **Consumo de APIs:** Implementação de chamadas a APIs externas para carregar serviços e depoimentos usando `fetch()`. -[x] **Validação de Formulário:** Validação para garantir que os campos obrigatórios estejam corretamente preenchidos.
 
 - [x] **Slider Interativo:** Uso de bibliotecas externas para criar um carrossel interativo e fluido.
-- **Tratamento de Erros:** Mensagens apropriadas para erros na chamada de API.
+- [ ] **Tratamento de Erros:** Mensagens apropriadas para erros na chamada de API.
 
 ## Bibliotecas Externas Recomendadas
 
 - [x] [**Swiper.js**](https://swiperjs.com/) ou [**Slick Slider**](https://kenwheeler.github.io/slick/): Para a implementação do slider/carrossel.
-- **AOS.js**: Para animações ao rolar a página.
+- [x] **AOS.js**: Para animações ao rolar a página.
 - [x] **Bootstrap** ou **Tailwind CSS**: Para design responsivo.
-- [**AOS.js**](https://michalsnik.github.io/aos/): Para envio de emails diretamente pelo formulário de contato.
+- [x] [**EmailJS**](https://www.emailjs.com/): Para envio de emails diretamente pelo formulário de contato.
 
 ## Link de Entrega
 
