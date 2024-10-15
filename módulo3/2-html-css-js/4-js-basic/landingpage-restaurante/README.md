@@ -21,7 +21,7 @@
 
 ## Header
 
--[x] Inclui o logo da empresa e um menu de navegação com links para as seções:
+- [x] Inclui o logo da empresa e um menu de navegação com links para as seções:
 
 - **Sobre**
 - **Serviços**
