@@ -1,4 +1,4 @@
-# Projeto: Página Web Sabores Autênticos
+# Projeto: Atividade 04 - Criação de uma Landing Page
 
 ## Sumário
 
