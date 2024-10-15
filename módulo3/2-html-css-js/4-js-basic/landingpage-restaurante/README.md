@@ -54,7 +54,7 @@
 
 ## Footer
 
-- [ ] Contém links para as redes sociais da empresa.
+- [x] Contém links para as redes sociais da empresa.
 - [ ] Informações adicionais, como termos de uso e política de privacidade.
 
 ## Estilização com CSS
@@ -66,7 +66,8 @@
 
 ## Requisitos JavaScript
 
-- [ ] **Consumo de APIs:** Implementação de chamadas a APIs externas para carregar serviços e depoimentos usando `fetch()`. -[x] **Validação de Formulário:** Validação para garantir que os campos obrigatórios estejam corretamente preenchidos.
+- [ ] **Consumo de APIs:** Implementação de chamadas a APIs externas para carregar serviços e depoimentos usando `fetch()`. 
+- [x] **Validação de Formulário:** Validação para garantir que os campos obrigatórios estejam corretamente preenchidos.
 
 - [x] **Slider Interativo:** Uso de bibliotecas externas para criar um carrossel interativo e fluido.
 - [ ] **Tratamento de Erros:** Mensagens apropriadas para erros na chamada de API.

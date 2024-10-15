@@ -1,0 +1,36 @@
+footer .text-red-500 {
+  font-size: 1.25rem !important;
+}
+.btn {
+  padding:.5rem 1.875rem !important;
+  border: 0.1rem solid var(--red-hover) !important;
+  color: var(--red-hover) !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.btn::before {
+  content: "";
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--red-hover);
+  transition: 0.3s linear;
+  z-index: -1;
+}
+.btn:hover::before {
+  width: 100%;
+  left: 0;
+}
+.btn:hover {
+  color: #fff !important;
+}
+@media (max-width: 480px) {
+  footer .btn,
+  footer h1 {
+    font-size: 1rem !important;
+    font-weight: 100 !important;
+  }
+}
