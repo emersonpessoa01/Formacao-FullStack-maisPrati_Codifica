@@ -1,5 +1,7 @@
 # Projeto: Atividade 04 - Criação de uma Landing Page
 
+<div align="center" id="topo"></div>
+
 ## Sumário
 
 - [Header](#header)
@@ -15,6 +17,8 @@
 - [Link de Entrega](#link-de-entrega)
 - [Critérios de Avaliação](#critérios-de-avaliação)
 
+<a href="#topo">Voltar ao Topo</a>
+
 ## Header
 
 -[x] Inclui o logo da empresa e um menu de navegação com links para as seções:
@@ -25,20 +29,28 @@
 - **Contato**
 - Contém uma chamada para ação (CTA) como "Entre em Contato" ou "Assine Agora".
 
+<a href="#topo">Voltar ao Topo</a>
+
 ## Banner Principal
 
 - [x] Utiliza um slider/carrossel para exibir imagens ou conteúdo sobre os principais serviços/produtos oferecidos pela empresa.
 - [x] O slider possui navegação com botões de avançar/retroceder e indicadores (círculos ou barras) para cada slide.
 - [x] Implementado com uma biblioteca externa, como [**Swiper.js**](https://swiperjs.com/) ou [**Slick Slider**](https://kenwheeler.github.io/slick/).
 
+<a href="#topo">Voltar ao Topo</a>
+
 ## Seção "Sobre"
 
 - [x] Breve introdução da empresa ou produto, com um título e parágrafo descritivo.
+
+<a href="#topo">Voltar ao Topo</a>
 
 ## Seção "Serviços"
 
 - [x] Uso de cards ou ícones para descrever os principais serviços ou características do produto.
 - [ ] Consumo de uma API externa para popular essa seção com dados dinâmicos.
+
+<a href="#topo">Voltar ao Topo</a>
 
 ## Seção "Testemunhos"
 
@@ -46,16 +58,22 @@
 - [x] Depoimentos podem ser estáticos ou dinâmicos, consumindo uma API de comentários.
 - [x] Animações de exibição implementadas com [**AOS.js**](https://michalsnik.github.io/aos/).
 
+<a href="#topo">Voltar ao Topo</a>
+
 ## Seção "Contato"
 
 - [x] Formulário de contato com campos para nome, email, telefone e mensagem.
 - [x] Validação de formulário usando JavaScript para garantir que todos os campos obrigatórios sejam preenchidos corretamente.
 - [x] Integração com [**EmailJS**](https://www.emailjs.com/) para enviar os dados do formulário para um email.
 
+<a href="#topo">Voltar ao Topo</a>
+
 ## Footer
 
 - [x] Contém links para as redes sociais da empresa.
-- [ ] Informações adicionais, como termos de uso e política de privacidade.
+- [x] Informações adicionais, como termos de uso e política de privacidade.
+
+<a href="#topo">Voltar ao Topo</a>
 
 ## Estilização com CSS
 
@@ -63,6 +81,8 @@
 - [x] **Slider:** Transições suaves entre as imagens e personalização dos botões de navegação e indicadores. 
 - [x] **Seção de Testemunhos:** Animações para que os depoimentos apareçam gradualmente à medida que o usuário rola a página. 
 - [x] **Botões CTA:** Efeito de hover nos botões, com mudanças de cor e tamanho.
+
+<a href="#topo">Voltar ao Topo</a>
 
 ## Requisitos JavaScript
 
@@ -72,6 +92,8 @@
 - [x] **Slider Interativo:** Uso de bibliotecas externas para criar um carrossel interativo e fluido.
 - [ ] **Tratamento de Erros:** Mensagens apropriadas para erros na chamada de API.
 
+<a href="#topo">Voltar ao Topo</a>
+
 ## Bibliotecas Externas Recomendadas
 
 - [x] [**Swiper.js**](https://swiperjs.com/) ou [**Slick Slider**](https://kenwheeler.github.io/slick/): Para a implementação do slider/carrossel.
@@ -79,10 +101,14 @@
 - [x] **Bootstrap** ou **Tailwind CSS**: Para design responsivo.
 - [x] [**EmailJS**](https://www.emailjs.com/): Para envio de emails diretamente pelo formulário de contato.
 
+<a href="#topo">Voltar ao Topo</a>
+
 ## Link de Entrega
 
 - [x] Submeta o link do repositório GitHub.
 - [ ] Incluir um arquivo `README.md` com instruções de como visualizar o projeto localmente, informações sobre as APIs utilizadas e uma breve explicação das bibliotecas externas aplicadas no projeto.
+
+<a href="#topo">Voltar ao Topo</a>
 
 ## Critérios de Avaliação
 
