@@ -1,0 +1,25 @@
+#popular {
+  background-image: url("../image/home-bg-remove.png"); /* Verifique o caminho */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* @media(max-width:991px){
+    #popular.grid{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)) !important;
+    }
+} */
+
+#popular .grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem !important;
+}
+#popular .grid .bg-white{
+    flex: 1 1 18rem;
+    padding: 0;
+    margin: 0;
+}
