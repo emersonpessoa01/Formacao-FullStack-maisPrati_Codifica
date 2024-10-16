@@ -119,6 +119,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Função para gerar um número aleatório
+  function generateRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
   // Função para aplicar a máscara ao campo de telefone
   function maskPhone(event) {
     const input = event.target;
@@ -198,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let foodName = document.getElementById("foodname").value.trim();
     let message = document.getElementById("message").value.trim();
     let dateTime = getCurrentDateTime(); // Obtém a data e hora atuais
+    let randomNumber = generateRandomNumber(1000, 9999); // Gera um número aleatório entre 1000 e 9999
 
     let hasError = false;
 
@@ -234,6 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
       food_name: foodName,
       message: message,
       date_time: dateTime, // Adiciona a data e hora aos parâmetros do template
+      random_number: randomNumber, // Adiciona o número aleatório aos parâmetros do template
       to_email: "emersonpessoa011108@gmail.com",
     };
 
