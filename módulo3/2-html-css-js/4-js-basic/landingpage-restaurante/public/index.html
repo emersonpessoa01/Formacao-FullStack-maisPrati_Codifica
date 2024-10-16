@@ -600,6 +600,7 @@
               ></textarea>
               <span class="text-red-500 text-sm hidden normal-case" id="error-message">Insira seu endereço.</span>
             </div>
+            <div class="text-gray-600 text-sm mt-2" id="current-date-time"></div>
             <input
               type="submit"
               style="
@@ -740,9 +741,8 @@
     </footer>
 
     <!-- scroll top button -->
-     <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
 
-  
     <!-- loader  -->
     <div class="loader-container">
       <img src="./image/loader.gif" alt="" />
@@ -753,7 +753,6 @@
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="./js/main.js"></script>
     <!-- custom js file link  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -763,144 +762,7 @@
       });
     </script>
     <!-- Email JS  -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("9jXgzGq5KGWzpGQkr"); // Substitua pelo seu User ID
-      })();
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const modal = document.getElementById("modal");
-        const modalCloseBtn = document.getElementById("modal-close-btn");
-
-        // Função para aplicar a máscara ao campo de telefone
-        function maskPhone(event) {
-          const input = event.target;
-          let value = input.value.replace(/\D/g, ""); // Remove tudo que não é dígito
-
-          if (value.length > 11) {
-            value = value.slice(0, 11); // Limita a 11 dígitos
-          }
-
-          // Aplica a máscara de acordo com o número de dígitos
-          if (value.length <= 10) {
-            input.value = value.replace(/^(\d{2})(\d{4})(\d+)/, "($1) $2-$3");
-          } else {
-            input.value = value.replace(/^(\d{2})(\d{5})(\d+)/, "($1) $2-$3");
-          }
-        }
-
-        // Adicionando a máscara ao campo de telefone
-        document.getElementById("tel").addEventListener("input", maskPhone);
-
-        // Função para verificar e remover a mensagem de erro quando o campo for validado corretamente
-        function validateField(field, errorElementId, pattern = /.*/) {
-          const errorElement = document.getElementById(errorElementId);
-          if (field.value.trim() && pattern.test(field.value.trim())) {
-            errorElement.classList.add("hidden"); // Remove a mensagem de erro se o campo estiver válido
-          }
-        }
-
-        // Adicionando eventos de validação em tempo real para os campos do formulário
-        document.getElementById("sendername").addEventListener("input", function () {
-          validateField(this, "error-sendername");
-        });
-
-        document.getElementById("email").addEventListener("input", function () {
-          validateField(this, "error-email", /^[^\s@]+@[^\s@]+\.[^\s@]+$/);
-        });
-
-        document.getElementById("tel").addEventListener("input", function () {
-          validateField(this, "error-tel", /^\(\d{2}\) \d{4,5}-\d{4}$/);
-        });
-
-        document.getElementById("foodname").addEventListener("input", function () {
-          validateField(this, "error-foodname");
-        });
-
-        document.getElementById("message").addEventListener("input", function () {
-          validateField(this, "error-message");
-        });
-
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          let senderName = document.getElementById("sendername").value.trim();
-          let email = document.getElementById("email").value.trim();
-          let tel = document.getElementById("tel").value.trim();
-          let foodName = document.getElementById("foodname").value.trim();
-          let message = document.getElementById("message").value.trim();
-
-          // Limpa as mensagens de erro antes de cada nova validação
-          document.querySelectorAll(".text-red-500").forEach((element) => element.classList.add("hidden"));
-
-          let hasError = false;
-
-          // Validação dos campos
-          if (!senderName) {
-            document.getElementById("error-sendername").classList.remove("hidden");
-            hasError = true;
-          }
-          if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            document.getElementById("error-email").classList.remove("hidden");
-            hasError = true;
-          }
-          if (!tel || !/^\(\d{2}\) \d{4,5}-\d{4}$/.test(tel)) {
-            document.getElementById("error-tel").classList.remove("hidden");
-            hasError = true;
-          }
-          if (!foodName) {
-            document.getElementById("error-foodname").classList.remove("hidden");
-            hasError = true;
-          }
-          if (!message) {
-            document.getElementById("error-message").classList.remove("hidden");
-            hasError = true;
-          }
-
-          if (hasError) {
-            return; // Se houver erros, interrompe o envio do formulário
-          }
-
-          let templateParams = {
-            sender_name: senderName,
-            sender_email: email,
-            sender_tel: tel,
-            food_name: foodName,
-            message: message,
-            to_email: "emersonpessoa011108@gmail.com",
-          };
-
-          emailjs
-            .send("service_hcx5f1a", "template_wqp5s2o", templateParams)
-            .then((response) => {
-              console.log("Email enviado com sucesso!", response.status, response.text);
-
-              // Exibir o modal de sucesso
-              modal.classList.remove("hidden");
-
-              // Limpar os campos do formulário após o envio bem-sucedido
-              document.getElementById("contact-form").reset();
-            })
-            .catch((error) => {
-              console.log("Erro ao enviar o email:", error);
-              alert("Ocorreu um erro ao enviar o pedido. Por favor, tente novamente.");
-            });
-        });
-
-        // Fechar o modal quando o botão de fechar for clicado
-        modalCloseBtn.addEventListener("click", function () {
-          modal.classList.add("hidden");
-        });
-
-        // Evento para permitir o envio do formulário ao pressionar Enter
-        document.getElementById("contact-form").addEventListener("keydown", function (event) {
-          if (event.key === "Enter") {
-            event.preventDefault();
-            document.getElementById("contact-form").dispatchEvent(new Event("submit"));
-          }
-        });
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
