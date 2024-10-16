@@ -8,6 +8,12 @@ menu.onclick = () => {
 window.addEventListener("scroll", () => {
   navbarNav.classList.remove("active");
   menu.classList.remove("fa-times");
+  /* Scroll Top Button */
+  if (window.scrollY > 60) {
+    document.querySelector("#scroll-top").classList.add("active");
+  } else {
+    document.querySelector("#scroll-top").classList.remove("active");
+  }
 });
 // Função para buscar os dados da API
 const getJson = async () => {
@@ -63,12 +69,13 @@ window.addEventListener("load", () => {
 });
 
 /* Loader */
-function loader() {
-  document.querySelector(".loader-container").classList.add("fade-out");
-}
+const loader = () => {
+  let fadeOut = document.querySelector(".loader-container");
+  fadeOut.classList.add("fade-out");
+};
 
-function fadeOut() {
+const fadeOut = () => {
   setInterval(loader, 3000);
-}
+};
 
 window.onload = fadeOut();
