@@ -234,14 +234,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let templateParams = {
-      sender_name: senderName,
-      sender_email: email,
+      sender_name: senderName,//Nome do remetente
+      sender_email: email,//emial do remetente
       sender_tel: tel,
       food_name: foodName,
       message: message,
       date_time: dateTime, // Adiciona a data e hora aos parâmetros do template
       random_number: randomNumber, // Adiciona o número aleatório aos parâmetros do template
-      to_email: "emersonpessoa011108@gmail.com",
+      to_email: email, // Endereço do destinatário principal
+      to_cc: "emersonpessoa011108@gmail.com" // O email do usuário que fez o pedido será adicionado como CC
     };
 
     emailjs
