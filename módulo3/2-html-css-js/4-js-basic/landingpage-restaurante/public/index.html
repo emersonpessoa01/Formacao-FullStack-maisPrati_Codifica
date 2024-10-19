@@ -101,53 +101,7 @@
       <div class="w-full relative" id="content">
         <div class="swiper default-carousel swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="bg-indigo-50 h-96 flex justify-center items-center relative">
-                <img src="./image/cafe-da-manha.jpg" alt="cafe-da-manha" class="w-full h-full object-cover" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center">
-                  <h2 class="text-white font-bold text-center lg:w-1/2 mb-4" style="font-size: clamp(1.5rem, 5vw, 3rem)">
-                    Descubra o sabor da nossa comida
-                  </h2>
-                  <a
-                    href="#contact"
-                    class="bg-red-600 text-white px-6 py-3 rounded-lg inline-block hover:bg-red-500 transition duration-300 hover:no-underline lowercase first-letter-uppercase"
-                    >Entre em Contato</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="bg-indigo-50 h-96 flex justify-center items-center relative">
-                <img src="./image/cheeseburger-duplo.webp" alt="cheeseburger-duplo" class="w-full h-full object-cover" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center">
-                  <h2 class="text-white font-bold text-center lg:w-1/2 mb-4" style="font-size: clamp(1.5rem, 5vw, 3rem)">
-                    Uma experiência gastronômica inigualável
-                  </h2>
-                  <a
-                    href="#contact"
-                    class="bg-red-600 text-white px-6 py-3 rounded-lg inline-block hover:bg-red-500 transition duration-300 hover:no-underline lowercase first-letter-uppercase"
-                    >Entre em Contato</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="bg-indigo-50 h-96 flex justify-center items-center relative">
-                <img src="./image/pizza-1.jpg" alt="pizza-1" class="w-full h-full object-cover" />
-                <div class="absolute inset-0 flex flex-col justify-center items-center">
-                  <h2 class="text-white font-bold text-center lg:w-1/2 mb-4" style="font-size: clamp(1.5rem, 5vw, 3rem)">
-                    Venha saborear o melhor da culinária
-                  </h2>
-                  <a
-                    href="#contact"
-                    class="bg-red-600 text-white px-6 py-3 rounded-lg inline-block hover:bg-red-500 transition duration-300 hover:no-underline lowercase first-letter-uppercase"
-                    >Entre em Contato</a
-                  >
-                </div>
-              </div>
-            </div>
+            <!-- Slide 1, Slide 2, Slide3 inserindo pelo JS -->
           </div>
 
           <div class="flex items-center gap-4 lg:justify-start justify-center">
@@ -305,11 +259,23 @@
       </div>
       <!-- Junte-se a nós -->
       <div class="bg-red-100 rounded-lg p-8">
-        <h2 class="text-3xl font-bold mb-6 text-center lowercase first-letter-uppercase">Junte-se a Nós</h2>
-        <p class="text-gray-700 text-center mb-6 lowercase first-letter-uppercase">
+        <h2
+          class="text-3xl font-bold mb-6 text-center lowercase first-letter-uppercase"
+          data-aos="flip-left"
+          data-aos-easing="linear"
+          data-aos-duration="600"
+        >
+          Junte-se a Nós
+        </h2>
+        <p
+          class="text-gray-700 text-center mb-6 lowercase first-letter-uppercase"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="1000"
+        >
           Compartilhe sua paixão pela culinária brasileira! Estamos sempre em busca de novos talentos e colaboradores entusiasmados.
         </p>
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1400">
           <a
             href="#contact"
             class="bg-red-600 text-white px-6 py-3 rounded-lg inline-block hover:bg-red-500 transition duration-300 hover:no-underline lowercase first-letter-uppercase"
