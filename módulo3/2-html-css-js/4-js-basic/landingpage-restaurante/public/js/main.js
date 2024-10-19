@@ -1,7 +1,8 @@
 // Função para buscar os dados da API
 const getJson = async () => {
   try {
-    let url = "/api/data";
+    // let url = "/api/data";
+    let url = "https://landingpage-restaurante-three.vercel.app/api/data/";
     let response = await fetch(url);
     let { produtos } = await response.json(); // Assume que os produtos estão no array 'produtos'
     console.log(produtos);
