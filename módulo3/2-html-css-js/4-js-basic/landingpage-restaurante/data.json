@@ -1,62 +1,191 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "our_specialty": "Hamburguer Saboroso",
-      "special_image": "https://i.imgur.com/e67lq0X.jpeg",
-      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-      "popular_foods": "Hambúrguer Saboroso",
-      "imagem_popular": "https://i.imgur.com/Jth7W5A.jpeg",
-      "price": "(5 - 20 USD)",
-      "title_choice": "Escolha sua comida favorita"
-    },
-    {
-      "id": 2,
-      "our_specialty": "Pizza Saborosa",
-      "special_image": "https://i.imgur.com/tQo0wPy.jpeg",
-      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-      "popular_foods": "Bolos Saborosos",
-      "imagem_popular": "https://i.imgur.com/lUYpDnB.jpeg",
-      "price": "(5 - 20 USD)",
-      "title_choice": "Entrega grátis e rápida"
-    },
-    {
-      "id": 3,
-      "our_specialty": "Sorvete Gelado",
-      "special_image": "https://i.imgur.com/XnxxzsB.jpeg",
-      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-      "popular_foods": "Doces Saborosos",
-      "imagem_popular": "https://i.imgur.com/e3x7K6p.jpeg",
-      "price": "(5 - 20 USD)",
-      "title_choice": "Métodos de pagamento fáceis"
-    },
-    {
-      "id": 4,
-      "our_specialty": "Bebidas Geladas",
-      "special_image": "https://i.imgur.com/4GAappk.jpeg",
-      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-      "popular_foods": "Bolinhos Saborosos",
-      "imagem_popular": "https://i.imgur.com/O2qXMif.jpeg",
-      "price": "(5 - 20 USD)",
-      "title_choice": "E finalmente, aproveite sua comida"
-    },
-    {
-      "id": 5,
-      "our_specialty": "Doces Saborosos",
-      "special_image": "https://i.imgur.com/HBnJbTU.jpeg",
-      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-      "popular_foods": "Bebidas Geladas",
-      "imagem_popular": "https://i.imgur.com/LMLdeM7.jpeg",
-      "price": "(5 - 20 USD)"
-    },
-    {
-      "id": 6,
-      "our_specialty": "Café Da Manhã Saudável",
-      "special_image": "https://i.imgur.com/7ZbY2qm.jpeg",
-      "description": "A empresa em si é uma empresa de muito sucesso. Deve-se presumir que o inventor não é obrigado a abrir os prazeres do tempo livre ou do trabalho",
-      "popular_foods": "Sorvete Gelado",
-      "imagem_popular": "https://i.imgur.com/XnxxzsB.jpeg",
-      "price": "(5 - 20 USD)"
+      "home": {
+        "slide1": {
+          "id": 1,
+          "title": "Café da Manhã",
+          "description": "Descubra o sabor da nossa comida",
+          "image": "https://i.im.ge/2024/09/30/ka5Fop.s-img-6.jpeg"
+        },
+        "slide2": {
+          "id": 2,
+          "title": "Cheeseburger Duplo",
+          "description": "Uma experiência gastronômica inigualável",
+          "image": "https://i.im.ge/2024/09/30/ka0Sk6.p-1.jpeg"
+        },
+        "slide3": {
+          "id": 3,
+          "title": "Pizza",
+          "description": "Venha saborear o melhor da culinária",
+          "image": "https://i.im.ge/2024/09/30/ka04hX.s-img-2.jpeg"
+        }
+      },
+      "about": {
+        "title": "Nossa História",
+        "team_cooks": "https://i.im.ge/2024/10/19/kEo3I4.cooks.webp",
+        "paragraph1": "Fundado em 2010, o Sabores Autênticos nasceu da paixão de um grupo de amigos pela culinária tradicional brasileira. Nossa missão é preservar e compartilhar as receitas que fazem parte da rica herança gastronômica do Brasil.",
+        "paragraph2": "Ao longo dos anos, nos dedicamos a pesquisar, testar e aperfeiçoar receitas de todas as regiões do país, buscando sempre manter a autenticidade dos pratos e, ao mesmo tempo, torná-los acessíveis para cozinheiros de todos os níveis.",
+        "our_values": {
+          "title": "Nossos Valores",
+          "value1": {
+            "title": "Autenticidade",
+            "description": "Preservamos a essência das receitas tradicionais, respeitando suas origens e história."
+          },
+          "value2": {
+            "title": "Acessibilidade",
+            "description": "Tornamos as receitas fáceis de entender e preparar, para que todos possam desfrutar da culinária brasileira"
+          },
+          "value3": {
+            "title": "Diversidade",
+            "description": "Celebramos a rica variedade de sabores e influências culturais presentes na gastronomia brasileira."
+          }
+        },
+        "our_team": {
+          "title": "Nossa Equipe",
+          "team1": {
+            "name": "Maria Silva",
+            "role": "Chef Executiva",
+            "description": "Com mais de 20 anos de experiência, Maria é especialista em pratos tradicionais do Nordeste brasileiro.",
+            "image": "https://i.im.ge/2024/10/19/kEobnq.Chef-Maria-Silva.webp"
+          },
+          "team2": {
+            "name": "João Santos",
+            "role": "Chef de Pesquisa",
+            "description": "João viaja pelo Brasil coletando receitas autênticas e histórias por trás dos pratos regionais.",
+            "image": "https://i.im.ge/2024/10/19/kEogdp.Chef-Joao-Santos.webp"
+          },
+          "team3": {
+            "name": "Ana Oliveira",
+            "role": "Nutricionista",
+            "description": "Ana adapta nossas receitas para dietas especiais, garantindo que todos possam desfrutar da culinária brasileira..",
+            "image": "https://i.im.ge/2024/10/19/kEo8PP.Nutricionista-Ana-Oliveira.webp"
+          }
+        },
+        "cta": {
+          "title": "Junte-se a Nós",
+          "description": "Compartilhe sua paixão pela culinária brasileira! Estamos sempre em busca de novos talentos e colaboradores entusiasmados"
+        }
+      },
+      "our_speciality": {
+        "title": "Nossa Especialidade",
+        "card1": {
+          "title": "Hamburger Saboroso",
+          "description": "Delicie-se com o nosso suculento cheeseburger duplo que é feito com ingredientes selecionados, uma carne suculenta e um queijo irresistível que derrete na boca.",
+          "image": "https://i.im.ge/2024/09/30/kaigxM.g-1.jpeg",
+          "icon": "https://i.im.ge/2024/09/30/ka0YOT.s-1.png"
+        },
+        "card2": {
+          "title": "Pizza Saborosa",
+          "description": "Nossa pizza é preparada com uma massa crocante por fora e macia por dentro, coberta com ingredientes frescos e de alta qualidade.",
+          "image": "https://i.im.ge/2024/09/30/ka04hX.s-img-2.jpeg",
+          "icon": "https://i.im.ge/2024/10/19/kEX8B6.icon-hamgurger.png"
+        },
+        "card3": {
+          "title": "Bebidas Geladas",
+          "description": "Nossas bebidas geladas são preparadas com frutas frescas e ingredientes selecionados, nossas opções são ideais para saciar sua sede e revigorar seus momentos.",
+          "image": "https://i.im.ge/2024/09/30/ka5THD.s-img-4.jpeg",
+          "icon": "https://i.im.ge/2024/09/30/ka0WYa.s-4.png"
+        },
+        "card4": {
+          "title": "Sorvetes Gelados",
+          "description": "Nossos sorvetes gelados são a verdadeira indulgência! Feitos com ingredientes de alta qualidade e receitas artesanais, cada sabor é uma viagem de prazer.",
+          "image": "https://i.im.ge/2024/09/30/ka5MaM.s-img-3.jpeg",
+          "icon": "https://i.imgur.com/FlkxDyH.png"
+        },
+        "card5": {
+          "title": "Doces Saborosos",
+          "description": "Nossos doces são verdadeiras obras de arte, preparados com amor e os melhores ingredientes. Desde bolos fofinhos e tortas irresistíveis até doces finos que derretem na boca.",
+          "image": "https://i.im.ge/2024/09/30/kaipQ1.g-8.jpeg",
+          "icon": "https://i.im.ge/2024/09/30/ka0Vsy.s-5.png"
+        },
+        "card6": {
+          "title": "Café da Manhã",
+          "description": "Desperte seus sentidos com uma seleção de pães fresquinhos, croissants amanteigados e frutas da estação. Acompanhe com uma xícara do nosso café especial, preparado com grãos selecionados e moídos na hora.",
+          "image": "https://i.im.ge/2024/09/30/ka5Fop.s-img-6.jpeg",
+          "icon": "https://i.im.ge/2024/09/30/ka0kzz.s-6.png"
+        }
+      },
+      "dishes_popular": {
+        "card1": {
+          "title": "Cheeseburg Saboroso",
+          "price": "R$15 - R$30",
+          "title_link": "Peça agora",
+          "image": "https://i.im.ge/2024/09/30/ka0Sk6.p-1.jpeg"
+        },
+        "card2": {
+          "title": "Bolo Tangerina",
+          "price": "R$15 - R$30",
+          "title_link": "Peça agora",
+          "image": "https://i.im.ge/2024/09/30/ka0s9K.p-2.jpeg"
+        },
+        "card3": {
+          "title": "Namkeen",
+          "price": "R$15 - R$30",
+          "title_link": "Peça agora",
+          "image": "https://i.im.ge/2024/09/30/ka0DTX.p-3.jpeg"
+        },
+        "card4": {
+          "title": "Muffin de Chocolate",
+          "price": "R$15 - R$30",
+          "title_link": "Peça agora",
+          "image": "https://i.im.ge/2024/09/30/ka0U4M.p-4.jpeg"
+        },
+        "card5": {
+          "title": "Sucos Gelados",
+          "price": "R$15 - R$30",
+          "title_link": "Peça agora",
+          "image": "https://i.im.ge/2024/09/30/ka00tD.p-5.jpeg"
+        },
+        "card6": {
+          "title": "Sorvetes Gelados",
+          "price": "R$15 - R$30",
+          "title_link": "Peça agora",
+          "image": "https://i.im.ge/2024/09/30/ka5MaM.s-img-3.jpeg"
+        }
+      },
+      "our_services": {
+        "title": "Nossos Serviços",
+        "card1": {
+          "title": "Comida excelente",
+          "description": "Oferecemos aos nossos clientes serviços de excelente qualidade há muitos anos, com a melhor e mais deliciosa comida da cidade."
+        },
+        "card2": {
+          "title": "Comida rápida",
+          "description": "Oferecemos aos nossos clientes serviços de excelente qualidade há muitos anos, com a melhor e mais deliciosa comida da cidade."
+        },
+        "card3": {
+          "title": "Entrega",
+          "description": "Oferecemos aos nossos clientes serviços de excelente qualidade há muitos anos, com a melhor e mais deliciosa comida da cidade."
+        }
+      },
+      "testimonials": {
+        "title": "Depoimentos declientes",
+        "card1": {
+          "name": "Maria Silva",
+          "description": "A comida deste restaurante é simplesmente incrível! Cada prato é uma explosão de sabores. Recomendo a todos!",
+          "image": "https://i.im.ge/2024/09/30/ka0NTP.pic1.png"
+        },
+        "card2": {
+          "name": "João Santos",
+          "description": "Frequento este lugar há anos e nunca me decepcionou. O atendimento é excepcional e a comida é sempre fresca e deliciosa.",
+          "image": "https://i.im.ge/2024/09/30/ka0t3f.pic2.png"
+        },
+        "card3": {
+          "name": "Ana Oliveira",
+          "description": "Como vegetariana, fico impressionada com as opções criativas e saborosas que eles oferecem. É o meu lugar favorito para jantar!",
+          "image": "https://i.im.ge/2024/09/30/ka0Csr.pic3.png"
+        }
+      },
+      "contact": {
+        "image": "https://i.im.ge/2024/09/30/ka0Fny.order-img.jpeg",
+        "title": "Peça Agora",
+        "name": "Nome",
+        "email": "E-mail",
+        "phone": "Telefone",
+        "message": "Mensagem",
+        "submit": "Faça Seu Pedido"
+      }
     }
   ]
 }
