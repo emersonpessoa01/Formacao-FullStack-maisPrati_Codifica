@@ -2,13 +2,14 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 } */
 
-#testemonials {
+#testimonials {
   background-image: url("../image/home-bg-remove.png"); /* Verifique o caminho */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
+  margin-top: 0;
+  padding-bottom: 64px !important;
 }
 
 /* Definindo a animação de flutuação */

@@ -4,5 +4,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
+  margin-top: 0;
+}
+#service .text-3xl{
+  margin-top: 32px;
 }

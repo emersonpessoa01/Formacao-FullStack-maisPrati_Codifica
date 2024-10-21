@@ -4,7 +4,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 68px !important;
+}
+
+#contact .text-3xl {
+  margin-top: 32px;
 }
 
 .basics-30rem {

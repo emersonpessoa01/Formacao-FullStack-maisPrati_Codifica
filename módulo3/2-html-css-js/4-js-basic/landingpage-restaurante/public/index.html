@@ -23,21 +23,10 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page | Restaurante</title>
+    <title>Sabores Autênticos &trade;</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
@@ -82,10 +71,13 @@
                 <a class="nav-link" href="#speciality">Especialidade</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#popular">Mais Populares</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#service">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testemonials">Testemunhos</a>
+                <a class="nav-link" href="#testimonials">Testemunhos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contato</a>
@@ -110,6 +102,7 @@
               id="slider-button-left"
               class="swiper-button-prev group p-2 flex justify-center items-center border border-solid border-indigo-600 w-10 h-10 transition-all duration-500 rounded-full hover:bg-indigo-600"
               data-carousel-prev
+              aria-hidden="true"
             >
               <!-- Ícone da seta esquerda -->
             </button>
@@ -119,6 +112,7 @@
               id="slider-button-right"
               class="swiper-button-next group p-2 flex justify-center items-center border border-solid border-indigo-600 w-10 h-10 transition-all duration-500 rounded-full hover:bg-indigo-600"
               data-carousel-next
+              aria-hidden="true"
             >
               <!-- Ícone da seta direita -->
             </button>
@@ -131,246 +125,11 @@
 
     <!-- Sobre Nós -->
     <section class="mx-auto my-10 px-8" id="about">
-      <h2 class="text-center text-3xl bordered-title mb-10">
-        Sobre
-        <span class="text-danger bordered-title p-0 m-0 font-bold">Nós</span>
-      </h2>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center mb-16">
-        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="600">
-          <img src="./image/cooks.webp" alt="Equipe Sabores Autênticos na cozinha" class="rounded-lg shadow-lg" />
-        </div>
-        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="800">
-          <h2 class="text-3xl font-bold mb-4">Nossa História</h2>
-          <p class="text-gray-700 mb-4 first-letter-uppercase lowercase">
-            Fundado em 2010, o Sabores Autênticos nasceu da paixão de um grupo de amigos pela culinária tradicional brasileira. Nossa missão é
-            preservar e compartilhar as receitas que fazem parte da rica herança gastronômica do Brasil.
-          </p>
-          <p class="text-gray-700 mb-4 first-letter-uppercase lowercase">
-            Ao longo dos anos, nos dedicamos a pesquisar, testar e aperfeiçoar receitas de todas as regiões do país, buscando sempre manter a
-            autenticidade dos pratos e, ao mesmo tempo, torná-los acessíveis para cozinheiros de todos os níveis.
-          </p>
-        </div>
-      </div>
-      <!-- Nosso Valores -->
-      <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
-        <h2 class="text-3xl font-bold mb-6 text-center" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="600">Nossos Valores</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="600">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto font-bold mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-              />
-            </svg>
-            <h3 class="text-xl font-bold text-green-700 mb-2">Autenticidade</h3>
-            <p class="text-gray-600 lowercase first-letter-uppercase">
-              Preservamos a essência das receitas tradicionais, respeitando suas origens e história.
-            </p>
-          </div>
-          <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="800">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto font-bold mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-              />
-            </svg>
-            <h3 class="text-xl font-bold mb-2">Acessibilidade</h3>
-            <p class="text-gray-600 lowercase first-letter-uppercase">
-              Tornamos as receitas fáceis de entender e preparar, para que todos possam desfrutar da culinária brasileira.
-            </p>
-          </div>
-          <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1000">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto font-bold mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-              />
-            </svg>
-            <h3 class="text-xl font-bold text-green-700 mb-2">Diversidade</h3>
-            <p class="text-gray-600 lowercase first-letter-uppercase">
-              Celebramos a rica variedade de sabores e influências culturais presentes na gastronomia brasileira.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Nossa Equipe -->
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold mb-6 text-center" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="600">Nossa Equipe</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-delay="600"
-          >
-            <img src="./image/Chef Maria Silva.jpg" alt="Chef Maria Silva" class="w-full h-64 object-cover" width="300" height="300" />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">Maria Silva</h3>
-              <p class="text-gray-600 mb-2">Chef Executiva</p>
-              <p class="text-gray-700 lowercase first-letter-uppercase">
-                Com mais de 20 anos de experiência, Maria é especialista em pratos tradicionais do Nordeste brasileiro.
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-delay="800"
-          >
-            <img src="./image/Chef João Santos.jpg" alt="Chef João Santos" class="w-full h-64 object-cover" width="300" height="300" />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">João Santos</h3>
-              <p class="text-gray-600 mb-2">Chef de Pesquisa</p>
-              <p class="text-gray-700 lowercase first-letter-uppercase">
-                João viaja pelo Brasil coletando receitas autênticas e histórias por trás dos pratos regionais.
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-delay="1000"
-          >
-            <img
-              src="./image/Nutricionista Ana Oliveira.jpg"
-              alt="Nutricionista Ana Oliveira"
-              class="w-full h-64 object-cover"
-              width="300"
-              height="300"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">Ana Oliveira</h3>
-              <p class="text-gray-600 mb-2">Nutricionista</p>
-              <p class="text-gray-700 lowercase first-letter-uppercase">
-                Ana adapta nossas receitas para dietas especiais, garantindo que todos possam desfrutar da culinária brasileira.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Junte-se a nós -->
-      <div class="bg-red-100 rounded-lg p-8">
-        <h2
-          class="text-3xl font-bold mb-6 text-center lowercase first-letter-uppercase"
-          data-aos="flip-left"
-          data-aos-easing="linear"
-          data-aos-duration="600"
-        >
-          Junte-se a Nós
-        </h2>
-        <p
-          class="text-gray-700 text-center mb-6 lowercase first-letter-uppercase"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-delay="1000"
-        >
-          Compartilhe sua paixão pela culinária brasileira! Estamos sempre em busca de novos talentos e colaboradores entusiasmados.
-        </p>
-        <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1400">
-          <a
-            href="#contact"
-            class="bg-red-600 text-white px-6 py-3 rounded-lg inline-block hover:bg-red-500 transition duration-300 hover:no-underline lowercase first-letter-uppercase"
-            >Entre em Contato</a
-          >
-        </div>
-      </div>
+      <!-- Conteúdo inserido dinamicamente pelo JavaScript -->
     </section>
     <!-- Especialidade -->
     <section id="speciality" class="mx-auto mt-8 px-8 py-6 bg-light">
-      <div class="container">
-        <h2 class="text-center text-3xl bordered-title my-10">
-          Nossa
-          <span class="text-danger bordered-title p-0 m-0 font-bold">Especialidade</span>
-        </h2>
-        <div class="row mb-10">
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="600">
-            <div class="card">
-              <img src="./image/cheeseburger-duplo.jpg" alt="Hamburger Saboroso" class="card-img-top" />
-              <div class="card-body">
-                <img src="./image/icon-hamgurger.png" class="icon" />
-                <h5 class="card-title">Hamburger Saboroso</h5>
-                <p class="card-text text-center text-gray-700">
-                  Delicie-se com o nosso suculento cheeseburger duplo que é feito com ingredientes selecionados, uma carne suculenta e um queijo
-                  irresistível que derrete na boca.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="800">
-            <div class="card">
-              <img src="./image/pizza-1.jpg" alt="Pizza Saboroso" class="card-img-top" />
-              <div class="card-body">
-                <img src="./image/icon-pizza.png" alt="Ícone Pizza Saborosa" class="icon" />
-                <h5 class="card-title">Pizza Saborosa</h5>
-                <p class="card-text text-center text-gray-700">
-                  Nossa pizza é preparada com uma massa crocante por fora e macia por dentro, coberta com ingredientes frescos e de alta qualidade.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1000">
-            <div class="card">
-              <img src="./image/sucos-gelados.jpg" alt="Sucos Gelados" class="card-img-top" />
-              <div class="card-body">
-                <img src="./image/icon-suco.png" class="icon" />
-                <h5 class="card-title">Bebidas Geladas</h5>
-                <p class="card-text text-center text-gray-700">
-                  Nossas bebidas geladas são preparadas com frutas frescas e ingredientes selecionados, nossas opções são ideais para saciar sua sede
-                  e revigorar seus momentos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1200">
-            <div class="card">
-              <img src="./image/sorverte-1.jpg" class="card-img-top" />
-              <div class="card-body">
-                <img src="./image/icon-suco.png" class="icon" />
-                <h5 class="card-title">Sorvetes Gelados</h5>
-                <p class="card-text text-center text-gray-700">
-                  Nossos sorvetes gelados são a verdadeira indulgência! Feitos com ingredientes de alta qualidade e receitas artesanais, cada sabor é
-                  uma viagem de prazer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1400">
-            <div class="card">
-              <img src="./image/bombom-chocolate.jpg" class="card-img-top" />
-              <div class="card-body">
-                <img src="./image/icon-bolo.webp" class="icon" />
-                <h5 class="card-title">Doces Saborosos</h5>
-                <p class="card-text text-center text-gray-700">
-                  Nossos doces são verdadeiras obras de arte, preparados com amor e os melhores ingredientes. Desde bolos fofinhos e tortas
-                  irresistíveis até doces finos que derretem na boca.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1600">
-            <div class="card">
-              <img src="./image/cafe-da-manha.jpg" class="card-img-top" title="Café da Manhã" />
-              <div class="card-body">
-                <img src="./image/icon-cha.png" class="icon" title="Ícone Café da Manhã" />
-                <h5 class="card-title">Café da Manhã</h5>
-                <p class="card-text text-center text-gray-700">
-                  Desperte seus sentidos com uma seleção de pães fresquinhos, croissants amanteigados e frutas da estação. Acompanhe com uma xícara do
-                  nosso café especial, preparado com grãos selecionados e moídos na hora.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Conteúdo inserido dinamicamente pelo JavaScript -->
     </section>
     <!-- Popular Section -->
     <section class="bg-gray-10 mx-auto mt-8 px-8 py-6" id="popular">
@@ -536,144 +295,19 @@
 
     <!-- Serviços -->
     <section class="bg-white mx-auto mt-8 px-8 py-6" id="service">
-      <h2 class="text-center text-3xl bordered-title mb-10">
-        Nossos
-        <span class="text-danger bordered-title p-0 m-0 font-bold">Serviços</span>
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-lg shadow-lg p-6 text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="600">
-          <div class="w-16 h-16 mx-auto mb-4 bg-green-500 rounded-full flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-              />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Comida excelente</h3>
-          <p class="text-gray-600 normal-case">
-            Oferecemos aos nossos clientes serviços de excelente qualidade há muitos anos, com a melhor e mais deliciosa comida da cidade.
-          </p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6 text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="800">
-          <div class="w-16 h-16 mx-auto mb-4 bg-green-500 rounded-full flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Comida rápida</h3>
-          <p class="text-gray-600 normal-case">
-            Oferecemos aos nossos clientes serviços de excelente qualidade há muitos anos, com a melhor e mais deliciosa comida da cidade.
-          </p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg p-6 text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1000">
-          <div class="w-16 h-16 mx-auto mb-4 bg-green-500 rounded-full flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-              />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Entrega</h3>
-          <p class="text-gray-600 normal-case">
-            Oferecemos aos nossos clientes serviços de excelente qualidade há muitos anos, com a melhor e mais deliciosa comida da cidade.
-          </p>
-        </div>
-      </div>
+      <!-- Conteúdo isnerido pelo JS -->
+    </section>
+
+    <!-- Como funciona -->
+    <section class="py-5 bg-white" id="works">
+      <!-- Conteúdo do Como funciona inderido pelo JS -->
+       <!-- ========================================= -->
+      <!-- Conteúdo do Forma de pagamento inserido pelo JS-->
+      
     </section>
     <!-- Testemonials -->
-    <section class="bg-gray-10 mx-auto mt-8 px-8 py-6" id="testemonials">
-      <h2 class="text-center text-3xl bordered-title my-10">
-        Depoimentos de
-        <span class="text-danger bordered-title p-0 m-0 font-bold">clientes</span>
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- Testemunho 1 -->
-        <div
-          class="bg-gray-800 rounded-lg shadow-lg mt-10 mb-4 pt-16 pb-8 px-6 relative transform transition-transform duration-300 hover:translate-y-1 md:mb-0 card-hover border-8 border-solid border-white box"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-delay="600"
-        >
-          <img
-            src="./image/testemunha-1.webp"
-            alt="Foto de Maria Silva, mulher sorrindo com cabelos castanhos"
-            class="w-28 h-28 rounded-full absolute -top-12 left-1/2 transform -translate-x-1/2 border-8 border-white shadow-md object-cover"
-          />
-          <div class="text-center d-flex flex-column justify-between gap-2">
-            <h3 class="text-xl font-bold text-gray-800 my-2">Maria Silva</h3>
-            <div class="text-yellow-400 text-xl">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p class="text-gray-100 italic normal-case first-letter-uppercase">
-              "A comida deste restaurante é simplesmente incrível! Cada prato é uma explosão de sabores. Recomendo a todos!"
-            </p>
-          </div>
-        </div>
-
-        <!-- Testemunho 2 -->
-        <div
-          class="bg-gray-800 rounded-lg shadow-lg mt-10 mb-4 pt-16 pb-8 px-6 relative transform transition-transform duration-300 hover:translate-y-1 md:mb-0 card-hover border-8 border-solid border-white box"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-delay="800"
-        >
-          <img
-            src="./image/testemunha-2.webp"
-            alt="Foto de João Santos, homem de meia-idade com barba grisalha"
-            class="w-28 h-28 rounded-full absolute -top-12 left-1/2 transform -translate-x-1/2 border-8 border-white shadow-md object-cover"
-          />
-          <div class="text-center d-flex flex-column justify-between gap-2">
-            <h3 class="text-xl font-bold text-gray-800 my-2">João Santos</h3>
-            <div class="text-yellow-400 text-xl">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p class="text-gray-100 italic normal-case first-letter-uppercase">
-              "Frequento este lugar há anos e nunca me decepcionou. O atendimento é excepcional e a comida é sempre fresca e deliciosa."
-            </p>
-          </div>
-        </div>
-
-        <!-- Testemunho 3 -->
-        <div
-          class="bg-gray-800 rounded-lg shadow-lg mt-10 mb-4 pt-16 pb-8 px-6 relative transform transition-transform duration-300 hover:translate-y-1 md:mb-0 card-hover border-8 border-solid border-white"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-delay="1000"
-        >
-          <img
-            src="./image/testemunha-3.webp"
-            alt="Foto de Ana Oliveira, jovem mulher com cabelos cacheados"
-            class="w-28 h-28 rounded-full absolute -top-12 left-1/2 transform -translate-x-1/2 border-8 border-white shadow-md object-cover"
-          />
-          <div class="text-center d-flex flex-column justify-between gap-2">
-            <h3 class="text-xl font-bold text-gray-800 my-2">Ana Oliveira</h3>
-            <div class="text-yellow-400 text-xl">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <p class="text-gray-100 italic normal-case first-letter-uppercase">
-              "Como vegetariana, fico impressionada com as opções criativas e saborosas que eles oferecem. É o meu lugar favorito para jantar!"
-            </p>
-          </div>
-        </div>
-      </div>
+    <section class="bg-gray-10 mx-auto mt-8 px-8 py-6" id="testimonials">
+      <!-- Conteúdo inserido dinamicamente pelo JavaScript -->
     </section>
     <!-- Contato -->
     <section class="bg-white mx-auto my-8 px-8" id="contact">
@@ -773,6 +407,7 @@
 
               <button
                 id="modal-close-btn"
+                aria-hidden="true"
                 class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-500 transition duration-300 normal-case text-center w-full"
                 style="border: none; outline: none; box-shadow: none; appearance: none"
               >
@@ -904,6 +539,7 @@
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Tailwind -->

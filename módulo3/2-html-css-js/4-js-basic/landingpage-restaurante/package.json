@@ -15,5 +15,8 @@
     "emailjs-com": "^3.2.0",
     "express": "^4.21.0",
     "landingpage-ecommerce": "file:"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }

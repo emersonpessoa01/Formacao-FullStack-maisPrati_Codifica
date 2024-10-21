@@ -159,6 +159,29 @@
           "description": "Oferecemos aos nossos clientes serviços de excelente qualidade há muitos anos, com a melhor e mais deliciosa comida da cidade."
         }
       },
+      "works": {
+        "title": "Como funciona",
+        "payment_method": {
+          "title": "Formas de Pagamento",
+          "image": "https://i.im.ge/2024/10/22/kxV9mK.forma-de-pagamento-removebg.png"
+        },
+        "card1": {
+          "title": "Escolha sua comida favorita",
+          "image": "https://i.im.ge/2024/09/30/ka5OhP.step-1.jpeg"
+        },
+        "card2": {
+          "title": "Entrega rápida e gratuita",
+          "image": "https://i.im.ge/2024/09/30/ka52Bf.step-2.jpeg"
+        },
+        "card3": {
+          "title": "Métodos de pagamento fáceis",
+          "image": "https://i.im.ge/2024/09/30/ka5sHW.step-3.jpeg"
+        },
+        "card4": {
+          "title": "Aproveite sua comida",
+          "image": "https://i.im.ge/2024/09/30/ka5710.step-4.jpeg"
+        }
+      },
       "testimonials": {
         "title": "Depoimentos declientes",
         "card1": {
