@@ -192,10 +192,36 @@ Um banner em destaque com a chamada "Descubra O Sabor Da Nossa Comida" e um bot�
 ## APIs Utilizadas
 
 - **API Local** <code>(data.json)</code>: <br>
-  O projeto utiliza uma API interna chamada `data.json` que fornece dados específicos para a aplicação. Esta API: https://landingpage-restaurante-three.vercel.app/api/data foi deploiada na [Vercel](https://vercel.com/) e configurada utilizando o arquivo de ambiente `vercel.json`, que define as rotas e endpoints necessários para seu funcionamento.
-  A API complementa as seções "Home", "Sobre Nós", "Nossa Especialidade", "Nossos Serviços e "Depoimentos de Clientes" da Landing Page, injetando os dados diretamente no conteúdo e deixando o site mais dinâmico e fácil de atualizar.
+  No projeto, foi criado um servidor Express para servir tanto arquivos estáticos na pasta public (HTML, CSS e JavaScript) quanto uma API interna chamada data.json, que fornece dados específicos para a aplicação. Esta API, disponível em: https://landingpage-restaurante-three.vercel.app/api/data, foi deployada na Vercel e configurada utilizando o arquivo de ambiente vercel.json, que define as rotas e endpoints necessários para seu funcionamento.
+
+  A API complementa as seções "Home", "Sobre Nós", "Nossa Especialidade", "Nossos Serviços" e "Depoimentos de Clientes" da Landing Page, injetando os dados diretamente no conteúdo, tornando o site mais dinâmico e fácil de atualizar.
 
   `EmailJS`: Utilizado para integrar o serviço de envio de e-mails diretamente do front-end, permitindo que formulários enviem dados para uma conta de e-mail sem necessidade de backend.
+
+## Configuração do vercel.json
+O arquivo `vercel.json` serve para dizer à Vercel como direcionar as rotas. Segue a estrutura do arquivo:
+  ```bash
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
+}
+
+```
 
 ## Bibliotecas Externas Utilizadas
 

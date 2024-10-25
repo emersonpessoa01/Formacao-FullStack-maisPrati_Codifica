@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "UniSans";
+  src: url("../src/assets/fonts/Uni\ Sans\ Regular.woff") format("woff"), url("../src/assets/fonts/Uni\ Sans\ Light.woff") format("woff"),
+    url(".../src/assets/fonts/Uni\ Sans\ Bold.woff") format("woff"), url("../src/assets/fonts/Uni\ Sans\ Bold\ Italic.woff") format("woff"),
+    url(".../src/assets/fonts//Uni\ Sans\ Book.woff") format("woff"), url("../src/assets/fonts/Uni\ Sans\ Book\ Italic.woff") format("woff"),
+    url("../src/assets/fonts/Uni\ Sans\ Medium.woff") format("woff"), url("../src/assets/fonts/Uni\ Sans\ Medium\ Italic.woff") format("woff");
+}
+body {
+  font-family: "UniSans","Poppins", sans-serif;
+  background: #181c1f;
+  color: #bdd1d4;
+  margin: 2rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100vh;
+}

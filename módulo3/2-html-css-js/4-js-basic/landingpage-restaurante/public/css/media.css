@@ -54,10 +54,18 @@
   #about .grid {
     grid-template-columns: repeat(1, 1fr) !important;
   }
+  .card-text {
+    /* width: 75% !important; */
+    font-size: 18px !important;
+  }
 }
+
 @media (max-width: 480px) {
   .text-3xl {
     font-size: 1.5rem !important;
+  }
+  .card-text {
+    width: 100% !important;
   }
   /* #about{
     padding: 0 1rem !important;

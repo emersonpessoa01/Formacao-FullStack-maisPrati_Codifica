@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla JavaScript Content Switcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><span>JS</span> Vanilla JavaScript</h1>
+    <p>i.e., JavaScript without any (UI) framework or library</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="why-react">Why React?</button>
+      <button class="tab-btn" data-tab="core-features">Core Features</button>
+      <button class="tab-btn" data-tab="related-resources">Related Resources</button>
+    </div>
+
+    <div class="tab-content active" id="why-react">
+      <ul>
+        <li>React is extremely popular</li>
+        <li>It makes building complex, interactive UIs a breeze</li>
+        <li>It's powerful & flexible</li>
+        <li>It has a very active and versatile ecosystem</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="core-features">
+      <ul>
+        <li>Components, JSX & Props</li>
+        <li>State</li>
+        <li>Hooks (e.g., useEffect())</li>
+        <li>Dynamic rendering</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="related-resources">
+      <ul>
+        <li>Official web page (react.dev)</li>
+        <li>Next.js (Fullstack framework)</li>
+        <li>React Native (build native mobile apps with React)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -20,12 +20,12 @@
   display: flex !important;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* gap: 0 !important; */
-  gap: 1rem !important;
+  gap: 0 !important;
+  /* gap: 1rem !important; */
 }
 #works .container .row .col-md-3 {
   flex: 1 1 15rem !important;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   text-align: center !important;
 
   display: flex;
