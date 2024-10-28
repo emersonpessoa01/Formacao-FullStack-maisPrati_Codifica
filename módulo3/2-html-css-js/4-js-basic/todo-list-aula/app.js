@@ -17,7 +17,28 @@ class Database {
   }
 
   //Para carregar os dados
-  loadTasks() {}
+  loadTasks() {
+    //Carregando dados no localstorage
+    let tasks = [];
+    let id = localStorage.getItem("id");
+    //faça um for
+    for (let i = 1; i <= id; i++) {
+      try {
+        tasks.push(JSON.parse(localStorage.getItem(i.toString())));
+      } catch (error) {
+        console.error(`Erro ao carregar a tarefa com id ${id}`);
+      }
+    }
+    return tasks;
+
+    // let tasks = [];
+    // let id = localStorage.getItem("id");
+    // while (localStorage.getItem(id) !== null) {
+    //   tasks.push(JSON.parse(localStorage.getItem(id)));
+    //   id = this.getNextId();
+    // }
+    // return tasks;
+  }
 
   //Para criar dados
   createTask(task) {
@@ -29,7 +50,9 @@ class Database {
   }
 
   //Para deletar dados
-  removeTask(id) {}
+  removeTask(id) {
+    localStorage.removeItem(id);
+  }
 
   //Para pesquisar as tarefas
   searchTasks(searchTask) {}
@@ -37,7 +60,6 @@ class Database {
   //Para editar dados
   updateTask(id, updatedTask) {}
 
-  
   //Para pegar o próximo id
   getNextId() {
     let currentId = localStorage.getItem("id");
@@ -56,6 +78,7 @@ function registerTask() {
   let type = document.getElementById("type").value;
   let description = document.getElementById("description").value;
 
+  //Instancia a task
   let task = new Task(year, mounth, day, type, description);
 
   //Validar os dados
@@ -66,6 +89,70 @@ function registerTask() {
     alert("Todos os campos são obrigatórios!");
   }
 }
+
+//Função para mostrar na tela as tasks
+
+function loadTasks(tasks = database.loadTasks()) {
+  // let tasks = database.loadTasks();
+
+  let listTasks = document.getElementById("listTasks");
+
+  listTasks.innerHTML = "";
+
+  tasks.forEach(({ id, year, mounth, day, type, description }) => {
+    let row = listTasks.insertRow();
+    row.insertCell(0).innerHTML = `${day.toString().padStart(2, "0")}/${mounth.toString().padStart(2, "0")}/${year}`;
+    row.insertCell(1).innerHTML = getTaskTypeName(type);
+    row.insertCell(2).innerHTML = description;
+
+    //criar um botão
+    let btn = document.createElement("button");
+    btn.className = "btn btn-danger";
+    btn.id = id;
+    btn.innerHTML = "Remover";
+
+    btn.onClick = () => {
+      if (confirm("Você tem certeza que quer excluir esta tarefa?")) {
+        database.removeTask(id);
+        loadTasks();
+      }
+    };
+    row.insertCell(3).appendChild(btn);
+  });
+}
+
+//Função para pegar o nome do tipo da tarefa
+
+function getTaskTypeName(type) {
+  switch (type) {
+    case "1":
+      return "Studies";
+      break;
+    case "2":
+      return "Work";
+      break;
+    case "3":
+      return "Home";
+      break;
+    case "4":
+      return "Health";
+      break;
+    case "5":
+      return "Family";
+      break;
+    default:
+  }
+}
+
+//Função para carregar as tasks ao iniciar
+
+window.onload = () => {
+  if (document.body.contains(document.getElementById("listTasks"))) {
+    loadTasks();
+  }
+};
+
+//Entidade(representação de um conjunto de informações, que representa um objeto do mundo real) Databas
 
 //Entidade(representação de um conjunto de informações, que representa um objeto do mundo real) Task
 
