@@ -1,6 +1,7 @@
-import Contador from "./Contador.jsx"
+import Contador from "./components/Contador";
+
 function App() {
-  <Contador />;
+  return <Contador />;
 }
 
 export default App;

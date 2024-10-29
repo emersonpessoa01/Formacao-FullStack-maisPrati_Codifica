@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component } from "react";
 
 class Contador extends Component {
   constructor(props) {
@@ -10,6 +10,7 @@ class Contador extends Component {
 
   componentDidMount() {
     console.log("Componente montado");
+    alert("Componente montado");
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -25,12 +26,15 @@ class Contador extends Component {
 
   componentWillUnmount() {
     console.log("Componente será desmontado");
+    alert("Componente será desmontado");
   }
 
   incrementar = () => {
     this.setState((prevState) => {
       if (prevState.count < 10) {
-        return { count: prevState.count + 1 };
+        return { 
+          count: prevState.count + 1 
+        };
       }
       return prevState;
     });
@@ -39,7 +43,9 @@ class Contador extends Component {
   decrementar = () => {
     this.setState((prevState) => {
       if (prevState.count > 0) {
-        return { count: prevState.count - 1 };
+        return { 
+          count: prevState.count - 1 
+        };
       }
       return prevState;
     });
@@ -52,14 +58,16 @@ class Contador extends Component {
   render() {
     return (
       <div>
-        <h1>Contador: {this.state.count}</h1>
-        <button onClick={this.incrementar} disabled={this.state.count === 10}>
-          Incrementar
-        </button>
-        <button onClick={this.decrementar} disabled={this.state.count === 0}>
-          Decrementar
-        </button>
-        <button onClick={this.resetar}>Resetar</button>
+        <h1>Contador</h1>
+        <p>Contador: {this.state.count}</p>
+        <div className="box-btn">
+          <button onClick={this.incrementar} disabled={this.state.count === 10}>
+            Incrementar
+          </button>
+          <button onClick={this.decrementar} disabled={this.state.count === 0}>
+            Decrementar
+          </button>
+        </div>
       </div>
     );
   }

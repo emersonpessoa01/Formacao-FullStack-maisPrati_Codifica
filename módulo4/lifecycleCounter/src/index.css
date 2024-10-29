@@ -23,8 +23,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
+  /* margin: 0; */
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -33,7 +33,14 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
+p {
+  font-size: 1.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
 
 button {
   border-radius: 8px;
@@ -45,6 +52,12 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+.box-btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 button:hover {
   border-color: #646cff;
