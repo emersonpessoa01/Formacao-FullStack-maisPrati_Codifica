@@ -1,5 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+:root{
+    --primary-color: #3498db;
+    --primary-secondary:#176192b;
+}
+@font-face {
+  font-family: "UniSans";
+  src: url("../fonts/Uni\ Sans\ Bold.woff") format("woff"), url("../fonts/Uni\ Sans\ Bold\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Regular.woff") format("woff"), url("../fonts/Uni\ Sans\ Regular\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ SemiBold.woff") format("woff"), url("../fonts/Uni\ Sans\ SemiBold\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Thin.woff") format("woff"), url("../fonts/Uni\ Sans\ Thin\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ UltraLight.woff") format("woff"), url("../fonts/Uni\ Sans\ UltraLight\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ XLight.woff") format("woff"), url("../fonts/Uni\ Sans\ XLight\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Black.woff") format("woff"), url("../fonts/Uni\ Sans\ Black\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ ExtraLight.woff") format("woff"), url("../fonts/Uni\ Sans\ ExtraLight\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Light.woff") format("woff"), url("../fonts/Uni\ Sans\ Light\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Medium.woff") format("woff"), url("../fonts/Uni\ Sans\ Medium\ Italic.woff") format("woff");
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  height: .25rem;
+}
+html::-webkit-scrollbar-track {
+  background: inset 0 0 5px #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background:var(--primary-color);
+  border-radius: 5rem;
+  transition: background 0.5s ease-in-out;
+  border:1px solid #fff;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+  border-radius: 5rem;
+}
+*::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+section {
+  padding: 2rem 7%;
 }

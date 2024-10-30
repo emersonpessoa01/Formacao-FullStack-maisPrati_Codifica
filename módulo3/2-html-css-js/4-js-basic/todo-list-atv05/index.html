@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List | Atv05</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/image/favicon-todolist (1).png" type="image/x-icon" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   </head>
-  <body>
+  <body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow p-6">
+      <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Todo App</h1>
+
+      <!-- Fomr para adicionar tarefas -->
+      <form id="todoForm" class="mb-8">
+        <div class="flex gap-4">
+          <input
+            autofocus
+            type="text"
+            id="todoInput"
+            class="flex-1 p-2 border rounded focus:outline-none focus:border-blue-500 caret-blue-500"
+            placeholder="Digite sua tarefa..."
+          />
+          <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transitiob">Adicionar</button>
+        </div>
+      </form>
+      <!-- Lista de tarefas -->
+      <ul id="todoList" class="space-y-3"></ul>
+    </div>
     <script src="./assets/js/script.js"></script>
+    <script>
+      /* Trocar a cor do cursor texto */
+      caretColor = document.getElementById("todoInput");
+      caretColor.style.caretColor = "blue";
+    </script>
   </body>
 </html>
