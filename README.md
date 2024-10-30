@@ -128,7 +128,7 @@
   - [x] 10. Frameworks de CSS
   - [x] 11. Projeto Prático II - Desenvolvimento com Frameworks
   - [ ] 12. Introdução a Testes no Front-end
-  - [ ] 13. Projeto Prático III - Aplicação Front-end Completa
+  - [x] 13. Projeto Prático III - Aplicação Front-end Completa
   
   > **Trilha Complementar**: Design para quem não é Designer (paralelo aos módulos 3 e 4)
   
@@ -138,10 +138,10 @@
 
   <!-- ### Módulo 4 - Desenvolvendo Front-end com ReactJS (13 Aulas) -->
 
-- [ ] 1. Introdução ao ReactJS e Configuração do Ambiente
-- [ ] 2. Componentes Funcionais, Hooks e de Classe
-- [ ] 3. Estado e Ciclo de Vida dos Componentes
-- [ ] 4. Manipulação de Eventos e Formulários
+- [x] 1. Introdução ao ReactJS e Configuração do Ambiente
+- [x] 2. Componentes Funcionais, Hooks e de Classe
+- [x] 3. Estado e Ciclo de Vida dos Componentes
+- [x] 4. Manipulação de Eventos e Formulários
 - [ ] 5. Componentização Avançada
 - [ ] 6. Roteamento com React Router
 - [ ] 7. Gerenciamento de Estado com Context API I
