@@ -142,10 +142,10 @@
 - [x] 2. Componentes Funcionais, Hooks e de Classe
 - [x] 3. Estado e Ciclo de Vida dos Componentes
 - [x] 4. Manipulação de Eventos e Formulários
-- [ ] 5. Componentização Avançada
-- [ ] 6. Roteamento com React Router
-- [ ] 7. Gerenciamento de Estado com Context API I
-- [ ] 8. Gerenciamento de Estado com Context API II
+- [x] 5. Componentização Avançada
+- [x] 6. Roteamento com React Router
+- [x] 7. Gerenciamento de Estado com Context API I
+- [x] 8. Gerenciamento de Estado com Context API II
 - [ ] 9. Requisições HTTP com Axios e Estilização com CSS
 - [ ] 10. Testes Unitários com Jest e React Testing Library
 - [ ] 11. Desenvolvimento de Aplicações CRUD com React e Redux I
