@@ -301,4 +301,4 @@
   <a href="#topo">Voltar ao Topo</a>
   
  <h2 align="center"> Licença</h2>
-  <div align="center">Copyright ©️ 2024 - Dev Full Stack Jr <div>
+  <div align="center">Copyright ©️ 2024 - Dev Full Stack 2.0 Jr <div>
