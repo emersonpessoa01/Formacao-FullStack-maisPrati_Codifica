@@ -127,7 +127,7 @@
   - [x] 9. Flexbox e CSS Grid
   - [x] 10. Frameworks de CSS
   - [x] 11. Projeto Prático II - Desenvolvimento com Frameworks
-  - [ ] 12. Introdução a Testes no Front-end
+  - [x] 12. Introdução a Testes no Front-end
   - [x] 13. Projeto Prático III - Aplicação Front-end Completa
   
   > **Trilha Complementar**: Design para quem não é Designer (paralelo aos módulos 3 e 4)
