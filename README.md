@@ -146,8 +146,8 @@
 - [x] 6. Roteamento com React Router
 - [x] 7. Gerenciamento de Estado com Context API I
 - [x] 8. Gerenciamento de Estado com Context API II
-- [ ] 9. Requisições HTTP com Axios e Estilização com CSS
-- [ ] 10. Testes Unitários com Jest e React Testing Library
+- [x] 9. Requisições HTTP com Axios e Estilização com CSS
+- [x] 10. Testes Unitários com Jest e React Testing Library
 - [ ] 11. Desenvolvimento de Aplicações CRUD com React e Redux I
 - [ ] 12. Desenvolvimento de Aplicações CRUD com React e Redux II
 - [ ] 13. Deploy e Otimização de Aplicações React
