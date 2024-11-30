@@ -148,20 +148,20 @@
 - [x] 8. Gerenciamento de Estado com Context API II
 - [x] 9. Requisições HTTP com Axios e Estilização com CSS
 - [x] 10. Testes Unitários com Jest e React Testing Library
-- [ ] 11. Desenvolvimento de Aplicações CRUD com React e Redux I
-- [ ] 12. Desenvolvimento de Aplicações CRUD com React e Redux II
-- [ ] 13. Deploy e Otimização de Aplicações React
+- [x] 11. Desenvolvimento de Aplicações CRUD com React e Redux I
+- [x] 12. Desenvolvimento de Aplicações CRUD com React e Redux II
+- [x] 13. Deploy e Otimização de Aplicações React
 
 <a href="#topo">Voltar ao Topo</a>
 
   <h3 id="módulo-5---introdução-à-linguagem-java-17-aulas">📗Módulo 5 - Introdução à Linguagem Java (17 Aulas)</h3>
   <!-- ### Módulo 5 - Introdução à Linguagem Java (17 Aulas) -->
   
-  - [ ] 1. Introdução à Linguagem de Programação Java e Configuração do Ambiente
-  - [ ] 2. Conceitos Básicos: Variáveis e Tipos de Dados
-  - [ ] 3. Operadores e Expressões
-  - [ ] 4. Estruturas de Controle: Condicional
-  - [ ] 5. Estruturas de Controle: Repetição
+  - [x] 1. Introdução à Linguagem de Programação Java e Configuração do Ambiente
+  - [x] 2. Conceitos Básicos: Variáveis e Tipos de Dados
+  - [x] 3. Operadores e Expressões
+  - [x] 4. Estruturas de Controle: Condicional
+  - [x] 5. Estruturas de Controle: Repetição
   - [ ] 6. Arrays e Coleções
   - [ ] 7. Métodos e Funções
   - [ ] 8. Introdução à Programação Orientada a Objetos
