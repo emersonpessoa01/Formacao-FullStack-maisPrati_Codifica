@@ -1,4 +1,4 @@
-package poo;
+package poo.sistemaDeProdutos;
 
 /*
 //Crie um sistema de uma loja que vende produtos:

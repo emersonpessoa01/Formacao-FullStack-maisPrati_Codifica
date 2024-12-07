@@ -1,4 +1,4 @@
-package poo;
+package poo.sistemaDeProdutos;
 
 public class ProdutoEletronico extends Produto {
     private int garantiaEmMeses;
