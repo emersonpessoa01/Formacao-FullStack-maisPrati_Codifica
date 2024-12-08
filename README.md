@@ -162,15 +162,15 @@
   - [x] 3. Operadores e Expressões
   - [x] 4. Estruturas de Controle: Condicional
   - [x] 5. Estruturas de Controle: Repetição
-  - [ ] 6. Arrays e Coleções
-  - [ ] 7. Métodos e Funções
-  - [ ] 8. Introdução à Programação Orientada a Objetos
-  - [ ] 9. Classes, Objetos e Construtores
-  - [ ] 10. Herança e Sobrecarga
-  - [ ] 11. Polimorfismo e Interface
+  - [x] 6. Arrays e Coleções
+  - [x] 7. Métodos e Funções
+  - [x] 8. Introdução à Programação Orientada a Objetos
+  - [x] 9. Classes, Objetos e Construtores
+  - [x] 10. Herança e Sobrecarga
+  - [x] 11. Polimorfismo e Interface
   - [ ] 12. Tratamento de Exceções
-  - [ ] 13. Introdução a Estruturas de Dados: Listas e Filas
-  - [ ] 14. Estruturas de Dados: Pilhas e Mapas
+  - [x] 13. Introdução a Estruturas de Dados: Listas e Filas
+  - [x] 14. Estruturas de Dados: Pilhas e Mapas
   - [ ] 15. Algoritmos - Busca e Ordenação
   - [ ] 16. Projeto Prático I
   - [ ] 17. Projeto Prático II
