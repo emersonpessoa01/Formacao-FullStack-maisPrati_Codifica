@@ -168,7 +168,7 @@
   - [x] 9. Classes, Objetos e Construtores
   - [x] 10. Herança e Sobrecarga
   - [x] 11. Polimorfismo e Interface
-  - [ ] 12. Tratamento de Exceções
+  - [x] 12. Tratamento de Exceções
   - [x] 13. Introdução a Estruturas de Dados: Listas e Filas
   - [x] 14. Estruturas de Dados: Pilhas e Mapas
   - [ ] 15. Algoritmos - Busca e Ordenação
