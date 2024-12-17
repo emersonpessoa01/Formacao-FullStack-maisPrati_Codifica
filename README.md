@@ -171,9 +171,9 @@
   - [x] 12. Tratamento de Exceções
   - [x] 13. Introdução a Estruturas de Dados: Listas e Filas
   - [x] 14. Estruturas de Dados: Pilhas e Mapas
-  - [ ] 15. Algoritmos - Busca e Ordenação
-  - [ ] 16. Projeto Prático I
-  - [ ] 17. Projeto Prático II
+  - [x] 15. Algoritmos - Busca e Ordenação
+  - [x] 16. Projeto Prático I
+  - [x] 17. Projeto Prático II
   
   <a href="#topo">Voltar ao Topo</a>
 
@@ -181,9 +181,9 @@
   
   <!-- ### Módulo 6 - Fundamentos de Bancos de Dados Relacionais (13 Aulas) -->
   
-  - [ ] 1. Introdução a Bancos de Dados Relacionais e Configuração do MySQL
-  - [ ] 2. Modelagem de Dados e Entidades
-  - [ ] 3. Criação e Manipulação de Tabelas
+  - [x] 1. Introdução a Bancos de Dados Relacionais e Configuração do MySQL
+  - [x] 2. Modelagem de Dados e Entidades
+  - [x] 3. Criação e Manipulação de Tabelas
   - [ ] 4. Consultas Simples com Select
   - [ ] 5. Restrições de Integridade e Chaves
   - [ ] 6. Consultas Avançadas com Select
