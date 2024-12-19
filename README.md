@@ -184,7 +184,7 @@
   - [x] 1. Introdução a Bancos de Dados Relacionais e Configuração do MySQL
   - [x] 2. Modelagem de Dados e Entidades
   - [x] 3. Criação e Manipulação de Tabelas
-  - [ ] 4. Consultas Simples com Select
+  - [x] 4. Consultas Simples com Select
   - [ ] 5. Restrições de Integridade e Chaves
   - [ ] 6. Consultas Avançadas com Select
   - [ ] 7. Backup e Restauração de Dados
