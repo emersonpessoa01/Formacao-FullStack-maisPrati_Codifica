@@ -16,7 +16,7 @@ CREATE TABLE Clientes (
     cidade VARCHAR(100),
     tipo VARCHAR(50)
 );
-
+SELECT * from clientes;
 -- Tabela Pedidos
 CREATE TABLE Pedidos (
     nr_pedido INT PRIMARY KEY,
@@ -40,8 +40,21 @@ values
 (3,'Carlos Santos',40,5000.00),
 (4,'Ana Costa','33',3000.00);
 
-#desc Vendedores;
-#select * from Vendedores;
+-- Atualizar nome dos vendedores
+
+SET SQL_SAFE_UPDATES = 0;
+SET SQL_SAFE_UPDATES = 1;
+
+UPDATE Vendedores SET nomeVendedor='João Silva' WHERE nomeVendedor= 'Legolas';
+UPDATE Vendedores SET nomeVendedor='Maria Oliveira' WHERE nomeVendedor= 'Arwen';
+UPDATE Vendedores SET nomeVendedor='Carlos Santos' WHERE nomeVendedor= 'Gandalf';
+UPDATE Vendedores SET nomeVendedor='Ana Costa' WHERE nomeVendedor= 'Aragorn';
+
+desc Vendedores;
+SELECT 
+    *
+FROM
+    Vendedores;
 
 -- Inserindo dados na tabela Clientes
 insert into Clientes(nrCliente, nomeCliente, cidade, tipo) 
@@ -56,12 +69,12 @@ desc Clientes;
 SELECT * FROM Clientes;
 
 # Verificar quais registros serão excluídos antes de executar o comando:
--- SELECT * FROM Clientes
--- WHERE nrCliente BETWEEN 11 AND 15;
+SELECT * FROM Clientes
+WHERE nrCliente BETWEEN 11 AND 15;
 
 # Excluir as linhas com IDs no intervalo de 101 a 105 da tabela Clientes:
--- DELETE FROM Clientes 
--- WHERE nrCliente BETWEEN 101 AND 105;
+DELETE FROM Clientes 
+WHERE nrCliente BETWEEN 101 AND 105;
 
 -- Confirmando se os registros de nrcliente entre 101 e 105 
 -- realmente existem:
@@ -96,7 +109,10 @@ valor_total
 (1004,3,104,25,7500.00),
 (1005,4,105,30,9000.00);
 
-select * from Pedidos;
+SELECT 
+    *
+FROM
+    Pedidos;
 
 -- ---------------------Exercício ------------------------
 -- 1. Quais os nomes de todos os vendedores?
@@ -122,19 +138,32 @@ WHERE
         FROM
             Pedidos);
 
--- 4. Quais os números dos vendedores que realizaram pedido para clientes do tipo "INDÚSTRIA"?
+-- 4. Quais os nomes dos vendedores que realizaram pedido para clientes do tipo "INDÚSTRIA"?
 SELECT * FROM Vendedores;
 select * from Pedidos;
 select * from Clientes;
 
 SELECT DISTINCT
-    p.nrVendedor
+    Pedidos.nrVendedor
 FROM
-    Pedidos p
+    Pedidos 
         JOIN
-    Clientes c ON p.nrCliente = c.nrCliente
+    Clientes ON pedidos.nrCliente = clientes.nrCliente
 WHERE
-    c.tipo = 'INDÚSTRIA';
+    clientes.tipo = "INDÚSTRIA";
+    
+-- 4.1. Quais os números dos vendedores que realizaram pedido para clientes do tipo "INDÚSTRIA"?    
+SELECT DISTINCT
+    vendedores.nomeVendedor
+FROM
+    pedidos
+        JOIN
+    clientes ON pedidos.nrCliente = clientes.nrCliente
+    JOIN
+	vendedores ON pedidos.nrVendedor = vendedores.nrVendedor
+WHERE
+    clientes.tipo = 'INDÚSTRIA';
+
     
 -- 5. Quais os números dos vendedores que realizaram pedido para clientes do tipo "INDÚSTRIA"?
 SELECT DISTINCT
@@ -157,14 +186,17 @@ FROM
     Clientes c ON p.nrCliente = c.nrCliente
 WHERE
     p.valor_total > 5000;
+    
+    
 
--- 7. Quais asos nomes, idades e salários dos vendedores com salários acima de 3000
+-- 7. Quais são os nomes, idades e salários dos vendedores com salários acima de 3000
 SELECT 
     nomeVendedor, idade, salario
 FROM
     Vendedores
 WHERE
     salario > 3000;
+    
 -- 8. Quais as cidades dos clientes do tipo INDÚSTRIA
 SELECT * FROM Vendedores;
 select * from Pedidos;
