@@ -45,16 +45,24 @@ values
 SET SQL_SAFE_UPDATES = 0;
 SET SQL_SAFE_UPDATES = 1;
 
-UPDATE Vendedores SET nomeVendedor='João Silva' WHERE nomeVendedor= 'Legolas';
-UPDATE Vendedores SET nomeVendedor='Maria Oliveira' WHERE nomeVendedor= 'Arwen';
-UPDATE Vendedores SET nomeVendedor='Carlos Santos' WHERE nomeVendedor= 'Gandalf';
-UPDATE Vendedores SET nomeVendedor='Ana Costa' WHERE nomeVendedor= 'Aragorn';
+
+UPDATE Vendedores SET nomeVendedor = 'Aragorn' WHERE nrVendedor = 1;
+UPDATE Vendedores SET nomeVendedor = 'Arwen' WHERE nrVendedor = 2;
+UPDATE Vendedores SET nomeVendedor = 'Gandalf' WHERE nrVendedor = 3;
+UPDATE Vendedores SET nomeVendedor = 'Aragor' WHERE nrVendedor = 4;
+
+
+
+SELECT * FROM Vendedores WHERE nomeVendedor IN (C);
+
 
 desc Vendedores;
 SELECT 
     *
 FROM
     Vendedores;
+    
+
 
 -- Inserindo dados na tabela Clientes
 insert into Clientes(nrCliente, nomeCliente, cidade, tipo) 
