@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 public class UsuarioService {
-    private List<Usuario> usuarios = new ArrayList<>();
+    private final List<Usuario> usuarios = new ArrayList<>();
 
     public List<Usuario> listarUsuarios() {
         return this.usuarios;
