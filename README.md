@@ -185,24 +185,24 @@
   - [x] 2. Modelagem de Dados e Entidades
   - [x] 3. Criação e Manipulação de Tabelas
   - [x] 4. Consultas Simples com Select
-  - [ ] 5. Restrições de Integridade e Chaves
-  - [ ] 6. Consultas Avançadas com Select
-  - [ ] 7. Backup e Restauração de Dados
-  - [ ] 8. Segurança e Gerenciamento de Usuários
-  - [ ] 9. Introdução a Stored Procedures
-  - [ ] 10. Introdução a Triggers
-  - [ ] 11. Índices e Otimização de Consultas
-  - [ ] 12. Introdução a Views
-  - [ ] 13. Revisão e Projeto Final
+  - [x] 5. Restrições de Integridade e Chaves
+  - [x] 6. Consultas Avançadas com Select
+  - [x] 7. Backup e Restauração de Dados
+  - [x] 8. Segurança e Gerenciamento de Usuários
+  - [x] 9. Introdução a Stored Procedures
+  - [x] 10. Introdução a Triggers
+  - [x] 11. Índices e Otimização de Consultas
+  - [x] 12. Introdução a Views
+  - [x] 13. Revisão e Projeto Final
   
   <a href="#topo">Voltar ao Topo</a>
   
   <h3 id="módulo-7---desenvolvimento-de-apis-rest-com-spring-boot-13-aulas">📗Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas)</h3>
   <!-- ### Módulo 7 - Desenvolvimento de APIs Rest com Spring Boot (13 Aulas) -->
   
-  - [ ] 1. Introdução ao Desenvolvimento Back-end
-  - [ ] 2. Conceitos Básicos de API REST e Estrutura da Internet
-  - [ ] 3. Introdução ao Spring Boot e Configuração do Ambiente
+  - [x] 1. Introdução ao Desenvolvimento Back-end
+  - [x] 2. Conceitos Básicos de API REST e Estrutura da Internet
+  - [x] 3. Introdução ao Spring Boot e Configuração do Ambiente
   - [ ] 4. Manipulação de Dados com Spring Data JPA
   - [ ] 5. Validação de Dados e Tratamento de Exceções
   - [ ] 6. Documentação de API com Swagger
